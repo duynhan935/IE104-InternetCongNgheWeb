@@ -1,0 +1,258 @@
+/* Online-Booking Hero Banner */
+.onl-banner {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../images/online-booking/onl-banner.png") center/cover
+    no-repeat fixed;
+}
+
+.onl-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+.onl-banner__content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.onl-banner__title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3.5rem, 5vw, 7rem);
+  font-weight: 700;
+  color: #ff7b29;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+.onl-banner__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+/* Booking Form */
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 1rem; /* chừa chỗ icon bên phải */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+}
+
+/* Tùy chỉnh cho select */
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none; /* Ẩn mũi tên mặc định */
+}
+
+.form-group select option {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Icon bên phải */
+.form-group .icon {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dropdown arrow for select */
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1.2rem;
+  padding-right: 2.5rem;
+}
+
+.form-group select option {
+  background-color: #333;
+  color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ff7b29;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(255, 123, 41, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.form-group:hover .icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input:focus + .icon,
+.form-group select:focus + .icon {
+  color: #ff7b29;
+}
+
+/* Hide default calendar/clock icons on webkit browsers */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Booking Button */
+.booking-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.booking-btn button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.booking-btn button::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background: #ff7b29;
+  transition: width 0.3s ease;
+}
+
+.booking-btn button:hover {
+  color: #ff7b29;
+}
+
+.booking-btn button:hover::after {
+  width: 120%;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 20px;
+    max-width: 90%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .onl-banner__title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .onl-banner__subtitle {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-form {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 1rem 1.2rem 1rem 3rem;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+
+  .form-group .icon {
+    left: 1rem;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+body:has(.onl-banner) .footer {
+  margin-top: 0;
+}
