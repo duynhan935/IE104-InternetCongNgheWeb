@@ -7,37 +7,43 @@
   <form class="booking-form">
     <div class="form-row">
       <div class="form-group">
-        <input type="text" placeholder="Your name" required />
+        <input type="text" name="name" placeholder="Your name" required />
         <span class="icon"><i class="fas fa-user"></i></span>
+        <span class="error-message"></span>
       </div>
       <div class="form-group">
-        <input type="tel" placeholder="Phone number" required />
+        <input type="tel" name="phone" placeholder="Phone number" required />
         <span class="icon"><i class="fas fa-phone"></i></span>
+        <span class="error-message"></span>
       </div>
       <div class="form-group">
-        <input type="email" placeholder="Email address" required />
+        <input type="email" name="email" placeholder="Email address" required />
         <span class="icon"><i class="fas fa-envelope"></i></span>
+        <span class="error-message"></span>
       </div>
     </div>
 
     <div class="form-row">
       <div class="form-group">
-        <select required>
-          <option value="">1 Person</option>
+        <select required name="person" title="Guest">
+          <option value="">Select number of persons</option>
           <option value="1">1 Person</option>
           <option value="2">2 Persons</option>
           <option value="3">3 Persons</option>
           <option value="4">4+ Persons</option>
         </select>
         <span class="icon"><i class="fas fa-users"></i></span>
+        <span class="error-message"></span>
       </div>
       <div class="form-group">
-        <input type="date" required />
+        <input type="date" name="date" required />
         <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+        <span class="error-message"></span>
       </div>
       <div class="form-group">
-        <input type="time" value="07:00" required />
+        <input type="time" name="time" value="07:00" required />
         <span class="icon"><i class="fas fa-clock"></i></span>
+        <span class="error-message"></span>
       </div>
     </div>
 
