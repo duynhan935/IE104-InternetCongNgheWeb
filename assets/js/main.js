@@ -185,6 +185,10 @@ function loadPage(page) {
                     isPageLoading = false;
                 }
             }, 10000);
+
+            setTimeout(() => {
+                handleHeaderScroll();
+            }, 200);
         }, 100); // Delay 100ms để đảm bảo cleanup hoàn tất
     });
 }
@@ -305,3 +309,46 @@ window.addEventListener("resize", function () {
         if (sideMenuOverlay) sideMenuOverlay.classList.remove("active");
     }
 });
+
+// ============================================
+// 9. XỬ LÝ HEADER KHI CUỘN QUA BANNER
+// ============================================
+
+// Biến toàn cục để lưu scroll handler
+let scrollHandler = null;
+
+function handleHeaderScroll() {
+    const header = document.querySelector("header");
+    // Kiểm tra tất cả các loại banner
+    const banner = document.querySelector(".about-des-banner, .des-banner, .onl-banner, .destination-detail-hero");
+
+    if (!header) return;
+
+    // XÓA event listener cũ nếu có
+    if (scrollHandler) {
+        document.removeEventListener("scroll", scrollHandler);
+        scrollHandler = null;
+    }
+
+    // Nếu trang có banner
+    if (banner) {
+        const bannerHeight = banner.offsetHeight;
+
+        // Tạo handler mới
+        scrollHandler = () => {
+            const scrollY = document.body.scrollTop;
+
+            if (scrollY > bannerHeight) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        };
+
+        document.addEventListener("scroll", scrollHandler, true);
+
+        scrollHandler();
+    } else {
+        header.classList.add("scrolled");
+    }
+}

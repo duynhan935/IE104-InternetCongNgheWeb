@@ -1,0 +1,695 @@
+{
+  "data": [
+    {
+      "id": "vn001",
+      "country": "Việt Nam",
+      "title": "Hành trình Xuyên Việt: Từ Hà Nội đến Đồng bằng sông Cửu Long",
+      "description": "Khám phá vẻ đẹp đa dạng của Việt Nam...",
+      "price": 25000000,
+      "rating": 4.8,
+      "days": 12,
+      "places": [
+        {
+          "city": "Hà Nội",
+          "famous_locations": [
+            {
+              "name": "Hồ Gươm",
+              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpg"
+            },
+            {
+              "name": "Lăng Chủ tịch Hồ Chí Minh",
+              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Lăng Chủ tịch Hồ Chí Minh.jpg"
+            },
+            {
+              "name": "Văn Miếu - Quốc Tử Giám",
+              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Văn Miếu - Quốc Tử Giám.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Đà Nẵng",
+          "famous_locations": [
+            {
+              "name": "Bãi biển Mỹ Khê",
+              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Bãi biển Mỹ Khê.jpg"
+            },
+            {
+              "name": "Ngũ Hành Sơn",
+              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Ngũ Hành Sơn.jpg"
+            },
+            {
+              "name": "Bán đảo Sơn Trà",
+              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Bán đảo Sơn Trà.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Hội An",
+          "famous_locations": [
+            {
+              "name": "Phố cổ Hội An",
+              "image_url": "/assets/images/data/Việt Nam/Hội An/Phố cổ Hội An.jpg"
+            },
+            {
+              "name": "Làng gốm Thanh Hà",
+              "image_url": "/assets/images/data/Việt Nam/Hội An/Làng gốm Thanh Hà.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Hồ Chí Minh",
+          "famous_locations": [
+            {
+              "name": "Dinh Độc Lập",
+              "image_url": "/assets/images/data/Việt Nam/Hồ Chí Minh/Dinh Độc Lập.jpg"
+            },
+            {
+              "name": "Nhà thờ Đức Bà",
+              "image_url": "/assets/images/data/Việt Nam/Hồ Chí Minh/Nhà thờ Đức Bà.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jp002",
+      "country": "Nhật Bản",
+      "title": "Khám phá Đất nước Mặt trời mọc: Tokyo & Kyoto",
+      "description": "Trải nghiệm sự giao thoa giữa truyền thống và hiện đại tại Nhật Bản...",
+      "price": 45000000,
+      "rating": 4.9,
+      "days": 7,
+      "places": [
+        {
+          "city": "Tokyo",
+          "famous_locations": [
+            {
+              "name": "Giao lộ Shibuya",
+              "image_url": "/assets/images/data/Nhật Bản/Tokyo/Giao lộ Shibuya.jpg"
+            },
+            {
+              "name": "Tháp Tokyo Skytree",
+              "image_url": "/assets/images/data/Nhật Bản/Tokyo/Tháp Tokyo Skytree.jpg"
+            },
+            {
+              "name": "Hoàng cung Nhật Bản",
+              "image_url": "/assets/images/data/Nhật Bản/Tokyo/Hoàng cung Nhật Bản.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Kyoto",
+          "famous_locations": [
+            {
+              "name": "Chùa Vàng Kinkaku-ji",
+              "image_url": "/assets/images/data/Nhật Bản/Kyoto/Chùa Vàng Kinkaku-ji.jpg"
+            },
+            {
+              "name": "Rừng tre Arashiyama",
+              "image_url": "/assets/images/data/Nhật Bản/Kyoto/Rừng tre Arashiyama.jpg"
+            },
+            {
+              "name": "Phố cổ Gion",
+              "image_url": "/assets/images/data/Nhật Bản/Kyoto/Phố cổ Gion.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Osaka",
+          "famous_locations": [
+            {
+              "name": "Lâu đài Osaka",
+              "image_url": "/assets/images/data/Nhật Bản/Osaka/Lâu đài Osaka.jpg"
+            },
+            {
+              "name": "Khu Dotonbori",
+              "image_url": "/assets/images/data/Nhật Bản/Osaka/Khu Dotonbori.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr003",
+      "country": "Pháp",
+      "title": "Vẻ đẹp Lãng mạn của Pháp: Paris và Nice",
+      "description": "Đắm mình trong kinh đô ánh sáng Paris...",
+      "price": 65000000,
+      "rating": 4.7,
+      "days": 8,
+      "places": [
+        {
+          "city": "Paris",
+          "famous_locations": [
+            {
+              "name": "Tháp Eiffel",
+              "image_url": "/assets/images/data/Pháp/Paris/Tháp Eiffel.jpg"
+            },
+            {
+              "name": "Nhà thờ Đức Bà Paris",
+              "image_url": "/assets/images/data/Pháp/Paris/Nhà thờ Đức Bà Paris.jpg"
+            },
+            {
+              "name": "Khải Hoàn Môn",
+              "image_url": "/assets/images/data/Pháp/Paris/Khải Hoàn Môn.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Nice",
+          "famous_locations": [
+            {
+              "name": "Phố cổ Vieille Ville",
+              "image_url": "/assets/images/data/Pháp/Nice/Phố cổ Vieille Ville.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it004",
+      "country": "Ý",
+      "title": "Vẻ đẹp Vĩnh cửu: Rome, Florence và Venice",
+      "description": "Hành trình khám phá di sản của Đế chế La Mã tại Rome...",
+      "price": 70000000,
+      "rating": 4.8,
+      "days": 10,
+      "places": [
+        {
+          "city": "Rome",
+          "famous_locations": [
+            {
+              "name": "Đấu trường Colosseum",
+              "image_url": "/assets/images/data/Ý/Rome/Đấu trường Colosseum.jpg"
+            },
+            {
+              "name": "Đài phun nước Trevi",
+              "image_url": "/assets/images/data/Ý/Rome/Đài phun nước Trevi.jpg"
+            },
+            {
+              "name": "Đền Pantheon",
+              "image_url": "/assets/images/data/Ý/Rome/Đền Pantheon.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Florence",
+          "famous_locations": [
+            {
+              "name": "Cầu Ponte Vecchio",
+              "image_url": "/assets/images/data/Ý/Florence/Cầu Ponte Vecchio.jpg"
+            },
+            {
+              "name": "Bảo tàng nghệ thuật Uffizi Gallery",
+              "image_url": "/assets/images/data/Ý/Florence/Bảo tàng nghệ thuật Uffizi Gallery.jpg"
+            },
+            {
+              "name": "Quảng trường Michelangelo",
+              "image_url": "/assets/images/data/Ý/Florence/Quảng trường Michelangelo.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Venice",
+          "famous_locations": [
+            {
+              "name": "Quảng trường St. Mark",
+              "image_url": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpg"
+            },
+            {
+              "name": "Cầu Rialto",
+              "image_url": "/assets/images/data/Ý/Venice/Cầu Rialto.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us005",
+      "country": "Mỹ",
+      "title": "Hành trình Bờ Tây Nước Mỹ: Los Angeles, Las Vegas & Grand Canyon",
+      "description": "Trải nghiệm sự hào nhoáng của kinh đô điện ảnh Hollywood...",
+      "price": 90000000,
+      "rating": 4.7,
+      "days": 9,
+      "places": [
+        {
+          "city": "Los Angeles",
+          "famous_locations": [
+            {
+              "name": "Bến tàu Santa Monica",
+              "image_url": "/assets/images/data/Mỹ/Los Angeles/Bến tàu Santa Monica.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Las Vegas",
+          "famous_locations": [
+            {
+              "name": "Đài phun nước Bellagio",
+              "image_url": "/assets/images/data/Mỹ/Las Vegas/Đài phun nước Bellagio.jpg"
+            },
+            {
+              "name": "Show diễn đường phố Fremont",
+              "image_url": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "th006",
+      "country": "Thái Lan",
+      "title": "Thiên đường Nhiệt đới: Bangkok và Phuket",
+      "description": "Khám phá sự kết hợp giữa nét cổ kính của những ngôi chùa vàng...",
+      "price": 12000000,
+      "rating": 4.6,
+      "days": 5,
+      "places": [
+        {
+          "city": "Bangkok",
+          "famous_locations": [
+            {
+              "name": "Chùa Phật Nằm (Wat Pho)",
+              "image_url": "/assets/images/data/Thái Lan/Bangkok/Chùa Phật Nằm (Wat Pho).jpg"
+            },
+            {
+              "name": "Du thuyền trên sông Chao Phraya",
+              "image_url": "/assets/images/data/Thái Lan/Bangkok/Du thuyền trên sông Chao Phraya.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Phuket",
+          "famous_locations": [
+            {
+              "name": "Quần đảo Phi Phi",
+              "image_url": "/assets/images/data/Thái Lan/Phuket/Quần đảo Phi Phi.jpg"
+            },
+            {
+              "name": "Bãi biển Patong",
+              "image_url": "/assets/images/data/Thái Lan/Phuket/Bãi biển Patong.jpg"
+            },
+            {
+              "name": "Phố cổ Phuket",
+              "image_url": "/assets/images/data/Thái Lan/Phuket/Phố cổ Phuket.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kr007",
+      "country": "Hàn Quốc",
+      "title": "Sức hút Seoul và Nét đẹp Busan",
+      "description": "Trải nghiệm văn hóa K-Pop sôi động...",
+      "price": 18000000,
+      "rating": 4.7,
+      "days": 6,
+      "places": [
+        {
+          "city": "Seoul",
+          "famous_locations": [
+            {
+              "name": "Cung điện Gyeongbokgung",
+              "image_url": "/assets/images/data/Hàn Quốc/Seoul/Cung điện Gyeongbokgung.jpg"
+            },
+            {
+              "name": "Làng cổ Bukchon Hanok",
+              "image_url": "/assets/images/data/Hàn Quốc/Seoul/Làng cổ Bukchon Hanok.jpg"
+            },
+            {
+              "name": "Khu phố mua sắm Myeongdong",
+              "image_url": "/assets/images/data/Hàn Quốc/Seoul/Khu phố mua sắm Myeongdong.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Busan",
+          "famous_locations": [
+            {
+              "name": "Bãi biển Haeundae",
+              "image_url": "/assets/images/data/Hàn Quốc/Busan/Bãi biển Haeundae.jpg"
+            },
+            {
+              "name": "Cầu Gwangandaegyo",
+              "image_url": "/assets/images/data/Hàn Quốc/Busan/Cầu Gwangandaegyo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "au008",
+      "country": "Úc",
+      "title": "Khám phá Sydney và Melbourne Năng động",
+      "description": "Chiêm ngưỡng các biểu tượng kiến trúc của Sydney...",
+      "price": 55000000,
+      "rating": 4.8,
+      "days": 8,
+      "places": [
+        {
+          "city": "Sydney",
+          "famous_locations": [
+            {
+              "name": "Nhà hát Opera Sydney",
+              "image_url": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpg"
+            },
+            {
+              "name": "Cầu cảng Sydney",
+              "image_url": "/assets/images/data/Úc/Sydney/Cầu cảng Sydney.jpg"
+            },
+            {
+              "name": "Khu The Rocks",
+              "image_url": "/assets/images/data/Úc/Sydney/Khu The Rocks.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Melbourne",
+          "famous_locations": [
+            {
+              "name": "Quảng trường Federation",
+              "image_url": "/assets/images/data/Úc/Melbourne/Quảng trường Federation.jpg"
+            },
+            {
+              "name": "Ga tàu Flinders Street",
+              "image_url": "/assets/images/data/Úc/Melbourne/Ga tàu Flinders Street.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eg009",
+      "country": "Ai Cập",
+      "title": "Hành trình Huyền bí Theo dòng Sông Nile",
+      "description": "Quay ngược thời gian về với nền văn minh Ai Cập cổ đại...",
+      "price": 85000000,
+      "rating": 4.9,
+      "days": 10,
+      "places": [
+        {
+          "city": "Cairo",
+          "famous_locations": [
+            {
+              "name": "Quần thể Kim tự tháp Giza",
+              "image_url": "/assets/images/data/Ai Cập/Cairo/Quần thể Kim tự tháp Giza.jpg"
+            },
+            {
+              "name": "Tượng Nhân sư Lớn",
+              "image_url": "/assets/images/data/Ai Cập/Cairo/Tượng Nhân sư Lớn.jpg"
+            },
+            {
+              "name": "Bảo tàng Ai Cập",
+              "image_url": "/assets/images/data/Ai Cập/Cairo/Bảo tàng Ai Cập.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Luxor",
+          "famous_locations": [
+            {
+              "name": "Thung lũng các vị Vua",
+              "image_url": "/assets/images/data/Ai Cập/Luxor/Thung lũng các vị Vua.jpg"
+            },
+            {
+              "name": "Đền Karnak",
+              "image_url": "/assets/images/data/Ai Cập/Luxor/Đền Karnak.jpg"
+            },
+            {
+              "name": "Tượng đài Colossi of Memnon",
+              "image_url": "/assets/images/data/Ai Cập/Luxor/Tượng đài Colossi of Memnon.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "es010",
+      "country": "Tây Ban Nha",
+      "title": "Sôi động Madrid và Kiến trúc Barcelona",
+      "description": "Đắm mình trong nhịp sống sôi động và văn hóa hoàng gia của Madrid...",
+      "price": 68000000,
+      "rating": 4.7,
+      "days": 8,
+      "places": [
+        {
+          "city": "Madrid",
+          "famous_locations": [
+            {
+              "name": "Cung điện Hoàng gia Madrid",
+              "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Cung điện Hoàng gia Madrid.jpg"
+            },
+            {
+              "name": "Quảng trường Plaza Mayor",
+              "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Quảng trường Plaza Mayor.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Barcelona",
+          "famous_locations": [
+            {
+              "name": "Nhà thờ Sagrada Família",
+              "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Nhà thờ Sagrada Família.jpg"
+            },
+            {
+              "name": "Công viên Güell",
+              "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Công viên Güell.jpg"
+            },
+            {
+              "name": "Phố đi bộ La Rambla",
+              "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Phố đi bộ La Rambla.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ca011",
+      "country": "Canada",
+      "title": "Kỳ quan Thiên nhiên Miền Tây: Vancouver & Dãy núi Rocky",
+      "description": "Khám phá thành phố cảng Vancouver xinh đẹp...",
+      "price": 95000000,
+      "rating": 4.9,
+      "days": 10,
+      "places": [
+        {
+          "city": "Vancouver",
+          "famous_locations": [
+            {
+              "name": "Cầu treo Capilano",
+              "image_url": "/assets/images/data/Canada/Vancouver/Cầu treo Capilano.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Banff",
+          "famous_locations": [
+            {
+              "name": "Vườn quốc gia Banff",
+              "image_url": "/assets/images/data/Canada/Banff/Vườn quốc gia Banff.jpg"
+            },
+            {
+              "name": "Hồ Moraine",
+              "image_url": "/assets/images/data/Canada/Banff/Hồ Moraine.jpg"
+            },
+            {
+              "name": "Đi cáp treo Banff Gondola",
+              "image_url": "/assets/images/data/Canada/Banff/Đi cáp treo Banff Gondola.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in012",
+      "country": "Ấn Độ",
+      "title": "Hành trình Tam giác Vàng: Delhi, Agra và Jaipur",
+      "description": "Đây là hành trình kinh điển nhất để khám phá Ấn Độ...",
+      "price": 35000000,
+      "rating": 4.8,
+      "days": 7,
+      "places": [
+        {
+          "city": "Delhi",
+          "famous_locations": [
+            {
+              "name": "Cổng Ấn Độ",
+              "image_url": "/assets/images/data/Ấn Độ/Delhi/Cổng Ấn Độ.jpg"
+            },
+            {
+              "name": "Lăng mộ Humayun",
+              "image_url": "/assets/images/data/Ấn Độ/Delhi/Lăng mộ Humayun.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Agra",
+          "famous_locations": [
+            {
+              "name": "Đền Taj Mahal",
+              "image_url": "/assets/images/data/Ấn Độ/Agra/Đền Taj Mahal.jpg"
+            },
+            {
+              "name": "Pháo đài Agra",
+              "image_url": "/assets/images/data/Ấn Độ/Agra/Pháo đài Agra.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Jaipur",
+          "famous_locations": [
+            {
+              "name": "Pháo đài Amber",
+              "image_url": "/assets/images/data/Ấn Độ/Jaipur/Pháo đài Amber.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br013",
+      "country": "Brazil",
+      "title": "Vũ điệu Rio và Thác nước Iguazu Hùng vĩ",
+      "description": "Cảm nhận vũ điệu Samba sôi động tại Rio de Janeiro...",
+      "price": 110000000,
+      "rating": 4.8,
+      "days": 9,
+      "places": [
+        {
+          "city": "Rio de Janeiro",
+          "famous_locations": [
+            {
+              "name": "Tượng Chúa Cứu thế",
+              "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Tượng Chúa Cứu thế.jpg"
+            },
+            {
+              "name": "Núi Sugarloaf",
+              "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Núi Sugarloaf.jpg"
+            },
+            {
+              "name": "Bãi biển Copacabana và Ipanema",
+              "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Bãi biển Copacabana và Ipanema.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr014",
+      "country": "Thổ Nhĩ Kỳ",
+      "title": "Di sản Istanbul và Cảnh quan Cappadocia",
+      "description": "Du hành qua hai châu lục tại Istanbul...",
+      "price": 58000000,
+      "rating": 4.9,
+      "days": 8,
+      "places": [
+        {
+          "city": "Istanbul",
+          "famous_locations": [
+            {
+              "name": "Nhà thờ Hagia Sophia",
+              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Nhà thờ Hagia Sophia.jpg"
+            },
+            {
+              "name": "Cung điện Topkapi",
+              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Cung điện Topkapi.jpg"
+            },
+            {
+              "name": "Chợ Grand Bazaar",
+              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Chợ Grand Bazaar.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Cappadocia",
+          "famous_locations": [
+            {
+              "name": "Bay khinh khí cầu ngắm bình minh",
+              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Cappadocia/Bay khinh khí cầu ngắm bình minh.jpg"
+            },
+            {
+              "name": "Bảo tàng ngoài trời Göreme",
+              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Cappadocia/Bảo tàng ngoài trời Göreme.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nz015",
+      "country": "New Zealand",
+      "title": "Phiêu lưu tại Đảo Nam: Queenstown & Milford Sound",
+      "description": "Một chuyến đi dành cho những người yêu thiên nhiên và mạo hiểm...",
+      "price": 88000000,
+      "rating": 4.9,
+      "days": 9,
+      "places": [
+        {
+          "city": "Te Anau",
+          "famous_locations": [
+            {
+              "name": "Vịnh hẹp Milford Sound",
+              "image_url": "/assets/images/data/New Zealand/Te Anau/Vịnh hẹp Milford Sound.jpg"
+            },
+            {
+              "name": "Vịnh hẹp Doubtful Sound",
+              "image_url": "/assets/images/data/New Zealand/Te Anau/Vịnh hẹp Doubtful Sound.jpg"
+            },
+            {
+              "name": "Hang đom đóm Te Anau",
+              "image_url": "/assets/images/data/New Zealand/Te Anau/Hang đom đóm Te Anau.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk016",
+      "country": "Anh",
+      "title": "Dấu ấn Lịch sử: London và Edinburgh",
+      "description": "Khám phá các biểu tượng hoàng gia và lịch sử tại London...",
+      "price": 75000000,
+      "rating": 4.7,
+      "days": 8,
+      "places": [
+        {
+          "city": "London",
+          "famous_locations": [
+            {
+              "name": "Tháp London",
+              "image_url": "/assets/images/data/Anh/London/Tháp London.jpg"
+            },
+            {
+              "name": "Cung điện Buckingham",
+              "image_url": "/assets/images/data/Anh/London/Cung điện Buckingham.jpg"
+            },
+            {
+              "name": "Vòng quay London Eye",
+              "image_url": "/assets/images/data/Anh/London/Vòng quay London Eye.jpg"
+            }
+          ]
+        },
+        {
+          "city": "Edinburgh",
+          "famous_locations": [
+            {
+              "name": "Lâu đài Edinburgh",
+              "image_url": "/assets/images/data/Anh/Edinburgh/Lâu đài Edinburgh.jpg"
+            },
+            {
+              "name": "Phố Royal Mile",
+              "image_url": "/assets/images/data/Anh/Edinburgh/Phố Royal Mile.jpg"
+            },
+            {
+              "name": "Cung điện Holyroodhouse",
+              "image_url": "/assets/images/data/Anh/Edinburgh/Cung điện Holyroodhouse.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

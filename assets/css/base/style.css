@@ -1,295 +1,298 @@
 :root {
-        /* Background color*/
-        --bg-primary: #f8f9fa;
-        --button-blue-bg-color: #31c3e0;
-        --button-blue-bg-color-hover: #22b8d9;
-        --button-orange-bg-color: #ff7b29;
-        --button-black-bg-color: #132742;
-        --card-bg-color: #ffffff;
-        --footer-divider-color: rgba(210, 208, 192, 0.21);
-        --social-icon-border-color: #333;
+  /* Background color*/
+  --bg-primary: #f8f9fa;
+  --button-blue-bg-color: #31c3e0;
+  --button-blue-bg-color-hover: #22b8d9;
+  --button-orange-bg-color: #ff7b29;
+  --button-black-bg-color: #132742;
+  --card-bg-color: #ffffff;
+  --footer-divider-color: rgba(210, 208, 192, 0.21);
+  --social-icon-border-color: #333;
+  --bg-header: #e6e8ea;
 
-        /* Hero */
-        --hero-gradient-orange-start: #ff8a3d;
-        --hero-gradient-orange-end: #ff7b29;
-        --hero-btn-primary-shadow: 0 12px 24px rgba(255, 123, 41, 0.28);
-        --hero-btn-icon-shadow: 0 8px 20px rgba(255, 123, 41, 0.25);
-        --hero-line-color: rgba(45, 49, 52, 0.18);
-        --hero-info-item-bg: #ffffff;
-        --hero-info-item-shadow: 0 6px 18px rgba(42, 203, 233, 0.1);
-        --hero-info-icon-bg: rgba(255, 123, 41, 0.1);
-        --hero-stat-track: #eef1f4;
-        --hero-stat-progress: #cfe66c;
-        --hero-stat-label: #9aa3ad;
-        --hero-stat-total-label: #93a0b2;
-        --hero-stat-inner-border: #eef1f4;
-        --hero-card-bg: #ffffff;
-        --hero-card-shadow: 0 20px 45px rgba(15, 34, 55, 0.12);
-        --hero-search-bg: #ffffff;
-        --hero-search-shadow: 0 8px 30px rgba(42, 203, 233, 0.12);
-        --hero-search-button-bg: #0f2237;
-        --hero-search-button-bg-hover: #102b4c;
-        --hero-search-button-color: #ffffff;
-        --hero-search-field-border: #ececec;
-        --hero-brush-filter: saturate(1.05) brightness(1.02);
-        --hero-secondary-text: var(--text-description);
-        --hero-highlight-number: var(--stats-color);
+  /* Hero */
+  --hero-gradient-orange-start: #ff8a3d;
+  --hero-gradient-orange-end: #ff7b29;
+  --hero-btn-primary-shadow: 0 12px 24px rgba(255, 123, 41, 0.28);
+  --hero-btn-icon-shadow: 0 8px 20px rgba(255, 123, 41, 0.25);
+  --hero-line-color: rgba(45, 49, 52, 0.18);
+  --hero-info-item-bg: #ffffff;
+  --hero-info-item-shadow: 0 6px 18px rgba(42, 203, 233, 0.1);
+  --hero-info-icon-bg: rgba(255, 123, 41, 0.1);
+  --hero-stat-track: #eef1f4;
+  --hero-stat-progress: #cfe66c;
+  --hero-stat-label: #9aa3ad;
+  --hero-stat-total-label: #93a0b2;
+  --hero-stat-inner-border: #eef1f4;
+  --hero-card-bg: #ffffff;
+  --hero-card-shadow: 0 20px 45px rgba(15, 34, 55, 0.12);
+  --hero-search-bg: #ffffff;
+  --hero-search-shadow: 0 8px 30px rgba(42, 203, 233, 0.12);
+  --hero-search-button-bg: #0f2237;
+  --hero-search-button-bg-hover: #102b4c;
+  --hero-search-button-color: #ffffff;
+  --hero-search-field-border: #ececec;
+  --hero-brush-filter: saturate(1.05) brightness(1.02);
+  --hero-secondary-text: var(--text-description);
+  --hero-highlight-number: var(--stats-color);
 
-        /* Tour */
-        --tours-heading-color: var(--text-primary);
-        --tours-desc-color: var(--text-primary);
-        --tour-see-all-bg: var(--button-orange-bg-color);
-        --tour-see-all-bg-hover: #ff893f;
-        --tour-card-bg: var(--card-bg-color);
-        --tour-card-shadow: 0 4px 18px rgba(15, 34, 55, 0.08);
-        --tour-card-shadow-hover: 0 10px 30px rgba(15, 34, 55, 0.14);
-        --tour-price-color: var(--button-orange-bg-color);
-        --tour-meta-color: var(--text-primary);
+  /* Tour */
+  --tours-heading-color: var(--text-primary);
+  --tours-desc-color: var(--text-primary);
+  --tour-see-all-bg: var(--button-orange-bg-color);
+  --tour-see-all-bg-hover: #ff893f;
+  --tour-card-bg: var(--card-bg-color);
+  --tour-card-shadow: 0 4px 18px rgba(15, 34, 55, 0.08);
+  --tour-card-shadow-hover: 0 10px 30px rgba(15, 34, 55, 0.14);
+  --tour-price-color: var(--button-orange-bg-color);
+  --tour-meta-color: var(--text-primary);
 
-        /* Why Choose Us (light) */
-        --why-section-bg: transparent;
-        --why-media-radius: 40px;
-        --why-icon-bg: rgba(255, 123, 41, 0.1);
-        --why-icon-border: transparent;
-        --why-icon-shadow: 0 4px 12px rgba(255, 123, 41, 0.18);
-        --why-icon-size: 44px;
-        --why-item-title-color: var(--text-primary);
-        --why-item-text-color: var(--text-primary);
+  /* Why Choose Us (light) */
+  --why-section-bg: transparent;
+  --why-media-radius: 40px;
+  --why-icon-bg: rgba(255, 123, 41, 0.1);
+  --why-icon-border: transparent;
+  --why-icon-shadow: 0 4px 12px rgba(255, 123, 41, 0.18);
+  --why-icon-size: 44px;
+  --why-item-title-color: var(--text-primary);
+  --why-item-text-color: var(--text-primary);
 
-        /* Trending Tour */
-        --trend-title-color: var(--text-primary);
-        --trend-desc-color: var(--text-primary);
-        --trend-card-bg: var(--card-bg-color);
-        --trend-card-border: #e6e8ea;
-        --trend-card-border-hover: #d4d7da;
-        --trend-card-shadow: 0 4px 14px rgba(15, 34, 55, 0.08);
-        --trend-card-shadow-hover: 0 10px 26px rgba(15, 34, 55, 0.14);
-        --trend-price-color: #ff7b29;
-        --trend-book-bg: var(--button-blue-bg-color);
-        --trend-book-bg-hover: var(--button-blue-bg-color-hover);
-        --trend-book-color: #fff;
-        --trend-agency-badge-bg: var(--button-orange-bg-color);
-        --trend-agency-badge-color: #fff;
-        --trend-nav-btn-bg: #fff;
-        --trend-nav-btn-border: #e6e8ea;
-        --trend-nav-btn-color: var(--text-primary);
-        --trend-nav-btn-bg-active: var(--button-orange-bg-color);
-        --trend-nav-btn-color-active: #fff;
+  /* Trending Tour */
+  --trend-title-color: var(--text-primary);
+  --trend-desc-color: var(--text-primary);
+  --trend-card-bg: var(--card-bg-color);
+  --trend-card-border: #e6e8ea;
+  --trend-card-border-hover: #d4d7da;
+  --trend-card-shadow: 0 4px 14px rgba(15, 34, 55, 0.08);
+  --trend-card-shadow-hover: 0 10px 26px rgba(15, 34, 55, 0.14);
+  --trend-price-color: #ff7b29;
+  --trend-book-bg: var(--button-blue-bg-color);
+  --trend-book-bg-hover: var(--button-blue-bg-color-hover);
+  --trend-book-color: #fff;
+  --trend-agency-badge-bg: var(--button-orange-bg-color);
+  --trend-agency-badge-color: #fff;
+  --trend-nav-btn-bg: #fff;
+  --trend-nav-btn-border: #e6e8ea;
+  --trend-nav-btn-color: var(--text-primary);
+  --trend-nav-btn-bg-active: var(--button-orange-bg-color);
+  --trend-nav-btn-color-active: #fff;
 
-        /* Destination */
-        --dest-title-color: var(--text-primary);
-        --dest-desc-color: var(--text-primary);
-        --dest-btn-bg: var(--button-orange-bg-color);
-        --dest-btn-bg-hover: #ff893f;
-        --dest-card-radius: 14px;
-        --dest-card-overlay: linear-gradient(
-                to top,
-                rgba(0, 0, 0, 0.55) 0%,
-                rgba(0, 0, 0, 0.05) 65%,
-                rgba(0, 0, 0, 0) 100%
-        );
-        --dest-rating-bg: #ffffff;
-        --dest-rating-color: var(--button-orange-bg-color);
-        --dest-rating-shadow: 0 4px 12px rgba(15, 34, 55, 0.12);
+  /* Destination */
+  --dest-title-color: var(--text-primary);
+  --dest-desc-color: var(--text-primary);
+  --dest-btn-bg: var(--button-orange-bg-color);
+  --dest-btn-bg-hover: #ff893f;
+  --dest-card-radius: 14px;
+  --dest-card-overlay: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.05) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --dest-rating-bg: #ffffff;
+  --dest-rating-color: var(--button-orange-bg-color);
+  --dest-rating-shadow: 0 4px 12px rgba(15, 34, 55, 0.12);
 
-        /* Newsletter */
-        --newsletter-bg: #e3c300;
-        --newsletter-title-color: #ffffff;
-        --newsletter-desc-color: #ffffff;
-        --newsletter-shape-color: rgba(0, 0, 0, 0.18);
-        --newsletter-shape-color-right: rgba(0, 0, 0, 0.12);
-        --newsletter-input-bg: #ffffff;
-        --newsletter-input-border: #ffffff;
-        --newsletter-input-color: #2d3134;
-        --newsletter-input-placeholder: #6d7175;
-        --newsletter-input-shadow: 0 4px 14px rgba(15, 34, 55, 0.15);
-        --newsletter-btn-bg: #ff7b29;
-        --newsletter-btn-bg-hover: #ff8f48;
-        --newsletter-btn-color: #ffffff;
+  /* Newsletter */
+  --newsletter-bg: #e3c300;
+  --newsletter-title-color: #ffffff;
+  --newsletter-desc-color: #ffffff;
+  --newsletter-shape-color: rgba(0, 0, 0, 0.18);
+  --newsletter-shape-color-right: rgba(0, 0, 0, 0.12);
+  --newsletter-input-bg: #ffffff;
+  --newsletter-input-border: #ffffff;
+  --newsletter-input-color: #2d3134;
+  --newsletter-input-placeholder: #6d7175;
+  --newsletter-input-shadow: 0 4px 14px rgba(15, 34, 55, 0.15);
+  --newsletter-btn-bg: #ff7b29;
+  --newsletter-btn-bg-hover: #ff8f48;
+  --newsletter-btn-color: #ffffff;
 
-        /* Tour Details Review */
-        --review-bar-bg: #e6e8ea;
-        --review-bar-fill: var(--button-orange-bg-color, #ff7b29);
-        --review-btn-bg: var(--button-orange-bg-color, #ff7b29);
-        --review-btn-bg-hover: #ff8a3d;
-        --review-btn-color: #fff;
-        --review-form-border: #e6e8ea;
-        --review-form-bg: #fff;
-        --review-form-label: var(--text-primary);
-        --review-form-input-bg: #fff;
-        --review-form-input-color: var(--text-primary);
-        --review-form-input-border: #e6e8ea;
-        --review-form-input-placeholder: #b3bcc5;
+  /* Tour Details Review */
+  --review-bar-bg: #e6e8ea;
+  --review-bar-fill: var(--button-orange-bg-color, #ff7b29);
+  --review-btn-bg: var(--button-orange-bg-color, #ff7b29);
+  --review-btn-bg-hover: #ff8a3d;
+  --review-btn-color: #fff;
+  --review-form-border: #e6e8ea;
+  --review-form-bg: #fff;
+  --review-form-label: var(--text-primary);
+  --review-form-input-bg: #fff;
+  --review-form-input-color: var(--text-primary);
+  --review-form-input-border: #e6e8ea;
+  --review-form-input-placeholder: #b3bcc5;
 
-        /* Font size */
-        --h1-fontSize: 62px;
-        --h2-fontSize: 40px;
-        --h3-fontSize: 24px;
-        --h4-fontSize: 18px;
-        --thumbnail-fontSize: 136px;
-        --description-fontSize: 16px;
-        --name-fontSize: 20px;
-        --location-fontSize: 20px;
-        --nav-text: 14px;
-        --button-text: 18px;
+  /* Font size */
+  --h1-fontSize: 62px;
+  --h2-fontSize: 40px;
+  --h3-fontSize: 24px;
+  --h4-fontSize: 18px;
+  --thumbnail-fontSize: 136px;
+  --description-fontSize: 16px;
+  --name-fontSize: 20px;
+  --location-fontSize: 20px;
+  --nav-text: 14px;
+  --button-text: 18px;
 
-        /* Text Color */
-        --text-primary: #2d3134;
-        --text-orange: #ff7b29;
-        --text-description: #676a6c;
+  /* Text Color */
+  --text-primary: #2d3134;
+  --text-orange: #ff7b29;
+  --text-description: #676a6c;
 
-        /* Maxwidth */
-        --screen-max-width: 1170px;
+  /* Maxwidth */
+  --screen-max-width: 1170px;
 
-        /* Font */
-        --font-body: "Inter", system-ui, sans-serif;
-        --font-heading: "Poppins", "Segoe UI", Arial, sans-serif;
-        --fw-body: 400;
-        --fw-heading: 800;
+  /* Font */
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Poppins", "Segoe UI", Arial, sans-serif;
+  --fw-body: 400;
+  --fw-heading: 800;
 }
 
 .dark {
-        /* Background color*/
-        --bg-primary: #373434;
-        --button-blue-bg-color: #31c3e0;
-        --button-blue-bg-color-hover: #22b8d9;
-        --button-orange-bg-color: #ff7b29;
-        --button-black-bg-color: #132742;
-        --card-bg-color: #484848;
-        --footer-divider-color: #575551;
-        --social-icon-border-color: #ececec;
+  /* Background color*/
+  --bg-primary: #373434;
+  --button-blue-bg-color: #31c3e0;
+  --button-blue-bg-color-hover: #22b8d9;
+  --button-orange-bg-color: #ff7b29;
+  --button-black-bg-color: #132742;
+  --card-bg-color: #484848;
+  --footer-divider-color: #575551;
+  --social-icon-border-color: #ececec;
+  --bg-header: #414446;
 
-        /* Hero */
-        --hero-gradient-orange-start: #ff8a3d;
-        --hero-gradient-orange-end: #ff7b29;
-        --hero-btn-primary-shadow: 0 12px 24px rgba(255, 123, 41, 0.4);
-        --hero-btn-icon-shadow: 0 8px 20px rgba(255, 123, 41, 0.35);
-        --hero-line-color: rgba(255, 255, 255, 0.15);
-        --hero-info-item-bg: #2f3236;
-        --hero-info-item-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
-        --hero-info-icon-bg: rgba(255, 123, 41, 0.18);
-        --hero-stat-track: #3d4248;
-        --hero-stat-progress: #cfe66c;
-        --hero-stat-label: #a7b3c1;
-        --hero-stat-total-label: #b5c2d0;
-        --hero-stat-inner-border: #3d4248;
-        --hero-card-bg: #272a2d;
-        --hero-card-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
-        --hero-search-bg: #2c2f32;
-        --hero-search-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
-        --hero-search-button-bg: #0f2237;
-        --hero-search-button-bg-hover: #17304a;
-        --hero-search-button-color: #ffffff;
-        --hero-search-field-border: #44484d;
-        --hero-brush-filter: saturate(1) brightness(1);
-        --hero-secondary-text: var(--text-description);
-        --hero-highlight-number: var(--stats-color);
+  /* Hero */
+  --hero-gradient-orange-start: #ff8a3d;
+  --hero-gradient-orange-end: #ff7b29;
+  --hero-btn-primary-shadow: 0 12px 24px rgba(255, 123, 41, 0.4);
+  --hero-btn-icon-shadow: 0 8px 20px rgba(255, 123, 41, 0.35);
+  --hero-line-color: rgba(255, 255, 255, 0.15);
+  --hero-info-item-bg: #2f3236;
+  --hero-info-item-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --hero-info-icon-bg: rgba(255, 123, 41, 0.18);
+  --hero-stat-track: #3d4248;
+  --hero-stat-progress: #cfe66c;
+  --hero-stat-label: #a7b3c1;
+  --hero-stat-total-label: #b5c2d0;
+  --hero-stat-inner-border: #3d4248;
+  --hero-card-bg: #272a2d;
+  --hero-card-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+  --hero-search-bg: #2c2f32;
+  --hero-search-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
+  --hero-search-button-bg: #0f2237;
+  --hero-search-button-bg-hover: #17304a;
+  --hero-search-button-color: #ffffff;
+  --hero-search-field-border: #44484d;
+  --hero-brush-filter: saturate(1) brightness(1);
+  --hero-secondary-text: var(--text-description);
+  --hero-highlight-number: var(--stats-color);
 
-        /* Tour */
-        --tours-heading-color: var(--text-primary);
-        --tours-desc-color: var(--text-primary);
-        --tour-see-all-bg: var(--button-orange-bg-color);
-        --tour-see-all-bg-hover: #ff893f;
-        --tour-card-bg: #2c2f32;
-        --tour-card-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
-        --tour-card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.65);
-        --tour-price-color: var(--button-orange-bg-color);
-        --tour-meta-color: #b3bcc5;
+  /* Tour */
+  --tours-heading-color: var(--text-primary);
+  --tours-desc-color: var(--text-primary);
+  --tour-see-all-bg: var(--button-orange-bg-color);
+  --tour-see-all-bg-hover: #ff893f;
+  --tour-card-bg: #2c2f32;
+  --tour-card-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+  --tour-card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.65);
+  --tour-price-color: var(--button-orange-bg-color);
+  --tour-meta-color: #b3bcc5;
 
-        /* Why Choose Us (dark) */
-        --why-section-bg: #2d2f31;
-        --why-icon-bg: rgba(255, 123, 41, 0.16);
-        --why-icon-border: 1px solid rgba(255, 255, 255, 0.08);
-        --why-icon-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-        --why-item-title-color: var(--text-primary);
-        --why-item-text-color: #b3bcc5;
+  /* Why Choose Us (dark) */
+  --why-section-bg: #2d2f31;
+  --why-icon-bg: rgba(255, 123, 41, 0.16);
+  --why-icon-border: 1px solid rgba(255, 255, 255, 0.08);
+  --why-icon-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  --why-item-title-color: var(--text-primary);
+  --why-item-text-color: #b3bcc5;
 
-        /* Trending Tour */
-        --trend-card-bg: #2c2f32;
-        --trend-card-border: #414446;
-        --trend-card-border-hover: #4d5154;
-        --trend-card-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
-        --trend-card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.65);
-        --trend-desc-color: #b3bcc5;
-        --trend-nav-btn-bg: #2c2f32;
-        --trend-nav-btn-border: #414446;
-        --trend-nav-btn-color: #e2e5e7;
+  /* Trending Tour */
+  --trend-card-bg: #2c2f32;
+  --trend-card-border: #414446;
+  --trend-card-border-hover: #4d5154;
+  --trend-card-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
+  --trend-card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.65);
+  --trend-desc-color: #b3bcc5;
+  --trend-nav-btn-bg: #2c2f32;
+  --trend-nav-btn-border: #414446;
+  --trend-nav-btn-color: #e2e5e7;
 
-        /* Destination */
-        --dest-desc-color: #b3bcc5;
-        --dest-btn-bg: var(--button-orange-bg-color);
-        --dest-btn-bg-hover: #ff8f48;
-        --dest-rating-bg: #2c2f32;
-        --dest-rating-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
+  /* Destination */
+  --dest-desc-color: #b3bcc5;
+  --dest-btn-bg: var(--button-orange-bg-color);
+  --dest-btn-bg-hover: #ff8f48;
+  --dest-rating-bg: #2c2f32;
+  --dest-rating-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
 
-        /* Newsletter */
-        --newsletter-bg: #e3c300;
-        --newsletter-title-color: #ffffff;
-        --newsletter-desc-color: #ffffff;
-        --newsletter-shape-color: rgba(0, 0, 0, 0.35);
-        --newsletter-shape-color-right: rgba(0, 0, 0, 0.28);
-        --newsletter-input-bg: #2d2f31;
-        --newsletter-input-border: #2d2f31;
-        --newsletter-input-color: #ececec;
-        --newsletter-input-placeholder: #b3bcc5;
-        --newsletter-input-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
-        --newsletter-btn-bg: #ff7b29;
-        --newsletter-btn-bg-hover: #ff8f48;
-        --newsletter-btn-color: #ffffff;
+  /* Newsletter */
+  --newsletter-bg: #e3c300;
+  --newsletter-title-color: #ffffff;
+  --newsletter-desc-color: #ffffff;
+  --newsletter-shape-color: rgba(0, 0, 0, 0.35);
+  --newsletter-shape-color-right: rgba(0, 0, 0, 0.28);
+  --newsletter-input-bg: #2d2f31;
+  --newsletter-input-border: #2d2f31;
+  --newsletter-input-color: #ececec;
+  --newsletter-input-placeholder: #b3bcc5;
+  --newsletter-input-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
+  --newsletter-btn-bg: #ff7b29;
+  --newsletter-btn-bg-hover: #ff8f48;
+  --newsletter-btn-color: #ffffff;
 
-        /* Tour Details Reviews */
-        --review-bar-bg: #414446;
-        --review-form-bg: #232426;
-        --review-form-input-bg: #232426;
-        --review-form-input-border: #414446;
-        --review-form-label: #fff;
-        --review-form-input-color: #fff;
-        --review-form-input-placeholder: #b3bcc5;
+  /* Tour Details Reviews */
+  --review-bar-bg: #414446;
+  --review-form-bg: #232426;
+  --review-form-input-bg: #232426;
+  --review-form-input-border: #414446;
+  --review-form-label: #fff;
+  --review-form-input-color: #fff;
+  --review-form-input-placeholder: #b3bcc5;
 
-        /* Text Color */
-        --text-primary: #ececec;
-        --text-orange: #ff7b29;
+  /* Text Color */
+  --text-primary: #ececec;
+  --text-orange: #ff7b29;
+  --text-description: #d9d9d9;
 
-        /* Maxwidth */
-        --screen-max-width: 1170px;
+  /* Maxwidth */
+  --screen-max-width: 1170px;
 }
 *,
 h *::before,
 *::after {
-        box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-        height: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-        scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        font-family: var(--font-body);
-        font-weight: var(--fw-body);
-        background: var(--bg-primary);
-        color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-weight: var(--fw-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 main {
-        flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .container {
-        max-width: var(--screen-max-width);
-        margin: 0 auto;
-        padding: 0 16px;
+  max-width: var(--screen-max-width);
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Thêm các style chung khác ở đây */
@@ -300,143 +303,143 @@ h4,
 h5,
 h6,
 [class*="__title"] {
-        font-family: var(--font-heading);
+  font-family: var(--font-heading);
 }
 
 h1 {
-        font-size: var(--h1-fontSize);
+  font-size: var(--h1-fontSize);
 }
 
 h2 {
-        font-size: var(--h2-fontSize);
+  font-size: var(--h2-fontSize);
 }
 
 h3 {
-        font-size: var(--h3-fontSize);
+  font-size: var(--h3-fontSize);
 }
 
 h4 {
-        font-size: var(--h4-fontSize);
+  font-size: var(--h4-fontSize);
 }
 
 .thumbnail {
-        font-size: var(--thumbnail-fontSize);
+  font-size: var(--thumbnail-fontSize);
 }
 
 .description {
-        font-size: var(--description-fontSize);
+  font-size: var(--description-fontSize);
 }
 
 .nav-text {
-        font-size: var(--nav-text);
+  font-size: var(--nav-text);
 }
 
 .btn-black {
 }
 
 .btn-orange {
-        cursor: pointer;
-        padding: 20px 40px;
-        outline: none;
-        border: none;
-        background: var(--button-orange-bg-color);
-        border-radius: 12px;
+  cursor: pointer;
+  padding: 20px 40px;
+  outline: none;
+  border: none;
+  background: var(--button-orange-bg-color);
+  border-radius: 12px;
 
-        /* Text */
-        color: #fff;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 18px; /* 100% */
-        letter-spacing: 0.18px;
+  /* Text */
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+  letter-spacing: 0.18px;
 
-        transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-orange:hover {
-        opacity: 60%;
+  opacity: 60%;
 }
 
 .btn-blue {
-        cursor: pointer;
-        padding: 20px 40px;
-        outline: none;
-        border: none;
-        background: var(--button-blue-bg-color);
-        border-radius: 12px;
+  cursor: pointer;
+  padding: 20px 40px;
+  outline: none;
+  border: none;
+  background: var(--button-blue-bg-color);
+  border-radius: 12px;
 
-        /* Text */
-        color: #fff;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 18px; /* 100% */
-        letter-spacing: 0.18px;
+  /* Text */
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+  letter-spacing: 0.18px;
 
-        transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-black {
-        cursor: pointer;
-        padding: 20px 40px;
-        outline: none;
-        border: none;
-        background: var(--button-black-bg-color);
-        border-radius: 12px;
+  cursor: pointer;
+  padding: 20px 40px;
+  outline: none;
+  border: none;
+  background: var(--button-black-bg-color);
+  border-radius: 12px;
 
-        /* Text */
-        color: #fff;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 18px; /* 100% */
-        letter-spacing: 0.18px;
+  /* Text */
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+  letter-spacing: 0.18px;
 
-        transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo-circle {
-        background: var(--button-orange-bg-color);
-        color: var(--bg-primary);
-        font-weight: bold;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.1rem;
-        letter-spacing: 1px;
+  background: var(--button-orange-bg-color);
+  color: var(--bg-primary);
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 .logo-text {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .logo-text .dot {
-        display: inline-block;
-        width: 4px;
-        height: 4px;
-        background: var(--button-orange-bg-color);
-        border-radius: 50%;
-        vertical-align: baseline;
-        content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: var(--button-orange-bg-color);
+  border-radius: 50%;
+  vertical-align: baseline;
+  content: "";
 }
 
 a {
-        color: inherit;
-        text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .hero__desc,
@@ -446,92 +449,104 @@ a {
 .destination-card__type,
 .tour-card__meta,
 p {
-        font-weight: var(--fw-body);
+  font-weight: var(--fw-body);
 }
 
-body:has(.onl-banner, .des-banner, .about-des-banner) .header {
-        position: absolute !important;
+body:has(.onl-banner, .des-banner, .about-des-banner, .destination-detail-hero) .header {
+        position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        z-index: 1000;
-        background: transparent !important;
-        box-shadow: none !important;
-        backdrop-filter: none !important;
-        transition: none !important;
+        z-index: 950;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        transition: all 0.3s ease;
+}
+
+/* THÊM CSS mới - Khi cuộn qua banner, header có background */
+body:has(.onl-banner, .des-banner, .about-des-banner, .destination-detail-hero) .header.scrolled {
+        background: var(--bg-header);
+        padding: 18px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        /* position: sticky; */
+        top: 0;
+        z-index: 950;
+        /* THÊM transition cho background và box-shadow */
+        transition: box-shadow 0.3s ease, backdrop-filter 0.3s ease, background 0.3s ease, transform 0.35s ease;
 }
 
 .spinner {
-        width: 40px;
-        height: 40px;
-        border: 4px solid #f3f3f3;
-        border-top: 4px solid #3498db;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-        0% {
-                transform: rotate(0deg);
-        }
-        100% {
-                transform: rotate(360deg);
-        }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Loading overlay styles - HIỆN MẶC ĐỊNH */
 #page-loading {
-        position: fixed;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(2px);
-        z-index: 9999;
-        flex-direction: column;
-        gap: 20px;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(2px);
+  z-index: 9999;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .loading-text {
-        color: #666;
-        font-size: 16px;
-        font-weight: 500;
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* ẨN TẤT CẢ CONTENT CHO ĐẾN KHI READY */
 body:not(.page-ready) #header,
 body:not(.page-ready) .container,
 body:not(.page-ready) #footer {
-        visibility: hidden;
-        opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* Hiện content khi ready */
 body.page-ready #header,
 body.page-ready .container,
 body.page-ready #footer {
-        visibility: visible;
-        opacity: 1;
-        transition: opacity 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 /* Ẩn loading khi ready */
 body.page-ready #page-loading {
-        display: none;
+  display: none;
 }
 
 /* Dark mode support cho loading */
 .dark #page-loading {
-        background: rgba(0, 0, 0, 0.95);
-        color: #fff;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
 }
 
 .dark .loading-text {
-        color: #ccc;
+  color: #ccc;
 }
 
 .dark .spinner {
-        border-color: #333;
-        border-top-color: #3498db;
+  border-color: #333;
+  border-top-color: #3498db;
 }

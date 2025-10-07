@@ -1,0 +1,236 @@
+/* ========== HERO ========== */
+.destination-detail-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../images/destination-detail/background.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; /* 👈 đổi từ row sang column */
+  justify-content: flex-start; /* 👈 bắt đầu từ trên xuống */
+  align-items: center; /* 👈 căn giữa ngang */
+  padding-top: 200px; /* tạo khoảng trống trên cho tiêu đề */
+  padding-bottom: 200px;
+}
+
+.destination-detail-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.destination-detail-hero__content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  max-width: 100%; /* Bỏ giới hạn chiều rộng */
+  margin: 0 auto;
+  padding: 0 2rem;
+  white-space: nowrap; /* Ngăn xuống dòng */
+}
+
+.destination-detail-hero__title {
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 1s ease-out;
+  white-space: nowrap; /* Quan trọng */
+}
+
+.destination-detail-hero__subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 0.5rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.destination-detail-filter {
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  background-color: transparent;
+  margin-top: 50px;
+}
+
+/* Tabs */
+.destination-detail-filter__tabs {
+  display: flex;
+  justify-content: center;
+  background: #10559C;
+}
+
+.destination-detail-filter__tab {
+  background: transparent;
+  border: none;
+  font-weight: 300;
+  padding: 0.5rem 1.25rem;
+  color: #FFFFFF;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Form inputs */
+.destination-detail-filter__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.destination-detail-filter__input {
+  flex: 1 1 180px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ========== POPULAR destination-detailS ========== */
+.destination-detail-popular {
+  text-align: center;
+  padding: 80px 5%;
+}
+
+.destination-detail-popular__title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #FFF6F6;
+  font-weight: 600;
+}
+
+.destination-detail-popular__container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.destination-detail-card {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.destination-detail-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-detail-card__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.destination-detail-card__content {
+  padding: 15px;
+}
+
+.destination-detail-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========== MISSION ========== */
+.destination-detail-mission {
+  padding: 80px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.destination-detail-mission__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.destination-detail-mission__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.destination-detail-mission__stat h3 {
+  color: #4466ff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.destination-detail-mission__text {
+  flex: 1;
+}
+
+.destination-detail-mission__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== VIDEO ========== */
+.home-video {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.home-video__media {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.home-video__overlay {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px 35px;
+  max-width: 300px;
+  color: #fff;
+}
+
+.home-video__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .destination-detail-hero__title {
+    white-space: normal; /* Cho phép xuống dòng khi màn nhỏ */
+  }
+}
