@@ -1,800 +1,808 @@
 {
-  "data": [
-    {
-      "id": "vn001",
-      "country": "Việt Nam",
-      "title": "Hành trình Xuyên Việt: Từ Hà Nội đến Đồng bằng sông Cửu Long",
-      "description": "Khám phá vẻ đẹp đa dạng của Việt Nam...",
-      "price": 25000000,
-      "rating": 4.8,
-      "days": 12,
-      "places": [
-        {
-          "city": "Hà Nội",
-          "blog": "Hà Nội là một bản giao hưởng của các giác quan. Đó là mùi hương của phở nóng hòa quyện với mùi trầm cổ kính từ những ngôi đền, là tiếng xe máy không ngừng len lỏi qua 36 phố phường. Đây không chỉ là một thành phố, mà là một bảo tàng sống. Hãy thử một ly cà phê trứng đặc sệt, ngắm nhìn Hồ Gươm yên ả lúc bình minh, và cảm nhận sức nặng ngàn năm lịch sử tại Văn Miếu. Hà Nội sẽ quyến rũ bạn bằng sự hỗn loạn có tổ chức và vẻ đẹp cổ điển không thể phai mờ.",
-          "lat": 21.0285,
-          "lon": 105.8542,
-          "famous_locations": [
-            {
-              "name": "Hồ Gươm",
-              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpg"
-            },
-            {
-              "name": "Lăng Chủ tịch Hồ Chí Minh",
-              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Lăng Chủ tịch Hồ Chí Minh.jpg"
-            },
-            {
-              "name": "Văn Miếu - Quốc Tử Giám",
-              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Văn Miếu - Quốc Tử Giám.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Đà Nẵng",
-          "blog": "Đà Nẵng là thành phố của tương lai, nơi những tòa nhà chọc trời lấp lánh soi bóng bên bờ cát trắng mịn. Ban ngày, hãy chinh phục bán đảo Sơn Trà xanh mướt, tìm sự thanh thản trong các hang động của Ngũ Hành Sơn. Khi đêm xuống, hãy chiêm ngưỡng Cầu Rồng biểu tượng phun lửa, thắp sáng cả dòng sông Hàn. Đây là nơi cân bằng hoàn hảo giữa năng lượng đô thị và sự thư thái của biển cả, một lối thoát hiện đại hoàn hảo của Việt Nam.",
-          "lat": 16.0545,
-          "lon": 108.2022,
-          "famous_locations": [
-            {
-              "name": "Bãi biển Mỹ Khê",
-              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Bãi biển Mỹ Khê.jpg"
-            },
-            {
-              "name": "Ngũ Hành Sơn",
-              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Ngũ Hành Sơn.jpg"
-            },
-            {
-              "name": "Bán đảo Sơn Trà",
-              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Bán đảo Sơn Trà.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Hội An",
-          "blog": "Hãy bước vào một câu chuyện cổ tích. Hội An là một chiếc hộp thời gian với những bức tường vàng óng, phủ đầy hoa giấy và được thắp sáng bởi hàng ngàn chiếc đèn lồng lụa. Khi hoàng hôn buông xuống, phố cổ biến thành một cảnh tượng huyền ảo. Hãy lướt nhẹ trên thuyền tam bản xuôi dòng sông Hoài, thả một chiếc đèn hoa đăng để cầu may. Đây là nơi để bạn sống chậm lại, để thưởng thức món Cao Lầu huyền thoại, và để tâm hồn mình được mê hoặc.",
-          "lat": 15.8801,
-          "lon": 108.3380,
-          "famous_locations": [
-            {
-              "name": "Phố cổ Hội An",
-              "image_url": "/assets/images/data/Việt Nam/Hội An/Phố cổ Hội An.jpg"
-            },
-            {
-              "name": "Làng gốm Thanh Hà",
-              "image_url": "/assets/images/data/Việt Nam/Hội An/Làng gốm Thanh Hà.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Hồ Chí Minh",
-          "blog": "Chào mừng đến với cơn lốc không ngừng nghỉ mang tên Sài Gòn. Thành phố này không chỉ sống; nó 'sôi' lên với một nguồn năng lượng truyền nhiễm, từ dòng xe máy bất tận đến những quầy hàng rong xì xèo ở mọi góc phố. Đắm mình trong lịch sử tại Dinh Độc Lập, sau đó leo lên tòa tháp Bitexco để thấy một đô thị hiện đại vươn mình. Sài Gòn là thành phố của sự kiên cường, của hương vị, và của sự chuyển động không ngừng.",
-          "lat": 10.7626,
-          "lon": 106.6602,
-          "famous_locations": [
-            {
-              "name": "Dinh Độc Lập",
-              "image_url": "/assets/images/data/Việt Nam/Hồ Chí Minh/Dinh Độc Lập.jpg"
-            },
-            {
-              "name": "Nhà thờ Đức Bà",
-              "image_url": "/assets/images/data/Việt Nam/Hồ Chí Minh/Nhà thờ Đức Bà.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "jp002",
-      "country": "Nhật Bản",
-      "title": "Khám phá Đất nước Mặt trời mọc: Tokyo & Kyoto",
-      "description": "Trải nghiệm sự giao thoa giữa truyền thống và hiện đại tại Nhật Bản...",
-      "price": 45000000,
-      "rating": 4.9,
-      "days": 7,
-      "places": [
-        {
-          "city": "Tokyo",
-          "blog": "Tokyo là một nghịch lý ngoạn mục. Một khoảnh khắc bạn lạc vào sự hỗn loạn tương lai, ngập trong ánh đèn neon của Ngã tư Shibuya, khoảnh khắc tiếp theo bạn tìm thấy sự tĩnh lặng tuyệt đối dưới những tán cây cổ thụ của Đền Meiji. Đây là nơi bạn có thể ăn một bữa sushi 3 sao Michelin trong một con hẻm ẩn, và ngay sau đó tham gia một buổi trà đạo hàng thế kỷ. Một trải nghiệm đầy kích thích, lịch sự và vô cùng kỳ thú.",
-          "lat": 35.6895,
-          "lon": 139.6917,
-          "famous_locations": [
-            {
-              "name": "Giao lộ Shibuya",
-              "image_url": "/assets/images/data/Nhật Bản/Tokyo/Giao lộ Shibuya.jpg"
-            },
-            {
-              "name": "Tháp Tokyo Skytree",
-              "image_url": "/assets/images/data/Nhật Bản/Tokyo/Tháp Tokyo Skytree.jpg"
-            },
-            {
-              "name": "Hoàng cung Nhật Bản",
-              "image_url": "/assets/images/data/Nhật Bản/Tokyo/Hoàng cung Nhật Bản.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Kyoto",
-          "blog": "Nếu Tokyo là tương lai, thì Kyoto chính là linh hồn của Nhật Bản. Đây là thành phố của vẻ đẹp tinh tế, nơi mọi góc phố đều kể một câu chuyện. Dạo bước trên con đường siêu thực xuyên qua Rừng tre Arashiyama, chứng kiến hình ảnh phản chiếu lấp lánh của Chùa Vàng Kinkaku-ji, và khám phá con đường linh thiêng Fushimi Inari. Buổi tối, hãy lang thang ở Gion, thế giới bí ẩn của các Geisha, và cảm nhận bản chất thực sự của Nhật Bản cổ xưa.",
-          "lat": 35.0116,
-          "lon": 135.7681,
-          "famous_locations": [
-            {
-              "name": "Chùa Vàng Kinkaku-ji",
-              "image_url": "/assets/images/data/Nhật Bản/Kyoto/Chùa Vàng Kinkaku-ji.jpg"
-            },
-            {
-              "name": "Rừng tre Arashiyama",
-              "image_url": "/assets/images/data/Nhật Bản/Kyoto/Rừng tre Arashiyama.jpg"
-            },
-            {
-              "name": "Phố cổ Gion",
-              "image_url": "/assets/images/data/Nhật Bản/Kyoto/Phố cổ Gion.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Osaka",
-          "blog": "Osaka là trái tim sôi động, yêu đời và cuồng nhiệt ẩm thực của Nhật Bản. Phương châm của thành phố là 'kuidaore' – ăn cho đến khi ngã quỵ! Đắm mình vào 'vụ nổ' cảm quan rực rỡ ánh đèn của Dotonbori, nếm thử takoyaki, okonomiyaki và kushikatsu nóng hổi. Ngoài ẩm thực, hãy khám phá Lâu đài Osaka hùng vĩ và trải nghiệm lòng hiếu khách nồng hậu, ồn ào khiến thành phố này khác biệt với tất cả.",
-          "lat": 34.6937,
-          "lon": 135.5023,
-          "famous_locations": [
-            {
-              "name": "Lâu đài Osaka",
-              "image_url": "/assets/images/data/Nhật Bản/Osaka/Lâu đài Osaka.jpg"
-            },
-            {
-              "name": "Khu Dotonbori",
-              "image_url": "/assets/images/data/Nhật Bản/Osaka/Khu Dotonbori.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fr003",
-      "country": "Pháp",
-      "title": "Vẻ đẹp Lãng mạn của Pháp: Paris và Nice",
-      "description": "Đắm mình trong kinh đô ánh sáng Paris...",
-      "price": 65000000,
-      "rating": 4.7,
-      "days": 8,
-      "places": [
-        {
-          "city": "Paris",
-          "blog": "Paris không chỉ là một thành phố; đó là một lời hứa về sự lãng mạn, nghệ thuật và những khoảnh khắc tinh tế. Hãy để hương thơm của bánh sừng bò mới nướng dẫn lối bạn qua khu Montmartre quyến rũ. Đứng kinh ngạc trước các kiệt tác ở Louvre và cảm nhận sự vĩ đại của Nhà thờ Đức Bà. Khi hoàng hôn buông xuống, hãy xem Tháp Eiffel thắp sáng bầu trời. Đây là một thành phố để bạn yêu, và để được yêu.",
-          "lat": 48.8566,
-          "lon": 2.3522,
-          "famous_locations": [
-            {
-              "name": "Tháp Eiffel",
-              "image_url": "/assets/images/data/Pháp/Paris/Tháp Eiffel.jpg"
-            },
-            {
-              "name": "Nhà thờ Đức Bà Paris",
-              "image_url": "/assets/images/data/Pháp/Paris/Nhà thờ Đức Bà Paris.jpg"
-            },
-            {
-              "name": "Khải Hoàn Môn",
-              "image_url": "/assets/images/data/Pháp/Paris/Khải Hoàn Môn.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Nice",
-          "blog": "Hãy hít thở không khí mặn mòi của Địa Trung Hải ở Nice, thủ đô lộng lẫy của vùng French Riviera. Thành phố là một bức tranh đầy màu sắc, từ làn nước xanh biếc của Vịnh Thiên thần (Baie des Anges) đến những tòa nhà màu đất son trong Phố Cổ (Vieille Ville). Dạo bước trên con đường Promenade des Anglais mang tính biểu tượng, lạc vào khu chợ hoa rực rỡ Cours Saleya, và leo lên Đồi Lâu đài để ngắm một toàn cảnh sẽ khiến bạn nghẹt thở.",
-          "lat": 43.7102,
-          "lon": 7.2620,
-          "famous_locations": [
-            {
-              "name": "Phố cổ Vieille Ville",
-              "image_url": "/assets/images/data/Pháp/Nice/Phố cổ Vieille Ville.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "it004",
-      "country": "Ý",
-      "title": "Vẻ đẹp Vĩnh cửu: Rome, Florence và Venice",
-      "description": "Hành trình khám phá di sản của Đế chế La Mã tại Rome...",
-      "price": 70000000,
-      "rating": 4.8,
-      "days": 10,
-      "places": [
-        {
-          "city": "Rome",
-          "blog": "Rome là một thiên anh hùng ca sống động, nơi 3.000 năm lịch sử được viết trên từng góc phố. Đứng trong đấu trường nơi các đấu sĩ đã chiến đấu tại Colosseum, cảm nhận sự hiện diện thiêng liêng dưới mái vòm Pantheon, và ném đồng xu xuống Đài phun nước Trevi để đảm bảo sự trở lại của bạn. Nhưng Rome cũng là về 'la dolce vita' – thưởng thức một đĩa cacio e pepe hoàn hảo, ăn gelato trên một quảng trường ngập nắng, và để vẻ đẹp vĩnh cửu của thành phố bao bọc lấy bạn.",
-          "lat": 41.9028,
-          "lon": 12.4964,
-          "famous_locations": [
-            {
-              "name": "Đấu trường Colosseum",
-              "image_url": "/assets/images/data/Ý/Rome/Đấu trường Colosseum.jpg"
-            },
-            {
-              "name": "Đài phun nước Trevi",
-              "image_url": "/assets/images/data/Ý/Rome/Đài phun nước Trevi.jpg"
-            },
-            {
-              "name": "Đền Pantheon",
-              "image_url": "/assets/images/data/Ý/Rome/Đền Pantheon.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Florence",
-          "blog": "Chào mừng đến với cái nôi của thời Phục hưng. Florence là một bảo tàng ngoài trời, một thành phố được xây dựng để truyền cảm hứng. Hãy cảm thấy khiêm tốn trước sự hoàn hảo tuyệt đối của 'David' của Michelangelo, nín thở trước 'Sự ra đời của thần Vệ Nữ' tại Uffizi, và leo lên mái vòm Duomo hùng vĩ để ngắm nhìn những mái ngói đất nung của vùng Tuscany. Đây là thành phố của các nghệ nhân, của nghệ thuật thần thánh, và của vẻ đẹp choáng ngợp.",
-          "lat": 43.7696,
-          "lon": 11.2558,
-          "famous_locations": [
-            {
-              "name": "Cầu Ponte Vecchio",
-              "image_url": "/assets/images/data/Ý/Florence/Cầu Ponte Vecchio.jpg"
-            },
-            {
-              "name": "Bảo tàng nghệ thuật Uffizi Gallery",
-              "image_url": "/assets/images/data/Ý/Florence/Bảo tàng nghệ thuật Uffizi Gallery.jpg"
-            },
-            {
-              "name": "Quảng trường Michelangelo",
-              "image_url": "/assets/images/data/Ý/Florence/Quảng trường Michelangelo.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Venice",
-          "blog": "Một thành phố được xây dựng trên những giấc mơ và mặt nước. Nó hoàn toàn độc nhất, một mê cung của những con kênh uốn lượn, những cây cầu ẩn và những cung điện sang trọng dường như nổi trên đầm phá. Hãy cố tình đi lạc trong những con hẻm hẹp, rồi đột nhiên bước ra sự hùng vĩ của Quảng trường St. Mark, và trải nghiệm sự lãng mạn thầm lặng của một chuyến đi thuyền gondola. Không có nơi nào trên Trái đất giống như Venice; đó là ma thuật thuần túy, mong manh.",
-          "lat": 45.4408,
-          "lon": 12.3155,
-          "famous_locations": [
-            {
-              "name": "Quảng trường St. Mark",
-              "image_url": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpg"
-            },
-            {
-              "name": "Cầu Rialto",
-              "image_url": "/assets/images/data/Ý/Venice/Cầu Rialto.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "us005",
-      "country": "Mỹ",
-      "title": "Hành trình Bờ Tây Nước Mỹ: Los Angeles, Las Vegas & Grand Canyon",
-      "description": "Trải nghiệm sự hào nhoáng của kinh đô điện ảnh Hollywood...",
-      "price": 90000000,
-      "rating": 4.7,
-      "days": 9,
-      "places": [
-        {
-          "city": "Los Angeles",
-          "blog": "LA là một bức tranh khảm rộng lớn của những giấc mơ, tham vọng và ánh nắng bất tận. Đây là nơi bạn có thể săn tìm các ngôi sao trên Đại lộ Danh vọng Hollywood, cảm nhận không khí phóng khoáng của Bãi biển Venice, và ngắm nhìn những cửa hàng sang trọng trên Rodeo Drive. Từ những cảnh nghệ thuật đường phố cho đến những con sóng ở Malibu, LA liên tục tự làm mới mình, mang đến một câu chuyện khác nhau cho mọi người.",
-          "lat": 34.0522,
-          "lon": -118.2437,
-          "famous_locations": [
-            {
-              "name": "Bến tàu Santa Monica",
-              "image_url": "/assets/images/data/Mỹ/Los Angeles/Bến tàu Santa Monica.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Las Vegas",
-          "blog": "Chào mừng đến với sân chơi tối thượng, một thành phố thách thức sa mạc bằng sự lộng lẫy và ảo mộng. Vegas là về sự xa hoa. Chứng kiến vũ điệu đầy mê hoặc của Đài phun nước Bellagio, lạc vào bản sao của Venice với những con kênh đào, và xem một show diễn đẳng cấp thế giới sẽ khiến bạn nín thở. Đó là một nơi được xây dựng cho những đêm không thể nào quên và sự quá tải của các giác quan.",
-          "lat": 36.1699,
-          "lon": -115.1398,
-          "famous_locations": [
-            {
-              "name": "Đài phun nước Bellagio",
-              "image_url": "/assets/images/data/Mỹ/Las Vegas/Đài phun nước Bellagio.jpg"
-            },
-            {
-              "name": "Show diễn đường phố Fremont",
-              "image_url": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "th006",
-      "country": "Thái Lan",
-      "title": "Thiên đường Nhiệt đới: Bangkok và Phuket",
-      "description": "Khám phá sự kết hợp giữa nét cổ kính của những ngôi chùa vàng...",
-      "price": 12000000,
-      "rating": 4.6,
-      "days": 5,
-      "places": [
-        {
-          "city": "Bangkok",
-          "blog": "Một cuộc tấn công đầy phấn khích vào các giác quan. Những ngôi đền lợp vàng như Cung điện Hoàng gia và Wat Pho đứng tương phản thanh thản với sự hỗn loạn sôi động của các khu chợ đường phố và cuộc sống về đêm náo nhiệt. Điều hướng các 'klongs' (kênh rạch) bằng thuyền đuôi dài, kinh ngạc trước tượng Phật Nằm khổng lồ, và quan trọng nhất là ĂN. Ẩm thực đường phố ở đây tự nó đã là một hành trình ẩm thực đẳng cấp thế giới.",
-          "lat": 13.7563,
-          "lon": 100.5018,
-          "famous_locations": [
-            {
-              "name": "Chùa Phật Nằm (Wat Pho)",
-              "image_url": "/assets/images/data/Thái Lan/Bangkok/Chùa Phật Nằm (Wat Pho).jpg"
-            },
-            {
-              "name": "Du thuyền trên sông Chao Phraya",
-              "image_url": "/assets/images/data/Thái Lan/Bangkok/Du thuyền trên sông Chao Phraya.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Phuket",
-          "blog": "Thiên đường đảo tinh túy của Thái Lan, một thiên đường của làn nước màu ngọc lam, những mỏm đá vôi ấn tượng và những bãi biển cát trắng mịn. Đi thuyền đến Quần đảo Phi Phi ngoạn mục, lặn xuống thế giới dưới nước sôi động của Biển Andaman, hoặc đơn giản là thư giãn trên ghế tắm nắng với một trái dừa tươi. Từ trung tâm tiệc tùng Patong đến sự sang trọng thanh bình của Bang Tao, Phuket có một bãi biển cho mọi tâm trạng.",
-          "lat": 7.8804,
-          "lon": 98.3923,
-          "famous_locations": [
-            {
-              "name": "Quần đảo Phi Phi",
-              "image_url": "/assets/images/data/Thái Lan/Phuket/Quần đảo Phi Phi.jpg"
-            },
-            {
-              "name": "Bãi biển Patong",
-              "image_url": "/assets/images/data/Thái Lan/Phuket/Bãi biển Patong.jpg"
-            },
-            {
-              "name": "Phố cổ Phuket",
-              "image_url": "/assets/images/data/Thái Lan/Phuket/Phố cổ Phuket.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "kr007",
-      "country": "Hàn Quốc",
-      "title": "Sức hút Seoul và Nét đẹp Busan",
-      "description": "Trải nghiệm văn hóa K-Pop sôi động...",
-      "price": 18000000,
-      "rating": 4.7,
-      "days": 6,
-      "places": [
-        {
-          "city": "Seoul",
-          "blog": "Một đô thị siêu hiện đại rung động với năng lượng của K-Pop và công nghệ tiên tiến, nhưng không bao giờ quên đi nguồn cội cổ xưa của mình. Một khoảnh khắc bạn đang mua sắm tại Dongdaemun Design Plaza, khoảnh khắc tiếp theo bạn đang mặc Hanbok lang thang qua Cung điện Gyeongbokgung hùng vĩ. Đắm mình vào chợ Myeongdong nhộn nhịp để mua mỹ phẩm và thức ăn đường phố, và cảm nhận nhịp đập trẻ trung của một thành phố thực sự không bao giờ ngủ.",
-          "lat": 37.5665,
-          "lon": 126.9780,
-          "famous_locations": [
-            {
-              "name": "Cung điện Gyeongbokgung",
-              "image_url": "/assets/images/data/Hàn Quốc/Seoul/Cung điện Gyeongbokgung.jpg"
-            },
-            {
-              "name": "Làng cổ Bukchon Hanok",
-              "image_url": "/assets/images/data/Hàn Quốc/Seoul/Làng cổ Bukchon Hanok.jpg"
-            },
-            {
-              "name": "Khu phố mua sắm Myeongdong",
-              "image_url": "/assets/images/data/Hàn Quốc/Seoul/Khu phố mua sắm Myeongdong.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Busan",
-          "blog": "Busan là người anh em ven biển thoải mái, mát mẻ hơn của Seoul. Thành phố cảng này quyến rũ với văn hóa bãi biển thoải mái, hải sản tươi rói và những khu nghệ thuật đáng ngạc nhiên. Thư giãn trên bãi biển Haeundae nổi tiếng, khám phá kính vạn hoa màu sắc tại Làng văn hóa Gamcheon (Santorini của Hàn Quốc), và tìm thấy sự tĩnh tâm tại ngôi chùa ven biển Haedong Yonggungsa tuyệt đẹp. Đó là một làn gió biển trong lành.",
-          "lat": 35.1796,
-          "lon": 129.0756,
-          "famous_locations": [
-            {
-              "name": "Bãi biển Haeundae",
-              "image_url": "/assets/images/data/Hàn Quốc/Busan/Bãi biển Haeundae.jpg"
-            },
-            {
-              "name": "Cầu Gwangandaegyo",
-              "image_url": "/assets/images/data/Hàn Quốc/Busan/Cầu Gwangandaegyo.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "au008",
-      "country": "Úc",
-      "title": "Khám phá Sydney và Melbourne Năng động",
-      "description": "Chiêm ngưỡng các biểu tượng kiến trúc của Sydney...",
-      "price": 55000000,
-      "rating": 4.8,
-      "days": 8,
-      "places": [
-        {
-          "city": "Sydney",
-          "blog": "Sydney là một thành phố được định nghĩa bởi bến cảng lộng lẫy của nó. Lần đầu tiên nhìn thấy bộ đôi biểu tượng – 'cánh buồm' bay bổng của Nhà hát Opera và vòm cầu cảng hùng vĩ – là một ký ức cốt lõi. Nhưng Sydney không chỉ là các địa danh; đó là một phong cách sống. Học lướt sóng tại Bãi biển Bondi huyền thoại, khám phá những con đường lát sỏi lịch sử của The Rocks, và sống như một người địa phương tại một quán cà phê 'brekkie' đầy nắng.",
-          "lat": -33.8688,
-          "lon": 151.2093,
-          "famous_locations": [
-            {
-              "name": "Nhà hát Opera Sydney",
-              "image_url": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpg"
-            },
-            {
-              "name": "Cầu cảng Sydney",
-              "image_url": "/assets/images/data/Úc/Sydney/Cầu cảng Sydney.jpg"
-            },
-            {
-              "name": "Khu The Rocks",
-              "image_url": "/assets/images/data/Úc/Sydney/Khu The Rocks.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Melbourne",
-          "blog": "Nếu Sydney có sự hào nhoáng, thì Melbourne có linh hồn. Đây là thủ đô văn hóa của Úc, một thành phố bị ám ảnh bởi cà phê, nghệ thuật và thể thao. Melbourne thực sự được tìm thấy trong những con hẻm ẩn, được trang trí bằng graffiti đẳng cấp thế giới và là nơi có các cửa hàng độc đáo và các quán cà phê 'lỗ nhỏ trên tường' phục vụ món flat white ngon nhất thế giới. Đó là một thành phố bạn không chỉ nhìn thấy, mà bạn phải khám phá.",
-          "lat": -37.8136,
-          "lon": 144.9631,
-          "famous_locations": [
-            {
-              "name": "Quảng trường Federation",
-              "image_url": "/assets/images/data/Úc/Melbourne/Quảng trường Federation.jpg"
-            },
-            {
-              "name": "Ga tàu Flinders Street",
-              "image_url": "/assets/images/data/Úc/Melbourne/Ga tàu Flinders Street.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "eg009",
-      "country": "Ai Cập",
-      "title": "Hành trình Huyền bí Theo dòng Sông Nile",
-      "description": "Quay ngược thời gian về với nền văn minh Ai Cập cổ đại...",
-      "price": 85000000,
-      "rating": 4.9,
-      "days": 10,
-      "places": [
-        {
-          "city": "Cairo",
-          "blog": "Hãy chuẩn bị để bị choáng ngợp. Cairo là cổng vào thế giới cổ đại, một thành phố hỗn loạn rộng lớn canh gác kỳ quan duy nhất còn sót lại của thế giới cổ đại. Đứng trước Đại Kim tự tháp Giza và Tượng Nhân sư bí ẩn – một khoảnh khắc sẽ định nghĩa lại cảm nhận của bạn về lịch sử. Sau đó, lặn vào kho báu của Bảo tàng Ai Cập, quê hương của mặt nạ vàng của Tutankhamun, và mặc cả để mua kho báu trong khu chợ Khan el-Khalili ngàn năm tuổi.",
-          "lat": 30.0444,
-          "lon": 31.2357,
-          "famous_locations": [
-            {
-              "name": "Quần thể Kim tự tháp Giza",
-              "image_url": "/assets/images/data/Ai Cập/Cairo/Quần thể Kim tự tháp Giza.jpg"
-            },
-            {
-              "name": "Tượng Nhân sư Lớn",
-              "image_url": "/assets/images/data/Ai Cập/Cairo/Tượng Nhân sư Lớn.jpg"
-            },
-            {
-              "name": "Bảo tàng Ai Cập",
-              "image_url": "/assets/images/data/Ai Cập/Cairo/Bảo tàng Ai Cập.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Luxor",
-          "blog": "Luxor thường được gọi là bảo tàng ngoài trời vĩ đại nhất thế giới, và không hề quá lời. Đây là Thebes, thủ đô của các Pharaoh ở đỉnh cao quyền lực. Ở Bờ Đông, khám phá quần thể Đền Karnak rộng lớn đến không tưởng. Ở Bờ Tây, đi xuống những ngôi mộ được sơn vẽ sống động của Thung lũng các vị Vua. Đây không chỉ là lịch sử; đây là lịch sử ở một quy mô hoành tráng.",
-          "lat": 25.6872,
-          "lon": 32.6396,
-          "famous_locations": [
-            {
-              "name": "Thung lũng các vị Vua",
-              "image_url": "/assets/images/data/Ai Cập/Luxor/Thung lũng các vị Vua.jpg"
-            },
-            {
-              "name": "Đền Karnak",
-              "image_url": "/assets/images/data/Ai Cập/Luxor/Đền Karnak.jpg"
-            },
-            {
-              "name": "Tượng đài Colossi of Memnon",
-              "image_url": "/assets/images/data/Ai Cập/Luxor/Tượng đài Colossi of Memnon.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "es010",
-      "country": "Tây Ban Nha",
-      "title": "Sôi động Madrid và Kiến trúc Barcelona",
-      "description": "Đắm mình trong nhịp sống sôi động và văn hóa hoàng gia của Madrid...",
-      "price": 68000000,
-      "rating": 4.7,
-      "days": 8,
-      "places": [
-        {
-          "city": "Madrid",
-          "blog": "Madrid là một thành phố sống với niềm đam mê. Đó là một thủ đô hoàng gia nơi các quảng trường lớn như Plaza Mayor luôn nhộn nhịp cả ngày lẫn đêm. Đó là giấc mơ của người yêu nghệ thuật, quê hương của 'Tam giác Vàng' bảo tàng (Prado, Reina Sofía). Và đó là một thành phố thực sự sống dậy sau khi trời tối. Hãy đón nhận lối sống 'Madrileño': ăn tapas muộn, thưởng thức một buổi biểu diễn flamenco và sống hết mình.",
-          "lat": 40.4168,
-          "lon": -3.7038,
-          "famous_locations": [
-            {
-              "name": "Cung điện Hoàng gia Madrid",
-              "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Cung điện Hoàng gia Madrid.jpg"
-            },
-            {
-              "name": "Quảng trường Plaza Mayor",
-              "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Quảng trường Plaza Mayor.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Barcelona",
-          "blog": "Barcelona là một thành phố của vẻ đẹp siêu thực, nhờ vào thiên tài kỳ quái của Antoni Gaudí. Hãy để trí tưởng tượng của bạn bay xa tại kiệt tác chưa hoàn thành, La Sagrada Família, và Công viên Güell như trong truyện cổ tích. Nhưng đây cũng là một thành phố Địa Trung Hải sôi động. Dạo bước xuống La Rambla nhộn nhịp, lạc vào những con hẻm thời trung cổ của Khu Gothic, và sau đó ra bãi biển tại Barceloneta. Đó là nghệ thuật và cuộc sống, hòa quyện hoàn hảo.",
-          "lat": 41.3851,
-          "lon": 2.1734,
-          "famous_locations": [
-            {
-              "name": "Nhà thờ Sagrada Família",
-              "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Nhà thờ Sagrada Família.jpg"
-            },
-            {
-              "name": "Công viên Güell",
-              "image_url": "/assets/images/data/Tây BanNha/Barcelona/Công viên Güell.jpg"
-            },
-            {
-              "name": "Phố đi bộ La Rambla",
-              "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Phố đi bộ La Rambla.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ca011",
-      "country": "Canada",
-      "title": "Kỳ quan Thiên nhiên Miền Tây: Vancouver & Dãy núi Rocky",
-      "description": "Khám phá thành phố cảng Vancouver xinh đẹp...",
-      "price": 95000000,
-      "rating": 4.9,
-      "days": 10,
-      "places": [
-        {
-          "city": "Vancouver",
-          "blog": "Vancouver là nơi đại dương, núi non và thành phố cùng tồn tại trong sự hài hòa tuyệt đẹp. Đây là một trong số ít nơi trên Trái đất mà bạn có thể trượt tuyết vào buổi sáng và đi thuyền buồm vào buổi chiều. Đạp xe quanh bờ biển trong Công viên Stanley rộng lớn, một khu rừng mưa ôn đới ngay trong thành phố. Sau đó, băng qua Cầu treo Capilano ly kỳ, lơ lửng cao trên nền rừng. Đó là một cuộc phiêu lưu đô thị trong một thiên đường tự nhiên.",
-          "lat": 49.2827,
-          "lon": -123.1207,
-          "famous_locations": [
-            {
-              "name": "Cầu treo Capilano",
-              "image_url": "/assets/images/data/Canada/Vancouver/Cầu treo Capilano.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Banff",
-          "blog": "Hãy chuẩn bị để há hốc mồm. Banff là viên ngọc quý của dãy núi Rocky Canada, một nơi đẹp đến mức gần như không có thật. Thị trấn là một trung tâm miền núi quyến rũ, nhưng những ngôi sao thực sự là cảnh quan. Chứng kiến làn nước màu ngọc lam không thể tin được của Hồ Louise và Hồ Moraine, được bao bọc bởi những đỉnh núi phủ tuyết. Đi cáp treo Banff Gondola để ngắm nhìn sáu dãy núi từ trên cao. Đây là kiệt tác của thiên nhiên.",
-          "lat": 51.1784,
-          "lon": -115.5708,
-          "famous_locations": [
-            {
-              "name": "Vườn quốc gia Banff",
-              "image_url": "/assets/images/data/Canada/Banff/Vườn quốc gia Banff.jpg"
-            },
-            {
-              "name": "Hồ Moraine",
-              "image_url": "/assets/images/data/Canada/Banff/Hồ Moraine.jpg"
-            },
-            {
-              "name": "Đi cáp treo Banff Gondola",
-              "image_url": "/assets/images/data/Canada/Banff/Đi cáp treo Banff Gondola.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "in012",
-      "country": "Ấn Độ",
-      "title": "Hành trình Tam giác Vàng: Delhi, Agra và Jaipur",
-      "description": "Đây là hành trình kinh điển nhất để khám phá Ấn Độ...",
-      "price": 35000000,
-      "rating": 4.8,
-      "days": 7,
-      "places": [
-        {
-          "city": "Delhi",
-          "blog": "Delhi là một tấm thảm đáng kinh ngạc của lịch sử và nhân loại. Đó là hai thành phố trong một: Old Delhi đổ nát, hỗn loạn và say sưa, với các khu chợ gia vị và nhà thờ Hồi giáo cổ; và New Delhi với những đại lộ rợp bóng cây, được xây dựng để trở thành một thủ đô của đế quốc. Khám phá Lăng mộ Humayun hùng vĩ (tiền thân của Taj) và cảm nhận nhịp đập của quốc gia tại Cổng Ấn Độ. Dữ dội, khó quên, và hoàn toàn quyến rũ.",
-          "lat": 28.7041,
-          "lon": 77.1025,
-          "famous_locations": [
-            {
-              "name": "Cổng Ấn Độ",
-              "image_url": "/assets/images/data/Ấn Độ/Delhi/Cổng Ấn Độ.jpg"
-            },
-            {
-              "name": "Lăng mộ Humayun",
-              "image_url": "/assets/images/data/Ấn Độ/Delhi/Lăng mộ Humayun.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Agra",
-          "blog": "Agra là quê hương của tòa nhà không cần giới thiệu: Taj Mahal. Được tận mắt chiêm ngưỡng, đặc biệt là lúc bình minh khi đá cẩm thạch chuyển từ màu hồng ngọc sang màu trắng sáng, là một khoảnh khắc vượt qua cả việc du lịch. Nó không chỉ là một tòa nhà; đó là một bài thơ bằng đá, một minh chứng cho tình yêu vĩnh cửu. Khi ở đây, đừng bỏ lỡ Pháo đài Agra bằng đá sa thạch đỏ, một thành phố trong thành phố.",
-          "lat": 27.1767,
-          "lon": 78.0081,
-          "famous_locations": [
-            {
-              "name": "Đền Taj Mahal",
-              "image_url": "/assets/images/data/Ấn Độ/Agra/Đền Taj Mahal.jpg"
-            },
-            {
-              "name": "Pháo đài Agra",
-              "image_url": "/assets/images/data/Ấn Độ/Agra/Pháo đài Agra.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Jaipur",
-          "blog": "Chào mừng đến với 'Thành phố Hồng', thủ đô rực rỡ của Rajasthan. Jaipur là một màn trình diễn tráng lệ của hoàng gia và kiến trúc Rajput. Cưỡi voi lên Pháo đài Amber khổng lồ, một pháo đài màu mật ong nhìn ra hồ. Chụp ảnh mặt tiền phức tạp của Hawa Mahal (Cung điện Gió), và khám phá các hội trường sang trọng của Cung điện Thành phố. Đây là Ấn Độ ở vẻ lộng lẫy và rực rỡ nhất.",
-          "lat": 26.9124,
-          "lon": 75.7873,
-          "famous_locations": [
-            {
-              "name": "Pháo đài Amber",
-              "image_url": "/assets/images/data/Ấn Độ/Jaipur/Pháo đài Amber.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "br013",
-      "country": "Brazil",
-      "title": "Vũ điệu Rio và Thác nước Iguazu Hùng vĩ",
-      "description": "Cảm nhận vũ điệu Samba sôi động tại Rio de Janeiro...",
-      "price": 110000000,
-      "rating": 4.8,
-      "days": 9,
-      "places": [
-        {
-          "city": "Rio de Janeiro",
-          "blog": "Rio là 'Thành phố Kỳ diệu', và nó xứng đáng với tên gọi của mình bằng một sự tinh tế phô trương. Nó được ban tặng một trong những bối cảnh tự nhiên tuyệt đẹp nhất thế giới, nép mình giữa những ngọn núi phủ đầy rừng rậm và những bãi biển vàng. Đứng dang rộng vòng tay bên dưới bức tượng Chúa Cứu thế khổng lồ, đi cáp treo lên đỉnh Núi Sugarloaf để ngắm hoàng hôn, và cảm nhận nhịp điệu bossa nova trên các bãi biển Ipanema và Copacabana huyền thoại.",
-          "lat": -22.9068,
-          "lon": -43.1729,
-          "famous_locations": [
-            {
-              "name": "Tượng Chúa Cứu thế",
-              "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Tượng Chúa Cứu thế.jpg"
-            },
-            {
-              "name": "Núi Sugarloaf",
-              "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Núi Sugarloaf.jpg"
-            },
-            {
-              "name": "Bãi biển Copacabana và Ipanema",
-              "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Bãi biển Copacabana và Ipanema.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "tr014",
-      "country": "Thổ Nhĩ Kỳ",
-      "title": "Di sản Istanbul và Cảnh quan Cappadocia",
-      "description": "Du hành qua hai châu lục tại Istanbul...",
-      "price": 58000000,
-      "rating": 4.9,
-      "days": 8,
-      "places": [
-        {
-          "city": "Istanbul",
-          "blog": "Istanbul là thành phố nơi các lục địa va chạm. Với một chân ở Châu Âu và một chân ở Châu Á, đây là thành phố của các đế chế, gia vị và vẻ đẹp ngoạn mục. Bị mê hoặc bởi các kiệt tác: Hagia Sophia cổ kính, chứa đầy tranh mosaic, và Nhà thờ Hồi giáo Xanh thanh lịch. Lạc vào khu chợ Grand Bazaar như mê cung, và kết thúc một ngày của bạn bằng một chuyến phà huyền diệu trên eo biển Bosphorus, lướt qua giữa hai thế giới.",
-          "lat": 41.0082,
-          "lon": 28.9784,
-          "famous_locations": [
-            {
-              "name": "Nhà thờ Hagia Sophia",
-              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Nhà thờ Hagia Sophia.jpg"
-            },
-            {
-              "name": "Cung điện Topkapi",
-              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Cung điện Topkapi.jpg"
-            },
-            {
-              "name": "Chợ Grand Bazaar",
-              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Chợ Grand Bazaar.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Cappadocia",
-          "blog": "Cappadocia là một cảnh quan được lấy từ một giấc mơ. Vùng đất siêu thực này nổi tiếng với 'ống khói cổ tích' – những thành tạo đá kỳ lạ che giấu toàn bộ các thành phố ngầm và nhà thờ được đẽo vào hang động. Trải nghiệm tinh túy? Thức dậy trước bình minh để bay lơ lửng trên khinh khí cầu, ngắm mặt trời mọc trên cảnh quan như mặt trăng này cùng với hàng trăm khinh khí cầu khác. Đó là ma thuật thuần túy, không thể nào quên.",
-          "lat": 38.6431,
-          "lon": 34.8282,
-          "famous_locations": [
-            {
-              "name": "Bay khinh khí cầu ngắm bình minh",
-              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Cappadocia/Bay khinh khí cầu ngắm bình minh.jpg"
-            },
-            {
-              "name": "Bảo tàng ngoài trời Göreme",
-              "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Cappadocia/Bảo tàng ngoài trời Göreme.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "nz015",
-      "country": "New Zealand",
-      "title": "Phiêu lưu tại Đảo Nam: Queenstown & Milford Sound",
-      "description": "Một chuyến đi dành cho những người yêu thiên nhiên và mạo hiểm...",
-      "price": 88000000,
-      "rating": 4.9,
-      "days": 9,
-      "places": [
-        {
-          "city": "Te Anau",
-          "blog": "Te Anau là cửa ngõ thanh bình dẫn đến một trong những vùng hoang dã vĩ đại cuối cùng của Trái đất: Vườn quốc gia Fiordland. Thị trấn ven hồ thanh bình này là cơ sở của bạn để khám phá kỳ quan đầy cảm hứng. Đi du thuyền trên Milford Sound, một vịnh hẹp hùng vĩ nơi thác nước đổ xuống hàng trăm mét từ những vách đá granite dựng đứng. Hoặc, để có trải nghiệm thực sự huyền bí, hãy trôi dạt trong những chiếc thuyền im lặng qua Hang đom đóm Te Anau.",
-          "lat": -45.4146,
-          "lon": 167.7180,
-          "famous_locations": [
-            {
-              "name": "Vịnh hẹp Milford Sound",
-              "image_url": "/assets/images/data/New Zealand/Te Anau/Vịnh hẹp Milford Sound.jpg"
-            },
-            {
-              "name": "Vịnh hẹp Doubtful Sound",
-              "image_url": "/assets/images/data/New Zealand/Te Anau/Vịnh hẹp Doubtful Sound.jpg"
-            },
-            {
-              "name": "Hang đom đóm Te Anau",
-              "image_url": "/assets/images/data/New Zealand/Te Anau/Hang đom đóm Te Anau.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "uk016",
-      "country": "Anh",
-      "title": "Dấu ấn Lịch sử: London và Edinburgh",
-      "description": "Khám phá các biểu tượng hoàng gia và lịch sử tại London...",
-      "price": 75000000,
-      "rating": 4.7,
-      "days": 8,
-      "places": [
-        {
-          "city": "London",
-          "blog": "London là một sân khấu lớn nơi lịch sử và hiện đại diễn ra trên mọi con đường. Cảm nhận sức nặng của ngàn năm lịch sử tại Tháp London, nơi lưu giữ Vương miện Hoàng gia. Chứng kiến nghi lễ đổi gác tại Cung điện Buckingham. Sau đó, bay vút lên trên tất cả trên Vòng quay London Eye để ngắm nhìn toàn cảnh một thành phố hòa trộn liền mạch các địa danh cổ xưa với kiến trúc tiên tiến. Vượt thời gian, nhưng luôn luôn mới.",
-          "lat": 51.5074,
-          "lon": -0.1278,
-          "famous_locations": [
-            {
-              "name": "Tháp London",
-              "image_url": "/assets/images/data/Anh/London/Tháp London.jpg"
-            },
-            {
-              "name": "Cung điện Buckingham",
-              "image_url": "/assets/images/data/Anh/London/Cung điện Buckingham.jpg"
-            },
-            {
-              "name": "Vòng quay London Eye",
-              "image_url": "/assets/images/data/Anh/London/Vòng quay London Eye.jpg"
-            }
-          ]
-        },
-        {
-          "city": "Edinburgh",
-          "blog": "Edinburgh là một thành phố của không khí, bí ẩn và vẻ đẹp u tối. Đường chân trời của nó bị thống trị bởi Lâu đài Edinburgh đáng gờm, nằm trên một ngọn núi lửa đã tắt. Lang thang trong những con hẻm thời trung cổ của Phố Cổ, đặc biệt là Royal Mile lịch sử, nơi vang vọng những câu chuyện về vua, nữ hoàng và những bóng ma. Đây là thành phố đã truyền cảm hứng cho Harry Potter; sức hấp dẫn gothic, các quán rượu ấm cúng và không khí mờ sương của nó sẽ bỏ bùa bạn.",
-          "lat": 55.9533,
-          "lon": -3.1883,
-          "famous_locations": [
-            {
-              "name": "Lâu đài Edinburgh",
-              "image_url": "/assets/images/data/Anh/Edinburgh/Lâu đài Edinburgh.jpg"
-            },
-            {
-              "name": "Phố Royal Mile",
-              "image_url": "/assets/images/data/Anh/Edinburgh/Phố Royal Mile.jpg"
-            },
-            {
-              "name": "Cung điện Holyroodhouse",
-              "image_url": "/assets/images/data/Anh/Edinburgh/Cung điện Holyroodhouse.jpg"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+        "data": [
+                {
+                        "id": "vn001",
+                        "country": "Việt Nam",
+                        "title": "Hành trình Xuyên Việt: Từ Hà Nội đến Đồng bằng sông Cửu Long",
+                        "description": "Khám phá vẻ đẹp đa dạng của Việt Nam...",
+                        "price": 25000000,
+                        "rating": 4.8,
+                        "days": 12,
+                        "places": [
+                                {
+                                        "city": "Hà Nội",
+                                        "blog": "Hà Nội là một bản giao hưởng của các giác quan. Đó là mùi hương của phở nóng hòa quyện với mùi trầm cổ kính từ những ngôi đền, là tiếng xe máy không ngừng len lỏi qua 36 phố phường. Đây không chỉ là một thành phố, mà là một bảo tàng sống. Hãy thử một ly cà phê trứng đặc sệt, ngắm nhìn Hồ Gươm yên ả lúc bình minh, và cảm nhận sức nặng ngàn năm lịch sử tại Văn Miếu. Hà Nội sẽ quyến rũ bạn bằng sự hỗn loạn có tổ chức và vẻ đẹp cổ điển không thể phai mờ.",
+                                        "lat": 21.0285,
+                                        "lon": 105.8542,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Hồ Gươm",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpg",
+                                                        "description": "Hồ nước biểu tượng giữa lòng Hà Nội; dạo bộ quanh hồ vào sớm mai để cảm nhận nhịp sống thanh bình."
+                                                },
+                                                {
+                                                        "name": "Lăng Chủ tịch Hồ Chí Minh",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hà Nội/Lăng Chủ tịch Hồ Chí Minh.jpg",
+                                                        "description": "Công trình lịch sử trang nghiêm, nơi lưu giữ thi hài Chủ tịch Hồ Chí Minh; nên ăn mặc lịch sự khi tham quan."
+                                                },
+                                                {
+                                                        "name": "Văn Miếu - Quốc Tử Giám",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hà Nội/Văn Miếu - Quốc Tử Giám.jpg",
+                                                        "description": "Trường đại học đầu tiên của Việt Nam, nổi tiếng với kiến trúc cổ kính và bia tiến sĩ."
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Đà Nẵng",
+                                        "blog": "Đà Nẵng là thành phố của tương lai, nơi những tòa nhà chọc trời lấp lánh soi bóng bên bờ cát trắng mịn. Ban ngày, hãy chinh phục bán đảo Sơn Trà xanh mướt, tìm sự thanh thản trong các hang động của Ngũ Hành Sơn. Khi đêm xuống, hãy chiêm ngưỡng Cầu Rồng biểu tượng phun lửa, thắp sáng cả dòng sông Hàn. Đây là nơi cân bằng hoàn hảo giữa năng lượng đô thị và sự thư thái của biển cả, một lối thoát hiện đại hoàn hảo của Việt Nam.",
+                                        "lat": 16.0545,
+                                        "lon": 108.2022,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Bãi biển Mỹ Khê",
+                                                        "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Bãi biển Mỹ Khê.jpg",
+                                                        "description": "Bãi biển cát trắng mịn, nước trong xanh; thích hợp tắm biển và thể thao nước vào buổi sáng."
+                                                },
+                                                {
+                                                        "name": "Ngũ Hành Sơn",
+                                                        "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Ngũ Hành Sơn.jpg",
+                                                        "description": "Cụm núi đá vôi với hệ thống chùa chiền và hang động kỳ thú; leo lên ngọn Thủy Sơn để ngắm toàn cảnh."
+                                                },
+                                                {
+                                                        "name": "Bán đảo Sơn Trà",
+                                                        "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Bán đảo Sơn Trà.jpg",
+                                                        "description": "Lá phổi xanh của Đà Nẵng, nơi sinh sống của voọc chà vá chân nâu; cung đường ven biển rất đẹp để phượt."
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Hội An",
+                                        "blog": "Hãy bước vào một câu chuyện cổ tích. Hội An là một chiếc hộp thời gian với những bức tường vàng óng, phủ đầy hoa giấy và được thắp sáng bởi hàng ngàn chiếc đèn lồng lụa. Khi hoàng hôn buông xuống, phố cổ biến thành một cảnh tượng huyền ảo. Hãy lướt nhẹ trên thuyền tam bản xuôi dòng sông Hoài, thả một chiếc đèn hoa đăng để cầu may. Đây là nơi để bạn sống chậm lại, để thưởng thức món Cao Lầu huyền thoại, và để tâm hồn mình được mê hoặc.",
+                                        "lat": 15.8801,
+                                        "lon": 108.338,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Phố cổ Hội An",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hội An/Phố cổ Hội An.jpg"
+                                                },
+                                                {
+                                                        "name": "Làng gốm Thanh Hà",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hội An/Làng gốm Thanh Hà.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Hồ Chí Minh",
+                                        "blog": "Chào mừng đến với cơn lốc không ngừng nghỉ mang tên Sài Gòn. Thành phố này không chỉ sống; nó 'sôi' lên với một nguồn năng lượng truyền nhiễm, từ dòng xe máy bất tận đến những quầy hàng rong xì xèo ở mọi góc phố. Đắm mình trong lịch sử tại Dinh Độc Lập, sau đó leo lên tòa tháp Bitexco để thấy một đô thị hiện đại vươn mình. Sài Gòn là thành phố của sự kiên cường, của hương vị, và của sự chuyển động không ngừng.",
+                                        "lat": 10.7626,
+                                        "lon": 106.6602,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Dinh Độc Lập",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hồ Chí Minh/Dinh Độc Lập.jpg",
+                                                        "description": "Dinh Tổng thống miền Nam cũ, biểu tượng lịch sử của ngày thống nhất 30/4. Tham quan các hầm ngầm, phòng họp và nội thất mang đậm dấu ấn thập niên 60–70."
+                                                },
+                                                {
+                                                        "name": "Nhà thờ Đức Bà",
+                                                        "image_url": "/assets/images/data/Việt Nam/Hồ Chí Minh/Nhà thờ Đức Bà.jpg",
+                                                        "description": "Công trình kiến trúc Pháp cổ nổi tiếng với hai tháp chuông đỏ gạch. Ghé thăm vào buổi sáng để chụp hình với ánh nắng đẹp và thưởng thức cà phê bệt ngay quảng trường."
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "jp002",
+                        "country": "Nhật Bản",
+                        "title": "Khám phá Đất nước Mặt trời mọc: Tokyo & Kyoto",
+                        "description": "Trải nghiệm sự giao thoa giữa truyền thống và hiện đại tại Nhật Bản...",
+                        "price": 45000000,
+                        "rating": 4.9,
+                        "days": 7,
+                        "places": [
+                                {
+                                        "city": "Tokyo",
+                                        "blog": "Tokyo là một nghịch lý ngoạn mục. Một khoảnh khắc bạn lạc vào sự hỗn loạn tương lai, ngập trong ánh đèn neon của Ngã tư Shibuya, khoảnh khắc tiếp theo bạn tìm thấy sự tĩnh lặng tuyệt đối dưới những tán cây cổ thụ của Đền Meiji. Đây là nơi bạn có thể ăn một bữa sushi 3 sao Michelin trong một con hẻm ẩn, và ngay sau đó tham gia một buổi trà đạo hàng thế kỷ. Một trải nghiệm đầy kích thích, lịch sự và vô cùng kỳ thú.",
+                                        "lat": 35.6895,
+                                        "lon": 139.6917,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Giao lộ Shibuya",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Tokyo/Giao lộ Shibuya.jpg"
+                                                },
+                                                {
+                                                        "name": "Tháp Tokyo Skytree",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Tokyo/Tháp Tokyo Skytree.jpg"
+                                                },
+                                                {
+                                                        "name": "Hoàng cung Nhật Bản",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Tokyo/Hoàng cung Nhật Bản.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Kyoto",
+                                        "blog": "Nếu Tokyo là tương lai, thì Kyoto chính là linh hồn của Nhật Bản. Đây là thành phố của vẻ đẹp tinh tế, nơi mọi góc phố đều kể một câu chuyện. Dạo bước trên con đường siêu thực xuyên qua Rừng tre Arashiyama, chứng kiến hình ảnh phản chiếu lấp lánh của Chùa Vàng Kinkaku-ji, và khám phá con đường linh thiêng Fushimi Inari. Buổi tối, hãy lang thang ở Gion, thế giới bí ẩn của các Geisha, và cảm nhận bản chất thực sự của Nhật Bản cổ xưa.",
+                                        "lat": 35.0116,
+                                        "lon": 135.7681,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Chùa Vàng Kinkaku-ji",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Kyoto/Chùa Vàng Kinkaku-ji.jpg"
+                                                },
+                                                {
+                                                        "name": "Rừng tre Arashiyama",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Kyoto/Rừng tre Arashiyama.jpg"
+                                                },
+                                                {
+                                                        "name": "Phố cổ Gion",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Kyoto/Phố cổ Gion.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Osaka",
+                                        "blog": "Osaka là trái tim sôi động, yêu đời và cuồng nhiệt ẩm thực của Nhật Bản. Phương châm của thành phố là 'kuidaore' – ăn cho đến khi ngã quỵ! Đắm mình vào 'vụ nổ' cảm quan rực rỡ ánh đèn của Dotonbori, nếm thử takoyaki, okonomiyaki và kushikatsu nóng hổi. Ngoài ẩm thực, hãy khám phá Lâu đài Osaka hùng vĩ và trải nghiệm lòng hiếu khách nồng hậu, ồn ào khiến thành phố này khác biệt với tất cả.",
+                                        "lat": 34.6937,
+                                        "lon": 135.5023,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Lâu đài Osaka",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Osaka/Lâu đài Osaka.jpg"
+                                                },
+                                                {
+                                                        "name": "Khu Dotonbori",
+                                                        "image_url": "/assets/images/data/Nhật Bản/Osaka/Khu Dotonbori.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "fr003",
+                        "country": "Pháp",
+                        "title": "Vẻ đẹp Lãng mạn của Pháp: Paris và Nice",
+                        "description": "Đắm mình trong kinh đô ánh sáng Paris...",
+                        "price": 65000000,
+                        "rating": 4.7,
+                        "days": 8,
+                        "places": [
+                                {
+                                        "city": "Paris",
+                                        "blog": "Paris không chỉ là một thành phố; đó là một lời hứa về sự lãng mạn, nghệ thuật và những khoảnh khắc tinh tế. Hãy để hương thơm của bánh sừng bò mới nướng dẫn lối bạn qua khu Montmartre quyến rũ. Đứng kinh ngạc trước các kiệt tác ở Louvre và cảm nhận sự vĩ đại của Nhà thờ Đức Bà. Khi hoàng hôn buông xuống, hãy xem Tháp Eiffel thắp sáng bầu trời. Đây là một thành phố để bạn yêu, và để được yêu.",
+                                        "lat": 48.8566,
+                                        "lon": 2.3522,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Tháp Eiffel",
+                                                        "image_url": "/assets/images/data/Pháp/Paris/Tháp Eiffel.jpg"
+                                                },
+                                                {
+                                                        "name": "Nhà thờ Đức Bà Paris",
+                                                        "image_url": "/assets/images/data/Pháp/Paris/Nhà thờ Đức Bà Paris.jpg"
+                                                },
+                                                {
+                                                        "name": "Khải Hoàn Môn",
+                                                        "image_url": "/assets/images/data/Pháp/Paris/Khải Hoàn Môn.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Nice",
+                                        "blog": "Hãy hít thở không khí mặn mòi của Địa Trung Hải ở Nice, thủ đô lộng lẫy của vùng French Riviera. Thành phố là một bức tranh đầy màu sắc, từ làn nước xanh biếc của Vịnh Thiên thần (Baie des Anges) đến những tòa nhà màu đất son trong Phố Cổ (Vieille Ville). Dạo bước trên con đường Promenade des Anglais mang tính biểu tượng, lạc vào khu chợ hoa rực rỡ Cours Saleya, và leo lên Đồi Lâu đài để ngắm một toàn cảnh sẽ khiến bạn nghẹt thở.",
+                                        "lat": 43.7102,
+                                        "lon": 7.262,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Phố cổ Vieille Ville",
+                                                        "image_url": "/assets/images/data/Pháp/Nice/Phố cổ Vieille Ville.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "it004",
+                        "country": "Ý",
+                        "title": "Vẻ đẹp Vĩnh cửu: Rome, Florence và Venice",
+                        "description": "Hành trình khám phá di sản của Đế chế La Mã tại Rome...",
+                        "price": 70000000,
+                        "rating": 4.8,
+                        "days": 10,
+                        "places": [
+                                {
+                                        "city": "Rome",
+                                        "blog": "Rome là một thiên anh hùng ca sống động, nơi 3.000 năm lịch sử được viết trên từng góc phố. Đứng trong đấu trường nơi các đấu sĩ đã chiến đấu tại Colosseum, cảm nhận sự hiện diện thiêng liêng dưới mái vòm Pantheon, và ném đồng xu xuống Đài phun nước Trevi để đảm bảo sự trở lại của bạn. Nhưng Rome cũng là về 'la dolce vita' – thưởng thức một đĩa cacio e pepe hoàn hảo, ăn gelato trên một quảng trường ngập nắng, và để vẻ đẹp vĩnh cửu của thành phố bao bọc lấy bạn.",
+                                        "lat": 41.9028,
+                                        "lon": 12.4964,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Đấu trường Colosseum",
+                                                        "image_url": "/assets/images/data/Ý/Rome/Đấu trường Colosseum.jpg"
+                                                },
+                                                {
+                                                        "name": "Đài phun nước Trevi",
+                                                        "image_url": "/assets/images/data/Ý/Rome/Đài phun nước Trevi.jpg"
+                                                },
+                                                {
+                                                        "name": "Đền Pantheon",
+                                                        "image_url": "/assets/images/data/Ý/Rome/Đền Pantheon.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Florence",
+                                        "blog": "Chào mừng đến với cái nôi của thời Phục hưng. Florence là một bảo tàng ngoài trời, một thành phố được xây dựng để truyền cảm hứng. Hãy cảm thấy khiêm tốn trước sự hoàn hảo tuyệt đối của 'David' của Michelangelo, nín thở trước 'Sự ra đời của thần Vệ Nữ' tại Uffizi, và leo lên mái vòm Duomo hùng vĩ để ngắm nhìn những mái ngói đất nung của vùng Tuscany. Đây là thành phố của các nghệ nhân, của nghệ thuật thần thánh, và của vẻ đẹp choáng ngợp.",
+                                        "lat": 43.7696,
+                                        "lon": 11.2558,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Cầu Ponte Vecchio",
+                                                        "image_url": "/assets/images/data/Ý/Florence/Cầu Ponte Vecchio.jpg"
+                                                },
+                                                {
+                                                        "name": "Bảo tàng nghệ thuật Uffizi Gallery",
+                                                        "image_url": "/assets/images/data/Ý/Florence/Bảo tàng nghệ thuật Uffizi Gallery.jpg"
+                                                },
+                                                {
+                                                        "name": "Quảng trường Michelangelo",
+                                                        "image_url": "/assets/images/data/Ý/Florence/Quảng trường Michelangelo.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Venice",
+                                        "blog": "Một thành phố được xây dựng trên những giấc mơ và mặt nước. Nó hoàn toàn độc nhất, một mê cung của những con kênh uốn lượn, những cây cầu ẩn và những cung điện sang trọng dường như nổi trên đầm phá. Hãy cố tình đi lạc trong những con hẻm hẹp, rồi đột nhiên bước ra sự hùng vĩ của Quảng trường St. Mark, và trải nghiệm sự lãng mạn thầm lặng của một chuyến đi thuyền gondola. Không có nơi nào trên Trái đất giống như Venice; đó là ma thuật thuần túy, mong manh.",
+                                        "lat": 45.4408,
+                                        "lon": 12.3155,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Quảng trường St. Mark",
+                                                        "image_url": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpg"
+                                                },
+                                                {
+                                                        "name": "Cầu Rialto",
+                                                        "image_url": "/assets/images/data/Ý/Venice/Cầu Rialto.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "us005",
+                        "country": "Mỹ",
+                        "title": "Hành trình Bờ Tây Nước Mỹ: Los Angeles, Las Vegas & Grand Canyon",
+                        "description": "Trải nghiệm sự hào nhoáng của kinh đô điện ảnh Hollywood...",
+                        "price": 90000000,
+                        "rating": 4.7,
+                        "days": 9,
+                        "places": [
+                                {
+                                        "city": "Los Angeles",
+                                        "blog": "LA là một bức tranh khảm rộng lớn của những giấc mơ, tham vọng và ánh nắng bất tận. Đây là nơi bạn có thể săn tìm các ngôi sao trên Đại lộ Danh vọng Hollywood, cảm nhận không khí phóng khoáng của Bãi biển Venice, và ngắm nhìn những cửa hàng sang trọng trên Rodeo Drive. Từ những cảnh nghệ thuật đường phố cho đến những con sóng ở Malibu, LA liên tục tự làm mới mình, mang đến một câu chuyện khác nhau cho mọi người.",
+                                        "lat": 34.0522,
+                                        "lon": -118.2437,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Bến tàu Santa Monica",
+                                                        "image_url": "/assets/images/data/Mỹ/Los Angeles/Bến tàu Santa Monica.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Las Vegas",
+                                        "blog": "Chào mừng đến với sân chơi tối thượng, một thành phố thách thức sa mạc bằng sự lộng lẫy và ảo mộng. Vegas là về sự xa hoa. Chứng kiến vũ điệu đầy mê hoặc của Đài phun nước Bellagio, lạc vào bản sao của Venice với những con kênh đào, và xem một show diễn đẳng cấp thế giới sẽ khiến bạn nín thở. Đó là một nơi được xây dựng cho những đêm không thể nào quên và sự quá tải của các giác quan.",
+                                        "lat": 36.1699,
+                                        "lon": -115.1398,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Đài phun nước Bellagio",
+                                                        "image_url": "/assets/images/data/Mỹ/Las Vegas/Đài phun nước Bellagio.jpg"
+                                                },
+                                                {
+                                                        "name": "Show diễn đường phố Fremont",
+                                                        "image_url": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "th006",
+                        "country": "Thái Lan",
+                        "title": "Thiên đường Nhiệt đới: Bangkok và Phuket",
+                        "description": "Khám phá sự kết hợp giữa nét cổ kính của những ngôi chùa vàng...",
+                        "price": 12000000,
+                        "rating": 4.6,
+                        "days": 5,
+                        "places": [
+                                {
+                                        "city": "Bangkok",
+                                        "blog": "Một cuộc tấn công đầy phấn khích vào các giác quan. Những ngôi đền lợp vàng như Cung điện Hoàng gia và Wat Pho đứng tương phản thanh thản với sự hỗn loạn sôi động của các khu chợ đường phố và cuộc sống về đêm náo nhiệt. Điều hướng các 'klongs' (kênh rạch) bằng thuyền đuôi dài, kinh ngạc trước tượng Phật Nằm khổng lồ, và quan trọng nhất là ĂN. Ẩm thực đường phố ở đây tự nó đã là một hành trình ẩm thực đẳng cấp thế giới.",
+                                        "lat": 13.7563,
+                                        "lon": 100.5018,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Chùa Phật Nằm (Wat Pho)",
+                                                        "image_url": "/assets/images/data/Thái Lan/Bangkok/Chùa Phật Nằm (Wat Pho).jpg"
+                                                },
+                                                {
+                                                        "name": "Du thuyền trên sông Chao Phraya",
+                                                        "image_url": "/assets/images/data/Thái Lan/Bangkok/Du thuyền trên sông Chao Phraya.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Phuket",
+                                        "blog": "Thiên đường đảo tinh túy của Thái Lan, một thiên đường của làn nước màu ngọc lam, những mỏm đá vôi ấn tượng và những bãi biển cát trắng mịn. Đi thuyền đến Quần đảo Phi Phi ngoạn mục, lặn xuống thế giới dưới nước sôi động của Biển Andaman, hoặc đơn giản là thư giãn trên ghế tắm nắng với một trái dừa tươi. Từ trung tâm tiệc tùng Patong đến sự sang trọng thanh bình của Bang Tao, Phuket có một bãi biển cho mọi tâm trạng.",
+                                        "lat": 7.8804,
+                                        "lon": 98.3923,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Quần đảo Phi Phi",
+                                                        "image_url": "/assets/images/data/Thái Lan/Phuket/Quần đảo Phi Phi.jpg"
+                                                },
+                                                {
+                                                        "name": "Bãi biển Patong",
+                                                        "image_url": "/assets/images/data/Thái Lan/Phuket/Bãi biển Patong.jpg"
+                                                },
+                                                {
+                                                        "name": "Phố cổ Phuket",
+                                                        "image_url": "/assets/images/data/Thái Lan/Phuket/Phố cổ Phuket.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "kr007",
+                        "country": "Hàn Quốc",
+                        "title": "Sức hút Seoul và Nét đẹp Busan",
+                        "description": "Trải nghiệm văn hóa K-Pop sôi động...",
+                        "price": 18000000,
+                        "rating": 4.7,
+                        "days": 6,
+                        "places": [
+                                {
+                                        "city": "Seoul",
+                                        "blog": "Một đô thị siêu hiện đại rung động với năng lượng của K-Pop và công nghệ tiên tiến, nhưng không bao giờ quên đi nguồn cội cổ xưa của mình. Một khoảnh khắc bạn đang mua sắm tại Dongdaemun Design Plaza, khoảnh khắc tiếp theo bạn đang mặc Hanbok lang thang qua Cung điện Gyeongbokgung hùng vĩ. Đắm mình vào chợ Myeongdong nhộn nhịp để mua mỹ phẩm và thức ăn đường phố, và cảm nhận nhịp đập trẻ trung của một thành phố thực sự không bao giờ ngủ.",
+                                        "lat": 37.5665,
+                                        "lon": 126.978,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Cung điện Gyeongbokgung",
+                                                        "image_url": "/assets/images/data/Hàn Quốc/Seoul/Cung điện Gyeongbokgung.jpg"
+                                                },
+                                                {
+                                                        "name": "Làng cổ Bukchon Hanok",
+                                                        "image_url": "/assets/images/data/Hàn Quốc/Seoul/Làng cổ Bukchon Hanok.jpg"
+                                                },
+                                                {
+                                                        "name": "Khu phố mua sắm Myeongdong",
+                                                        "image_url": "/assets/images/data/Hàn Quốc/Seoul/Khu phố mua sắm Myeongdong.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Busan",
+                                        "blog": "Busan là người anh em ven biển thoải mái, mát mẻ hơn của Seoul. Thành phố cảng này quyến rũ với văn hóa bãi biển thoải mái, hải sản tươi rói và những khu nghệ thuật đáng ngạc nhiên. Thư giãn trên bãi biển Haeundae nổi tiếng, khám phá kính vạn hoa màu sắc tại Làng văn hóa Gamcheon (Santorini của Hàn Quốc), và tìm thấy sự tĩnh tâm tại ngôi chùa ven biển Haedong Yonggungsa tuyệt đẹp. Đó là một làn gió biển trong lành.",
+                                        "lat": 35.1796,
+                                        "lon": 129.0756,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Bãi biển Haeundae",
+                                                        "image_url": "/assets/images/data/Hàn Quốc/Busan/Bãi biển Haeundae.jpg"
+                                                },
+                                                {
+                                                        "name": "Cầu Gwangandaegyo",
+                                                        "image_url": "/assets/images/data/Hàn Quốc/Busan/Cầu Gwangandaegyo.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "au008",
+                        "country": "Úc",
+                        "title": "Khám phá Sydney và Melbourne Năng động",
+                        "description": "Chiêm ngưỡng các biểu tượng kiến trúc của Sydney...",
+                        "price": 55000000,
+                        "rating": 4.8,
+                        "days": 8,
+                        "places": [
+                                {
+                                        "city": "Sydney",
+                                        "blog": "Sydney là một thành phố được định nghĩa bởi bến cảng lộng lẫy của nó. Lần đầu tiên nhìn thấy bộ đôi biểu tượng – 'cánh buồm' bay bổng của Nhà hát Opera và vòm cầu cảng hùng vĩ – là một ký ức cốt lõi. Nhưng Sydney không chỉ là các địa danh; đó là một phong cách sống. Học lướt sóng tại Bãi biển Bondi huyền thoại, khám phá những con đường lát sỏi lịch sử của The Rocks, và sống như một người địa phương tại một quán cà phê 'brekkie' đầy nắng.",
+                                        "lat": -33.8688,
+                                        "lon": 151.2093,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Nhà hát Opera Sydney",
+                                                        "image_url": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpg"
+                                                },
+                                                {
+                                                        "name": "Cầu cảng Sydney",
+                                                        "image_url": "/assets/images/data/Úc/Sydney/Cầu cảng Sydney.jpg"
+                                                },
+                                                {
+                                                        "name": "Khu The Rocks",
+                                                        "image_url": "/assets/images/data/Úc/Sydney/Khu The Rocks.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Melbourne",
+                                        "blog": "Nếu Sydney có sự hào nhoáng, thì Melbourne có linh hồn. Đây là thủ đô văn hóa của Úc, một thành phố bị ám ảnh bởi cà phê, nghệ thuật và thể thao. Melbourne thực sự được tìm thấy trong những con hẻm ẩn, được trang trí bằng graffiti đẳng cấp thế giới và là nơi có các cửa hàng độc đáo và các quán cà phê 'lỗ nhỏ trên tường' phục vụ món flat white ngon nhất thế giới. Đó là một thành phố bạn không chỉ nhìn thấy, mà bạn phải khám phá.",
+                                        "lat": -37.8136,
+                                        "lon": 144.9631,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Quảng trường Federation",
+                                                        "image_url": "/assets/images/data/Úc/Melbourne/Quảng trường Federation.jpg"
+                                                },
+                                                {
+                                                        "name": "Ga tàu Flinders Street",
+                                                        "image_url": "/assets/images/data/Úc/Melbourne/Ga tàu Flinders Street.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "eg009",
+                        "country": "Ai Cập",
+                        "title": "Hành trình Huyền bí Theo dòng Sông Nile",
+                        "description": "Quay ngược thời gian về với nền văn minh Ai Cập cổ đại...",
+                        "price": 85000000,
+                        "rating": 4.9,
+                        "days": 10,
+                        "places": [
+                                {
+                                        "city": "Cairo",
+                                        "blog": "Hãy chuẩn bị để bị choáng ngợp. Cairo là cổng vào thế giới cổ đại, một thành phố hỗn loạn rộng lớn canh gác kỳ quan duy nhất còn sót lại của thế giới cổ đại. Đứng trước Đại Kim tự tháp Giza và Tượng Nhân sư bí ẩn – một khoảnh khắc sẽ định nghĩa lại cảm nhận của bạn về lịch sử. Sau đó, lặn vào kho báu của Bảo tàng Ai Cập, quê hương của mặt nạ vàng của Tutankhamun, và mặc cả để mua kho báu trong khu chợ Khan el-Khalili ngàn năm tuổi.",
+                                        "lat": 30.0444,
+                                        "lon": 31.2357,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Quần thể Kim tự tháp Giza",
+                                                        "image_url": "/assets/images/data/Ai Cập/Cairo/Quần thể Kim tự tháp Giza.jpg"
+                                                },
+                                                {
+                                                        "name": "Tượng Nhân sư Lớn",
+                                                        "image_url": "/assets/images/data/Ai Cập/Cairo/Tượng Nhân sư Lớn.jpg"
+                                                },
+                                                {
+                                                        "name": "Bảo tàng Ai Cập",
+                                                        "image_url": "/assets/images/data/Ai Cập/Cairo/Bảo tàng Ai Cập.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Luxor",
+                                        "blog": "Luxor thường được gọi là bảo tàng ngoài trời vĩ đại nhất thế giới, và không hề quá lời. Đây là Thebes, thủ đô của các Pharaoh ở đỉnh cao quyền lực. Ở Bờ Đông, khám phá quần thể Đền Karnak rộng lớn đến không tưởng. Ở Bờ Tây, đi xuống những ngôi mộ được sơn vẽ sống động của Thung lũng các vị Vua. Đây không chỉ là lịch sử; đây là lịch sử ở một quy mô hoành tráng.",
+                                        "lat": 25.6872,
+                                        "lon": 32.6396,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Thung lũng các vị Vua",
+                                                        "image_url": "/assets/images/data/Ai Cập/Luxor/Thung lũng các vị Vua.jpg"
+                                                },
+                                                {
+                                                        "name": "Đền Karnak",
+                                                        "image_url": "/assets/images/data/Ai Cập/Luxor/Đền Karnak.jpg"
+                                                },
+                                                {
+                                                        "name": "Tượng đài Colossi of Memnon",
+                                                        "image_url": "/assets/images/data/Ai Cập/Luxor/Tượng đài Colossi of Memnon.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "es010",
+                        "country": "Tây Ban Nha",
+                        "title": "Sôi động Madrid và Kiến trúc Barcelona",
+                        "description": "Đắm mình trong nhịp sống sôi động và văn hóa hoàng gia của Madrid...",
+                        "price": 68000000,
+                        "rating": 4.7,
+                        "days": 8,
+                        "places": [
+                                {
+                                        "city": "Madrid",
+                                        "blog": "Madrid là một thành phố sống với niềm đam mê. Đó là một thủ đô hoàng gia nơi các quảng trường lớn như Plaza Mayor luôn nhộn nhịp cả ngày lẫn đêm. Đó là giấc mơ của người yêu nghệ thuật, quê hương của 'Tam giác Vàng' bảo tàng (Prado, Reina Sofía). Và đó là một thành phố thực sự sống dậy sau khi trời tối. Hãy đón nhận lối sống 'Madrileño': ăn tapas muộn, thưởng thức một buổi biểu diễn flamenco và sống hết mình.",
+                                        "lat": 40.4168,
+                                        "lon": -3.7038,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Cung điện Hoàng gia Madrid",
+                                                        "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Cung điện Hoàng gia Madrid.jpg"
+                                                },
+                                                {
+                                                        "name": "Quảng trường Plaza Mayor",
+                                                        "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Quảng trường Plaza Mayor.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Barcelona",
+                                        "blog": "Barcelona là một thành phố của vẻ đẹp siêu thực, nhờ vào thiên tài kỳ quái của Antoni Gaudí. Hãy để trí tưởng tượng của bạn bay xa tại kiệt tác chưa hoàn thành, La Sagrada Família, và Công viên Güell như trong truyện cổ tích. Nhưng đây cũng là một thành phố Địa Trung Hải sôi động. Dạo bước xuống La Rambla nhộn nhịp, lạc vào những con hẻm thời trung cổ của Khu Gothic, và sau đó ra bãi biển tại Barceloneta. Đó là nghệ thuật và cuộc sống, hòa quyện hoàn hảo.",
+                                        "lat": 41.3851,
+                                        "lon": 2.1734,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Nhà thờ Sagrada Família",
+                                                        "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Nhà thờ Sagrada Família.jpg"
+                                                },
+                                                {
+                                                        "name": "Công viên Güell",
+                                                        "image_url": "/assets/images/data/Tây BanNha/Barcelona/Công viên Güell.jpg"
+                                                },
+                                                {
+                                                        "name": "Phố đi bộ La Rambla",
+                                                        "image_url": "/assets/images/data/Tây Ban Nha/Barcelona/Phố đi bộ La Rambla.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "ca011",
+                        "country": "Canada",
+                        "title": "Kỳ quan Thiên nhiên Miền Tây: Vancouver & Dãy núi Rocky",
+                        "description": "Khám phá thành phố cảng Vancouver xinh đẹp...",
+                        "price": 95000000,
+                        "rating": 4.9,
+                        "days": 10,
+                        "places": [
+                                {
+                                        "city": "Vancouver",
+                                        "blog": "Vancouver là nơi đại dương, núi non và thành phố cùng tồn tại trong sự hài hòa tuyệt đẹp. Đây là một trong số ít nơi trên Trái đất mà bạn có thể trượt tuyết vào buổi sáng và đi thuyền buồm vào buổi chiều. Đạp xe quanh bờ biển trong Công viên Stanley rộng lớn, một khu rừng mưa ôn đới ngay trong thành phố. Sau đó, băng qua Cầu treo Capilano ly kỳ, lơ lửng cao trên nền rừng. Đó là một cuộc phiêu lưu đô thị trong một thiên đường tự nhiên.",
+                                        "lat": 49.2827,
+                                        "lon": -123.1207,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Cầu treo Capilano",
+                                                        "image_url": "/assets/images/data/Canada/Vancouver/Cầu treo Capilano.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Banff",
+                                        "blog": "Hãy chuẩn bị để há hốc mồm. Banff là viên ngọc quý của dãy núi Rocky Canada, một nơi đẹp đến mức gần như không có thật. Thị trấn là một trung tâm miền núi quyến rũ, nhưng những ngôi sao thực sự là cảnh quan. Chứng kiến làn nước màu ngọc lam không thể tin được của Hồ Louise và Hồ Moraine, được bao bọc bởi những đỉnh núi phủ tuyết. Đi cáp treo Banff Gondola để ngắm nhìn sáu dãy núi từ trên cao. Đây là kiệt tác của thiên nhiên.",
+                                        "lat": 51.1784,
+                                        "lon": -115.5708,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Vườn quốc gia Banff",
+                                                        "image_url": "/assets/images/data/Canada/Banff/Vườn quốc gia Banff.jpg"
+                                                },
+                                                {
+                                                        "name": "Hồ Moraine",
+                                                        "image_url": "/assets/images/data/Canada/Banff/Hồ Moraine.jpg"
+                                                },
+                                                {
+                                                        "name": "Đi cáp treo Banff Gondola",
+                                                        "image_url": "/assets/images/data/Canada/Banff/Đi cáp treo Banff Gondola.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "in012",
+                        "country": "Ấn Độ",
+                        "title": "Hành trình Tam giác Vàng: Delhi, Agra và Jaipur",
+                        "description": "Đây là hành trình kinh điển nhất để khám phá Ấn Độ...",
+                        "price": 35000000,
+                        "rating": 4.8,
+                        "days": 7,
+                        "places": [
+                                {
+                                        "city": "Delhi",
+                                        "blog": "Delhi là một tấm thảm đáng kinh ngạc của lịch sử và nhân loại. Đó là hai thành phố trong một: Old Delhi đổ nát, hỗn loạn và say sưa, với các khu chợ gia vị và nhà thờ Hồi giáo cổ; và New Delhi với những đại lộ rợp bóng cây, được xây dựng để trở thành một thủ đô của đế quốc. Khám phá Lăng mộ Humayun hùng vĩ (tiền thân của Taj) và cảm nhận nhịp đập của quốc gia tại Cổng Ấn Độ. Dữ dội, khó quên, và hoàn toàn quyến rũ.",
+                                        "lat": 28.7041,
+                                        "lon": 77.1025,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Cổng Ấn Độ",
+                                                        "image_url": "/assets/images/data/Ấn Độ/Delhi/Cổng Ấn Độ.jpg"
+                                                },
+                                                {
+                                                        "name": "Lăng mộ Humayun",
+                                                        "image_url": "/assets/images/data/Ấn Độ/Delhi/Lăng mộ Humayun.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Agra",
+                                        "blog": "Agra là quê hương của tòa nhà không cần giới thiệu: Taj Mahal. Được tận mắt chiêm ngưỡng, đặc biệt là lúc bình minh khi đá cẩm thạch chuyển từ màu hồng ngọc sang màu trắng sáng, là một khoảnh khắc vượt qua cả việc du lịch. Nó không chỉ là một tòa nhà; đó là một bài thơ bằng đá, một minh chứng cho tình yêu vĩnh cửu. Khi ở đây, đừng bỏ lỡ Pháo đài Agra bằng đá sa thạch đỏ, một thành phố trong thành phố.",
+                                        "lat": 27.1767,
+                                        "lon": 78.0081,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Đền Taj Mahal",
+                                                        "image_url": "/assets/images/data/Ấn Độ/Agra/Đền Taj Mahal.jpg"
+                                                },
+                                                {
+                                                        "name": "Pháo đài Agra",
+                                                        "image_url": "/assets/images/data/Ấn Độ/Agra/Pháo đài Agra.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Jaipur",
+                                        "blog": "Chào mừng đến với 'Thành phố Hồng', thủ đô rực rỡ của Rajasthan. Jaipur là một màn trình diễn tráng lệ của hoàng gia và kiến trúc Rajput. Cưỡi voi lên Pháo đài Amber khổng lồ, một pháo đài màu mật ong nhìn ra hồ. Chụp ảnh mặt tiền phức tạp của Hawa Mahal (Cung điện Gió), và khám phá các hội trường sang trọng của Cung điện Thành phố. Đây là Ấn Độ ở vẻ lộng lẫy và rực rỡ nhất.",
+                                        "lat": 26.9124,
+                                        "lon": 75.7873,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Pháo đài Amber",
+                                                        "image_url": "/assets/images/data/Ấn Độ/Jaipur/Pháo đài Amber.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "br013",
+                        "country": "Brazil",
+                        "title": "Vũ điệu Rio và Thác nước Iguazu Hùng vĩ",
+                        "description": "Cảm nhận vũ điệu Samba sôi động tại Rio de Janeiro...",
+                        "price": 110000000,
+                        "rating": 4.8,
+                        "days": 9,
+                        "places": [
+                                {
+                                        "city": "Rio de Janeiro",
+                                        "blog": "Rio là 'Thành phố Kỳ diệu', và nó xứng đáng với tên gọi của mình bằng một sự tinh tế phô trương. Nó được ban tặng một trong những bối cảnh tự nhiên tuyệt đẹp nhất thế giới, nép mình giữa những ngọn núi phủ đầy rừng rậm và những bãi biển vàng. Đứng dang rộng vòng tay bên dưới bức tượng Chúa Cứu thế khổng lồ, đi cáp treo lên đỉnh Núi Sugarloaf để ngắm hoàng hôn, và cảm nhận nhịp điệu bossa nova trên các bãi biển Ipanema và Copacabana huyền thoại.",
+                                        "lat": -22.9068,
+                                        "lon": -43.1729,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Tượng Chúa Cứu thế",
+                                                        "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Tượng Chúa Cứu thế.jpg"
+                                                },
+                                                {
+                                                        "name": "Núi Sugarloaf",
+                                                        "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Núi Sugarloaf.jpg"
+                                                },
+                                                {
+                                                        "name": "Bãi biển Copacabana và Ipanema",
+                                                        "image_url": "/assets/images/data/Brazil/Rio de Janeiro/Bãi biển Copacabana và Ipanema.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "tr014",
+                        "country": "Thổ Nhĩ Kỳ",
+                        "title": "Di sản Istanbul và Cảnh quan Cappadocia",
+                        "description": "Du hành qua hai châu lục tại Istanbul...",
+                        "price": 58000000,
+                        "rating": 4.9,
+                        "days": 8,
+                        "places": [
+                                {
+                                        "city": "Istanbul",
+                                        "blog": "Istanbul là thành phố nơi các lục địa va chạm. Với một chân ở Châu Âu và một chân ở Châu Á, đây là thành phố của các đế chế, gia vị và vẻ đẹp ngoạn mục. Bị mê hoặc bởi các kiệt tác: Hagia Sophia cổ kính, chứa đầy tranh mosaic, và Nhà thờ Hồi giáo Xanh thanh lịch. Lạc vào khu chợ Grand Bazaar như mê cung, và kết thúc một ngày của bạn bằng một chuyến phà huyền diệu trên eo biển Bosphorus, lướt qua giữa hai thế giới.",
+                                        "lat": 41.0082,
+                                        "lon": 28.9784,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Nhà thờ Hagia Sophia",
+                                                        "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Nhà thờ Hagia Sophia.jpg"
+                                                },
+                                                {
+                                                        "name": "Cung điện Topkapi",
+                                                        "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Cung điện Topkapi.jpg"
+                                                },
+                                                {
+                                                        "name": "Chợ Grand Bazaar",
+                                                        "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Istanbul/Chợ Grand Bazaar.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Cappadocia",
+                                        "blog": "Cappadocia là một cảnh quan được lấy từ một giấc mơ. Vùng đất siêu thực này nổi tiếng với 'ống khói cổ tích' – những thành tạo đá kỳ lạ che giấu toàn bộ các thành phố ngầm và nhà thờ được đẽo vào hang động. Trải nghiệm tinh túy? Thức dậy trước bình minh để bay lơ lửng trên khinh khí cầu, ngắm mặt trời mọc trên cảnh quan như mặt trăng này cùng với hàng trăm khinh khí cầu khác. Đó là ma thuật thuần túy, không thể nào quên.",
+                                        "lat": 38.6431,
+                                        "lon": 34.8282,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Bay khinh khí cầu ngắm bình minh",
+                                                        "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Cappadocia/Bay khinh khí cầu ngắm bình minh.jpg"
+                                                },
+                                                {
+                                                        "name": "Bảo tàng ngoài trời Göreme",
+                                                        "image_url": "/assets/images/data/Thổ Nhĩ Kỳ/Cappadocia/Bảo tàng ngoài trời Göreme.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "nz015",
+                        "country": "New Zealand",
+                        "title": "Phiêu lưu tại Đảo Nam: Queenstown & Milford Sound",
+                        "description": "Một chuyến đi dành cho những người yêu thiên nhiên và mạo hiểm...",
+                        "price": 88000000,
+                        "rating": 4.9,
+                        "days": 9,
+                        "places": [
+                                {
+                                        "city": "Te Anau",
+                                        "blog": "Te Anau là cửa ngõ thanh bình dẫn đến một trong những vùng hoang dã vĩ đại cuối cùng của Trái đất: Vườn quốc gia Fiordland. Thị trấn ven hồ thanh bình này là cơ sở của bạn để khám phá kỳ quan đầy cảm hứng. Đi du thuyền trên Milford Sound, một vịnh hẹp hùng vĩ nơi thác nước đổ xuống hàng trăm mét từ những vách đá granite dựng đứng. Hoặc, để có trải nghiệm thực sự huyền bí, hãy trôi dạt trong những chiếc thuyền im lặng qua Hang đom đóm Te Anau.",
+                                        "lat": -45.4146,
+                                        "lon": 167.718,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Vịnh hẹp Milford Sound",
+                                                        "image_url": "/assets/images/data/New Zealand/Te Anau/Vịnh hẹp Milford Sound.jpg"
+                                                },
+                                                {
+                                                        "name": "Vịnh hẹp Doubtful Sound",
+                                                        "image_url": "/assets/images/data/New Zealand/Te Anau/Vịnh hẹp Doubtful Sound.jpg"
+                                                },
+                                                {
+                                                        "name": "Hang đom đóm Te Anau",
+                                                        "image_url": "/assets/images/data/New Zealand/Te Anau/Hang đom đóm Te Anau.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": "uk016",
+                        "country": "Anh",
+                        "title": "Dấu ấn Lịch sử: London và Edinburgh",
+                        "description": "Khám phá các biểu tượng hoàng gia và lịch sử tại London...",
+                        "price": 75000000,
+                        "rating": 4.7,
+                        "days": 8,
+                        "places": [
+                                {
+                                        "city": "London",
+                                        "blog": "London là một sân khấu lớn nơi lịch sử và hiện đại diễn ra trên mọi con đường. Cảm nhận sức nặng của ngàn năm lịch sử tại Tháp London, nơi lưu giữ Vương miện Hoàng gia. Chứng kiến nghi lễ đổi gác tại Cung điện Buckingham. Sau đó, bay vút lên trên tất cả trên Vòng quay London Eye để ngắm nhìn toàn cảnh một thành phố hòa trộn liền mạch các địa danh cổ xưa với kiến trúc tiên tiến. Vượt thời gian, nhưng luôn luôn mới.",
+                                        "lat": 51.5074,
+                                        "lon": -0.1278,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Tháp London",
+                                                        "image_url": "/assets/images/data/Anh/London/Tháp London.jpg"
+                                                },
+                                                {
+                                                        "name": "Cung điện Buckingham",
+                                                        "image_url": "/assets/images/data/Anh/London/Cung điện Buckingham.jpg"
+                                                },
+                                                {
+                                                        "name": "Vòng quay London Eye",
+                                                        "image_url": "/assets/images/data/Anh/London/Vòng quay London Eye.jpg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "city": "Edinburgh",
+                                        "blog": "Edinburgh là một thành phố của không khí, bí ẩn và vẻ đẹp u tối. Đường chân trời của nó bị thống trị bởi Lâu đài Edinburgh đáng gờm, nằm trên một ngọn núi lửa đã tắt. Lang thang trong những con hẻm thời trung cổ của Phố Cổ, đặc biệt là Royal Mile lịch sử, nơi vang vọng những câu chuyện về vua, nữ hoàng và những bóng ma. Đây là thành phố đã truyền cảm hứng cho Harry Potter; sức hấp dẫn gothic, các quán rượu ấm cúng và không khí mờ sương của nó sẽ bỏ bùa bạn.",
+                                        "lat": 55.9533,
+                                        "lon": -3.1883,
+                                        "famous_locations": [
+                                                {
+                                                        "name": "Lâu đài Edinburgh",
+                                                        "image_url": "/assets/images/data/Anh/Edinburgh/Lâu đài Edinburgh.jpg"
+                                                },
+                                                {
+                                                        "name": "Phố Royal Mile",
+                                                        "image_url": "/assets/images/data/Anh/Edinburgh/Phố Royal Mile.jpg"
+                                                },
+                                                {
+                                                        "name": "Cung điện Holyroodhouse",
+                                                        "image_url": "/assets/images/data/Anh/Edinburgh/Cung điện Holyroodhouse.jpg"
+                                                }
+                                        ]
+                                }
+                        ]
+                }
+        ]
 }
