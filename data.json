@@ -17,7 +17,7 @@
           "famous_locations": [
             {
               "name": "Hồ Gươm",
-              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpeg"
+              "image_url": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpg"
             },
             {
               "name": "Lăng Chủ tịch Hồ Chí Minh",
@@ -41,7 +41,7 @@
             },
             {
               "name": "Ngũ Hành Sơn",
-              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Ngũ Hành Sơn.png"
+              "image_url": "/assets/images/data/Việt Nam/Đà Nẵng/Ngũ Hành Sơn.jpg"
             },
             {
               "name": "Bán đảo Sơn Trà",
@@ -250,11 +250,11 @@
           "famous_locations": [
             {
               "name": "Quảng trường St. Mark",
-              "image_url": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpeg"
+              "image_url": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpg"
             },
             {
               "name": "Cầu Rialto",
-              "image_url": "/assets/images/data/Ý/Venice/Cầu Rialto.jpeg"
+              "image_url": "/assets/images/data/Ý/Venice/Cầu Rialto.jpg"
             }
           ]
         }
@@ -293,7 +293,7 @@
             },
             {
               "name": "Show diễn đường phố Fremont",
-              "image_url": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpeg"
+              "image_url": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpg"
             }
           ]
         }
@@ -410,7 +410,7 @@
           "famous_locations": [
             {
               "name": "Nhà hát Opera Sydney",
-              "image_url": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpeg"
+              "image_url": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpg"
             },
             {
               "name": "Cầu cảng Sydney",
@@ -418,7 +418,7 @@
             },
             {
               "name": "Khu The Rocks",
-              "image_url": "/assets/images/data/Úc/Sydney/Khu The Rocks.png"
+              "image_url": "/assets/images/data/Úc/Sydney/Khu The Rocks.jpg"
             }
           ]
         },
@@ -430,7 +430,7 @@
           "famous_locations": [
             {
               "name": "Quảng trường Federation",
-              "image_url": "/assets/images/data/Úc/Melbourne/Quảng trường Federation.png"
+              "image_url": "/assets/images/data/Úc/Melbourne/Quảng trường Federation.jpg"
             },
             {
               "name": "Ga tàu Flinders Street",
@@ -512,7 +512,7 @@
             },
             {
               "name": "Quảng trường Plaza Mayor",
-              "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Quảng trường Plaza Mayor.jpeg"
+              "image_url": "/assets/images/data/Tây Ban Nha/Madrid/Quảng trường Plaza Mayor.jpg"
             }
           ]
         },

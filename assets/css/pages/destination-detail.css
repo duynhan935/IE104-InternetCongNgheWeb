@@ -214,15 +214,11 @@ html {
   color: var(--color-primary);
   margin-bottom: 1rem;
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   animation: fadeInUp 1s ease-out;
-  white-space: normal;
-  word-wrap: break-word;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  white-space: nowrap; /* Quan trọng */
 }
 
 .destination-detail-hero__subtitle {
@@ -277,15 +273,6 @@ html {
   width: 230px;
   border-radius: 12px;
   position: relative;
-}
-
-.destination-detail-card--interactive {
-  cursor: pointer;
-}
-
-.destination-detail-card--inactive {
-  cursor: not-allowed;
-  opacity: 0.85;
 }
 
 /* Scroll-triggered animations for cards */
@@ -844,6 +831,40 @@ img[data-src] {
         font-weight: 600;
         margin-bottom: 30px;
 }
+
+.destination-detail-pilgrimages__tabs {
+  display: inline-flex;
+  gap: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.destination-detail-pilgrimages__tab {
+  border: none;
+  background: transparent;
+  padding: 10px 25px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #444;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+}
+
+.destination-detail-pilgrimages__tab:hover {
+  background: rgba(62, 134, 245, 0.1);
+  color: #3E86F5;
+}
+
+.destination-detail-pilgrimages__tab--active {
+  background: linear-gradient(135deg, #3E86F5, #5a9df7);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(62, 134, 245, 0.35);
+  transform: translateY(-2px);
+}
+
 .destination-detail-pilgrimages__cards {
         display: flex;
         justify-content: center;
@@ -1238,7 +1259,7 @@ img[data-src] {
 
 .destination-detail-insights__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         max-width: 1100px;
         margin: 0 auto;
 }
@@ -1246,13 +1267,10 @@ img[data-src] {
 .destination-detail-insights__card {
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  cursor: pointer;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .destination-detail-insights__card.scroll-animate {
@@ -1272,110 +1290,52 @@ img[data-src] {
 .destination-detail-insights__card.scroll-animate:nth-child(6) { transition-delay: 0.3s; }
 
 .destination-detail-insights__card:hover {
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-  transform: translateY(-8px);
-  border-color: rgba(62, 134, 245, 0.15);
-}
-
-/* Link wrapper bên trong card */
-.destination-detail-insights__link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
 .destination-detail-insights__image {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 }
 
 /* Hover cho cả image trực tiếp và image trong skeleton-wrapper */
 .destination-detail-insights__card:hover .destination-detail-insights__image,
 .destination-detail-insights__card:hover .skeleton-wrapper img {
-  transform: scale(1.1);
-}
-
-.destination-detail-insights__content {
-  padding: 1.5rem 1.75rem 1.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  flex: 1;
-  background: #fff;
-}
-
-.destination-detail-insights__title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  line-height: 1.5;
-  margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: color 0.3s ease;
-  letter-spacing: -0.01em;
-}
-
-.destination-detail-insights__card:hover .destination-detail-insights__title {
-  color: #3E86F5;
-}
-
-.destination-detail-insights__location {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-  color: #666;
-  margin: 0;
-  font-weight: 400;
-  padding-top: 0.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.destination-detail-insights__location i {
-  color: #3E86F5;
-  font-size: 0.9rem;
+  transform: scale(1.08);
 }
 
 .destination-detail-insights__load-btn {
-  background: #fff;
-  border: 2px solid #e8e8e8;
-  color: #333;
-  font-weight: 600;
+  background: none;
+  border: 2px solid #e0e0e0;
+  color: var(--color-text-primary);
+  font-weight: 500;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 50px;
-  padding: 14px 32px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 12px 28px;
+  border-radius: 8px;
 }
 
 .destination-detail-insights__load-btn i {
   font-size: 0.85rem;
   transition: transform 0.3s ease;
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .destination-detail-insights__load-btn:hover {
-  color: #fff;
+  color: #3E86F5;
   border-color: #3E86F5;
-  background: linear-gradient(135deg, #3E86F5, #10559C);
+  background: rgba(62, 134, 245, 0.05);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(62, 134, 245, 0.3);
 }
 
 .destination-detail-insights__load-btn:hover i {
-  transform: translateY(3px);
+        transform: translateY(3px);
 }
 
 /* ========== DESTINATION DETAIL TESTIMONIALS ========== */
@@ -1507,7 +1467,7 @@ img[data-src] {
 }
 
 .destination-detail-testimonials__avatar {
-        width: 130px;
+        width: 70px;
         height: 70px;
         border-radius: 50%;
         object-fit: cover;
@@ -1803,16 +1763,21 @@ img[data-src] {
     font-size: 0.95rem;
   }
 
-  /* PILGRIMAGES */
-  .destination-detail-pilgrimages__cards {
-          flex-direction: column;
-          align-items: center;
-  }
+        /* PILGRIMAGES */
+        .destination-detail-pilgrimages__cards {
+                flex-direction: column;
+                align-items: center;
+        }
 
-  .destination-detail-pilgrimages__card {
-          width: 100%;
-          max-width: 320px;
-  }
+        .destination-detail-pilgrimages__card {
+                width: 100%;
+                max-width: 320px;
+        }
+
+        .destination-detail-pilgrimages__tabs {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+        }
 
   /* ITINERARY */
   .destination-detail-itinerary__list-header {
@@ -1850,20 +1815,7 @@ img[data-src] {
         }
 
         .destination-detail-insights__grid {
-                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-                gap: 1.5rem;
-        }
-
-        .destination-detail-insights__image {
-                height: 200px;
-        }
-
-        .destination-detail-insights__content {
-                padding: 1rem 1.25rem;
-        }
-
-        .destination-detail-insights__title {
-                font-size: 1rem;
+                grid-template-columns: 1fr;
         }
 
         .destination-detail-insights__load-btn {
@@ -1943,28 +1895,6 @@ img[data-src] {
 
         .destination-detail-cta__btn {
                 padding: 12px 20px;
-        }
-
-        /* INSIGHTS */
-        .destination-detail-insights__grid {
-                grid-template-columns: 1fr;
-                gap: 1.25rem;
-        }
-
-        .destination-detail-insights__image {
-                height: 180px;
-        }
-
-        .destination-detail-insights__content {
-                padding: 0.875rem 1rem;
-        }
-
-        .destination-detail-insights__title {
-                font-size: 0.95rem;
-        }
-
-        .destination-detail-insights__location {
-                font-size: 0.85rem;
         }
 
         /* TESTIMONIALS */
@@ -2367,6 +2297,15 @@ img[data-src] {
 
   .destination-detail-pilgrimages__title {
     font-size: 1.6rem;
+  }
+
+  .destination-detail-pilgrimages__tabs {
+    padding: 0.4rem;
+  }
+
+  .destination-detail-pilgrimages__tab {
+    padding: 8px 18px;
+    font-size: 13px;
   }
 
   .destination-detail-pilgrimages__card {

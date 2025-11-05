@@ -11,7 +11,7 @@
       "max_people": 25,
       "transport": ["Máy bay", "Xe du lịch"],
       "type": "Khám phá",
-      "main_image": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpeg",
+      "main_image": "/assets/images/data/Việt Nam/Hà Nội/Hồ Gươm.jpg",
       "overview": "Hành trình xuyên suốt từ Bắc chí Nam, chiêm ngưỡng cảnh đẹp và văn hóa đặc sắc Việt Nam.",
       "highlights": [
         "Tham quan Hồ Gươm, Lăng Bác, Phố cổ Hà Nội",
@@ -99,7 +99,7 @@
     {
       "id": "tour_fr_01",
       "destination_id": "fr003",
-      "title": "Tour Pháp 8 ngày: Paris - Nice - Lyon",
+      "title": "Tour Pháp 8 ngày: Paris - Nice",
       "duration_days": 8,
       "price": 68900000,
       "discount_percent": 10,
@@ -150,7 +150,7 @@
       "max_people": 20,
       "transport": ["Máy bay", "Xe du lịch", "Tàu"],
       "type": "Lịch sử - Nghệ thuật",
-      "main_image": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpeg",
+      "main_image": "/assets/images/data/Ý/Venice/Quảng trường St. Mark.jpg",
       "overview": "Khám phá di sản La Mã, nghệ thuật Phục hưng tại Florence và lãng mạn ở Venice.",
       "highlights": [
         "Đấu trường Colosseum, Trevi",
@@ -317,7 +317,7 @@
       "max_people": 18,
       "transport": ["Máy bay", "Xe du lịch"],
       "type": "Thành phố - Kiến trúc",
-      "main_image": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpeg",
+      "main_image": "/assets/images/data/Úc/Sydney/Nhà hát Opera Sydney.jpg",
       "overview": "Khám phá Nhà hát Opera Sydney, cảng và tinh hoa nghệ thuật Melbourne.",
       "highlights": [
         "Nhà hát Opera Sydney, Cầu cảng",
@@ -725,7 +725,7 @@
       "max_people": 16,
       "transport": ["Máy bay", "Xe du lịch"],
       "type": "Thiên nhiên - Phiêu lưu",
-      "main_image": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpeg",
+      "main_image": "/assets/images/data/Mỹ/Las Vegas/Show diễn đường phố Fremont.jpg",
       "overview": "Hành trình khám phá các công viên quốc gia nổi tiếng: Grand Canyon, Yosemite và các điểm tự nhiên ngoạn mục.",
       "highlights": [
         "Grand Canyon",

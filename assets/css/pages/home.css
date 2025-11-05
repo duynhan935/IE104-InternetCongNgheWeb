@@ -22,94 +22,7 @@
     --color-star: #f5c043;
 }
 
-/* ============================================
-   LAZY LOADING STYLES - FIXED
-   ============================================ */
-
-/* Lazy image loading */
-img.lazy-image {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-    background-size: 200% 100%;
-    min-height: 100px; /* Đảm bảo có chiều cao tối thiểu */
-}
-
-img.lazy-image:not(.loaded) {
-    animation: shimmer 1.5s linear infinite;
-}
-
-img.lazy-image.loaded {
-    opacity: 1;
-    background: none;
-    animation: none;
-}
-
-/* Lazy video loading - Placeholder cho TẤT CẢ video */
-video.lazy-video {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-    background-size: 200% 100%;
-}
-
-video.lazy-video:not(.loaded) {
-    animation: shimmer 1.5s linear infinite;
-}
-
-video.lazy-video.loaded {
-    opacity: 1;
-    background: none;
-    animation: none;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
-}
-
-/* Container cho ảnh cần có kích thước cố định */
-.home-tour-card__media,
-.home-destination-card,
-.home-testimonial__image,
-.home-articles__main,
-.home-articles__item,
-.vlog-item {
-    background: var(--color-primary-bg); /* Fallback nếu ảnh không load */
-}
-
-/* Dark mode support */
-.dark img.lazy-image:not(.loaded),
-.dark video.lazy-video:not(.loaded) {
-    background: linear-gradient(110deg, #2c2c2c 8%, #3a3a3a 18%, #2c2c2c 33%);
-    background-size: 200% 100%;
-}
-
-.dark .home-tour-card__media,
-.dark .home-destination-card,
-.dark .home-testimonial__image,
-.dark .home-articles__main,
-.dark .home-articles__item,
-.dark .vlog-item {
-    background: #2c2c2c;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
-}
-
-/* ============================================
-   HERO SECTION
-   ============================================ */
+/* Hero section */
 .home-hero {
     display: flex;
     align-items: center;
@@ -121,7 +34,6 @@ video.lazy-video.loaded {
 .home-hero__content {
     flex: 1;
     max-width: 520px;
-    opacity: 0; /* Để animation chạy */
 }
 
 .home-hero__title {
@@ -129,7 +41,6 @@ video.lazy-video.loaded {
     line-height: 1.1;
     font-weight: 800;
     color: var(--color-text-primary);
-    opacity: 0; /* Để animation chạy */
 }
 
 .home-hero__desc {
@@ -138,7 +49,6 @@ video.lazy-video.loaded {
     line-height: 1.6;
     max-width: 367px;
     margin: 18px 0;
-    opacity: 0; /* Để animation chạy */
 }
 
 .home-hero__actions {
@@ -146,7 +56,6 @@ video.lazy-video.loaded {
     align-items: center;
     gap: 18px;
     margin-bottom: 12px;
-    opacity: 0; /* Để animation chạy */
 }
 
 .home-hero__btn {
@@ -214,7 +123,7 @@ video.lazy-video.loaded {
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 520px;
-    opacity: 0; /* Để animation chạy */
+    animation: fadeInRight 1s ease-out 0.3s both;
 }
 
 .home-hero__brush {
@@ -228,8 +137,9 @@ video.lazy-video.loaded {
     transform: rotate(-8deg);
     pointer-events: none;
     user-select: none;
-    opacity: 0; /* Để animation chạy */
+    opacity: 0.95;
     filter: drop-shadow(0 22px 38px var(--color-shadow-light));
+    animation: float 6s ease-in-out infinite;
 }
 
 .home-hero__image {
@@ -239,10 +149,7 @@ video.lazy-video.loaded {
     object-fit: cover;
     margin-right: 170px;
     max-width: 380px;
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0; /* Để animation chạy */
+    animation: scaleIn 0.8s ease-out 0.5s both;
 }
 
 .home-hero__stat-card {
@@ -261,7 +168,7 @@ video.lazy-video.loaded {
     align-items: center;
     gap: 18px;
     z-index: 2;
-    opacity: 0; /* Để animation chạy */
+    animation: fadeInUp 0.8s ease-out 0.8s both;
 }
 
 .home-hero__stat-circle {
@@ -346,7 +253,7 @@ video.lazy-video.loaded {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    z-index: 2;
+    z-index: -1;
 }
 
 .home-hero__info-item {
@@ -359,7 +266,19 @@ video.lazy-video.loaded {
     transition: transform 0.2s ease;
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 14px 32px var(--color-shadow-light);
-    opacity: 0; /* Để animation chạy */
+    animation: fadeInRight 0.6s ease-out both;
+}
+
+.home-hero__info-item:nth-child(1) {
+    animation-delay: 0.9s;
+}
+
+.home-hero__info-item:nth-child(2) {
+    animation-delay: 1.1s;
+}
+
+.home-hero__info-item:nth-child(3) {
+    animation-delay: 1.3s;
 }
 
 .home-hero__info-item:hover {
@@ -401,9 +320,7 @@ video.lazy-video.loaded {
     font-weight: 500;
 }
 
-/* ============================================
-   SEARCH BOX
-   ============================================ */
+/* Search box */
 .home-search {
     background: var(--hero-search-bg);
     box-shadow: var(--hero-search-shadow);
@@ -471,9 +388,7 @@ video.lazy-video.loaded {
     background: var(--color-primary-hover);
 }
 
-/* ============================================
-   TOURS SECTION
-   ============================================ */
+/* Tours Section */
 .home-tours {
     margin-top: 80px;
 }
@@ -543,7 +458,6 @@ video.lazy-video.loaded {
     transform: translateY(-4px);
 }
 
-/* ✅ FIXED: Media container với aspect ratio */
 .home-tour-card__media {
     position: relative;
     display: block;
@@ -552,51 +466,15 @@ video.lazy-video.loaded {
     background: #eaeef1;
 }
 
-/* ✅ FIXED: Image styling với object-fit cover */
-.home-tour-card__img {
+.home-tour-card__media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    display: block;
     transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.home-tour-card:hover .home-tour-card__img {
+.home-tour-card:hover .home-tour-card__media img {
     transform: scale(1.08);
-}
-
-/* ✅ FIXED: Lazy loading states */
-.home-tour-card__img.lazy-image:not(.loaded) {
-    opacity: 0;
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-    background-size: 200% 100%;
-    animation: shimmer 1.5s linear infinite;
-}
-
-.home-tour-card__img.lazy-image.loaded {
-    opacity: 1;
-    background: none;
-    animation: none;
-}
-
-/* ✅ FIXED: Error state */
-.home-tour-card__img.error {
-    opacity: 0.3;
-    background: #f0f0f0;
-    position: relative;
-}
-
-.home-tour-card__img.error::after {
-    content: "⚠ Không thể tải ảnh";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.8rem;
-    color: #999;
-    text-align: center;
-    white-space: nowrap;
 }
 
 .home-tour-card__body {
@@ -668,7 +546,6 @@ video.lazy-video.loaded {
     border-radius: 6px;
     letter-spacing: 0.4px;
     transition: background-color 0.25s, transform 0.2s ease;
-    text-decoration: none;
 }
 
 .home-tour-card__btn:hover {
@@ -676,9 +553,7 @@ video.lazy-video.loaded {
     transform: translateY(-2px);
 }
 
-/* ============================================
-   VIDEO SECTION
-   ============================================ */
+/* Explore the world video */
 .home-video {
     position: relative;
     display: flex;
@@ -700,6 +575,7 @@ video.lazy-video.loaded {
     object-fit: cover;
     z-index: 0;
     filter: brightness(70%);
+    transition: transform 0.5s ease-in-out;
 }
 
 .home-video__overlay {
@@ -737,9 +613,18 @@ video.lazy-video.loaded {
     transform: scale(1.05);
 }
 
-/* ============================================
-   TRAVEL VLOGS
-   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Travel vlogs */
 .section-title {
     font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 700;
@@ -771,10 +656,6 @@ video.lazy-video.loaded {
     transition: transform 0.5s ease;
 }
 
-.vlog-track.no-transition {
-    transition: none;
-}
-
 .vlog-item {
     flex: 0 0 350px;
     height: 500px;
@@ -790,7 +671,6 @@ video.lazy-video.loaded {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     transition: transform 0.3s ease;
 }
 
@@ -816,13 +696,6 @@ video.lazy-video.loaded {
     margin-top: 8px;
     font-size: 0.95rem;
     line-height: 1.4;
-}
-
-.vlog-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .slide-vlog-btn {
@@ -859,9 +732,7 @@ video.lazy-video.loaded {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* ============================================
-   TOP DESTINATIONS
-   ============================================ */
+/* Top Destination Section */
 .home-destinations {
     margin-top: 90px;
 }
@@ -922,7 +793,7 @@ video.lazy-video.loaded {
     overflow: hidden;
     min-height: 210px;
     display: flex;
-    align-items: flex-end;
+    alignments: flex-end;
     isolation: isolate;
     background: var(--color-bg-tertiary);
 }
@@ -944,7 +815,6 @@ video.lazy-video.loaded {
     height: 100%;
     object-fit: cover;
     z-index: -2;
-    display: block;
     transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -980,8 +850,6 @@ video.lazy-video.loaded {
 .home-destination-card__info {
     padding: 14px 16px 18px;
     color: var(--color-text-inverse);
-    position: relative;
-    z-index: 1;
 }
 
 .home-destination-card__name {
@@ -989,7 +857,6 @@ video.lazy-video.loaded {
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.2px;
-    color: white;
 }
 
 .home-destination-card__type {
@@ -998,161 +865,7 @@ video.lazy-video.loaded {
     letter-spacing: 0.3px;
 }
 
-/* ============================================
-   TOUR TYPES
-   ============================================ */
-.home-tour-types {
-    margin-top: 90px;
-}
-
-.home-tour-types__heading {
-    text-align: center;
-    font-size: 1.9rem;
-    font-weight: 800;
-    margin: 0 0 34px;
-    color: var(--color-text-primary);
-}
-
-.home-tour-types__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 26px;
-}
-
-.home-tour-type-card {
-    background: var(--color-card-bg);
-    border: 1px solid var(--color-border-primary);
-    border-radius: 10px;
-    padding: 34px 18px 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-    box-shadow: 0 4px 14px rgba(15, 34, 55, 0.06);
-}
-
-.home-tour-type-card:hover {
-    border-color: var(--color-border-secondary);
-    box-shadow: 0 10px 28px rgba(15, 34, 55, 0.14);
-    transform: translateY(-4px);
-}
-
-.home-tour-type-card__icon {
-    width: 54px;
-    height: 54px;
-    margin: 0 auto;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home-tour-type-card__icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.home-tour-type-card__title {
-    margin: 10px 0;
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    letter-spacing: 0.2px;
-}
-
-.home-tour-type-card__meta {
-    margin: 0;
-    font-size: 0.62rem;
-    letter-spacing: 0.4px;
-    color: var(--color-text-secondary);
-}
-
-.home-tour-type-card__price {
-    color: var(--color-primary);
-    font-weight: 700;
-}
-
-/* ============================================
-   TESTIMONIAL
-   ============================================ */
-.home-testimonial {
-    padding: 10px 40px;
-    max-width: 1100px;
-    margin-top: 20px;
-}
-
-.home-testimonial__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-.home-testimonial__image img {
-    width: 400px;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-}
-
-.home-testimonial__content {
-    flex: 1;
-}
-
-.home-testimonial__title {
-    font-size: 2rem;
-    font-weight: 650;
-    margin-bottom: 18px;
-    color: var(--color-text-primary);
-}
-
-.home-testimonial__quote {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    font-style: italic;
-    line-height: 1.7;
-    color: var(--color-text-secondary);
-}
-
-.home-testimonial__author {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.home-testimonial__avatar {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-}
-
-.home-testimonial__name {
-    font-weight: 600;
-    font-size: 1rem;
-    margin: 0;
-    color: var(--color-text-primary);
-}
-
-.home-testimonial__role {
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-    margin: 3px 0;
-}
-
-.home-testimonial__stars {
-    color: var(--color-star);
-    font-size: 1rem;
-    letter-spacing: 2px;
-}
-
-/* ============================================
-   ARTICLES
-   ============================================ */
+/* Articles */
 .home-articles {
     max-width: 1200px;
     margin: 100px auto;
@@ -1171,7 +884,7 @@ video.lazy-video.loaded {
     color: var(--color-text-primary);
 }
 
-.home-articles__subtitle {
+home-articles__subtitle {
     font-size: 0.95rem;
     max-width: 650px;
     margin: 0 auto 15px;
@@ -1193,13 +906,12 @@ video.lazy-video.loaded {
     gap: 40px;
 }
 
-.home-articles__main {
+home-articles__main {
     overflow: hidden;
 }
 
 .home-articles__main-img {
     width: 100%;
-    height: auto;
     display: block;
     border-radius: 10px;
 }
@@ -1255,7 +967,6 @@ video.lazy-video.loaded {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    display: block;
 }
 
 .home-articles__item-content {
@@ -1278,9 +989,7 @@ video.lazy-video.loaded {
     color: var(--color-text-secondary);
 }
 
-/* ============================================
-   NEWSLETTER
-   ============================================ */
+/* Newsletter */
 .home-newsletter {
     margin-top: 100px;
     background: var(--color-newsletter-bg);
@@ -1396,146 +1105,152 @@ video.lazy-video.loaded {
     line-height: 1;
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Tour Type */
+.home-tour-types {
+    margin-top: 90px;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.home-tour-types__heading {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 0 0 34px;
+    color: var(--color-text-primary);
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.home-tour-types__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
 }
 
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.home-tour-type-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 10px;
+    padding: 34px 18px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    box-shadow: 0 4px 14px rgba(15, 34, 55, 0.06);
 }
 
-@keyframes scaleIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+.home-tour-type-card:hover {
+    border-color: var(--color-border-secondary);
+    box-shadow: 0 10px 28px rgba(15, 34, 55, 0.14);
+    transform: translateY(-4px);
 }
 
-@keyframes float {
-    0%,
-    100% {
-        transform: translateY(0px) rotate(-8deg);
-    }
-    50% {
-        transform: translateY(-15px) rotate(-8deg);
-    }
+.home-tour-type-card__icon {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Hero Section Animations - PRIORITY CAO */
-.home-hero__content {
-    animation: fadeInLeft 0.8s ease-out !important;
-    opacity: 1 !important;
+.home-tour-type-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.home-hero__title {
-    animation: fadeInUp 0.8s ease-out 0.2s both !important;
-    opacity: 1 !important;
+.home-tour-type-card__title {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: 0.2px;
 }
 
-.home-hero__desc {
-    animation: fadeInUp 0.8s ease-out 0.4s both !important;
-    opacity: 1 !important;
+.home-tour-type-card__meta {
+    margin: 0;
+    font-size: 0.62rem;
+    letter-spacing: 0.4px;
+    color: var(--color-text-secondary);
 }
 
-.home-hero__actions {
-    animation: fadeInUp 0.8s ease-out 0.6s both !important;
-    opacity: 1 !important;
+.home-tour-type-card__price {
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
-.home-hero__image-group {
-    animation: fadeInRight 1s ease-out 0.3s both !important;
-    opacity: 1 !important;
+/* Testimonial */
+.home-testimonial {
+    padding: 10px 40px;
+    max-width: 1100px;
+    margin-top: 20px;
 }
 
-.home-hero__brush {
-    animation: float 6s ease-in-out infinite !important;
-    opacity: 0.95 !important;
+.home-testimonial__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
 }
 
-.home-hero__image {
-    animation: scaleIn 0.8s ease-out 0.5s both !important;
-    /* Lazy loading sẽ được xử lý riêng */
+.home-testimonial__image img {
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.home-hero__image.lazy-image:not(.loaded) {
-    /* Vẫn giữ animation nhưng ẩn ảnh chưa load */
-    opacity: 0 !important;
-    animation: none !important;
+.home-testimonial__content {
+    flex: 1;
 }
 
-.home-hero__image.lazy-image.loaded {
-    /* Khi đã load xong, chạy animation */
-    animation: scaleIn 0.8s ease-out forwards !important;
+.home-testimonial__title {
+    font-size: 2rem;
+    font-weight: 650;
+    margin-bottom: 18px;
+    color: var(--color-text-primary);
 }
 
-.home-hero__stat-card {
-    animation: fadeInUp 0.8s ease-out 0.8s both !important;
-    opacity: 1 !important;
+.home-testimonial__quote {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
 }
 
-.home-hero__info-item {
-    animation: fadeInRight 0.6s ease-out both !important;
-    opacity: 1 !important;
+.home-testimonial__author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.home-hero__info-item:nth-child(1) {
-    animation-delay: 0.9s !important;
+.home-testimonial__avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.home-hero__info-item:nth-child(2) {
-    animation-delay: 1.1s !important;
+.home-testimonial__name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    color: var(--color-text-primary);
 }
 
-.home-hero__info-item:nth-child(3) {
-    animation-delay: 1.3s !important;
+.home-testimonial__role {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin: 3px 0;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
+.home-testimonial__stars {
+    color: var(--color-star);
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Responsive */
 @media (max-width: 1399.98px) {
     .vlog-item {
         flex: 0 0 300px;
@@ -1695,15 +1410,157 @@ video.lazy-video.loaded {
     }
 }
 
-/* ============================================
-   PERFORMANCE OPTIMIZATION
-   ============================================ */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+/* Skeleton lazy loading */
+.skeleton-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg-tertiary);
+    display: block;
+}
+
+.skeleton-wrapper.skeleton-loading::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
     }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton-wrapper img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skeleton-wrapper.skeleton-loading img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skeleton-wrapper.skeleton-loaded img,
+.skeleton-wrapper img.loaded {
+    opacity: 1;
+    visibility: visible;
+}
+
+.skeleton-wrapper.skeleton-loaded::before {
+    animation: none;
+    opacity: 0;
+}
+
+.skeleton-wrapper.skeleton-error {
+    background: var(--color-bg-tertiary);
+}
+
+.skeleton-wrapper.skeleton-error::before {
+    display: none;
+}
+
+.skeleton-wrapper.skeleton-error img {
+    opacity: 1;
+    visibility: visible;
+    object-fit: contain;
+}
+
+.home-destination-card .skeleton-wrapper {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--dest-radius-lg);
+    z-index: -2 !important;
+}
+
+img[data-src] {
+    background: var(--color-bg-tertiary);
+    opacity: 0.7;
+}
+
+img.loaded {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.home-hero__content {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.home-hero__title {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.home-hero__desc {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.home-hero__actions {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
 }
