@@ -1,143 +1,5 @@
-// --- FAKE DATA ---
-// In a real application, this data would come from an API.
-const blogData = [
-        {
-                id: 1,
-                title: "Exploring Argentina and Chile by Bus: An Unforgettable Journey",
-                author: {
-                        name: "Alex Wanderlust",
-                        avatar: "https://i.pravatar.cc/40?u=alex",
-                },
-                publishDate: "October 08, 2025",
-                tags: ["Travel", "South America", "Adventure"],
-                recentImage: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                content: [
-                        {
-                                type: "intro",
-                                text: "Sitting serenely on the turquoise coasts of the Caribbean Sea lie two properties that embody paradise in quiet luxury. Park Hyatt St. Kitts and Andaz Mayakoba are the answers to your desires for a sun-filled ocean getaway. This journey, however, takes us south, to the rugged spine of the Andes.",
-                        },
-                        {
-                                type: "image",
-                                src: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                                alt: "Views of the Andes mountains",
-                        },
-                        {
-                                type: "subheading",
-                                text: "The Majestic Andes Crossing",
-                        },
-                        {
-                                type: "paragraph",
-                                text: "The bus ride from Mendoza, Argentina, to Santiago, Chile, is not just a commute; it's a spectacle. As the vehicle snakes through winding mountain roads, each turn reveals a new, breathtaking vista. Aconcagua, the highest peak outside of Asia, stands as a silent, snow-capped guardian over the landscape.",
-                        },
-                        {
-                                type: "blockquote",
-                                text: "The mountains are calling and I must go.",
-                                cite: "John Muir",
-                        },
-                        {
-                                type: "subheading",
-                                text: "What to Pack for the Trip",
-                        },
-                        {
-                                type: "list",
-                                items: [
-                                        "A comfortable neck pillow is non-negotiable.",
-                                        "Snacks and a reusable water bottle.",
-                                        "A power bank to keep your devices charged for photos.",
-                                        "Layers of clothing, as temperatures can vary dramatically.",
-                                ],
-                        },
-                        {
-                                type: "image",
-                                src: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                                alt: "A bus on a winding mountain road",
-                        },
-                        {
-                                type: "paragraph",
-                                text: "This adventure offers a different kind of luxury—the luxury of time, perspective, and raw, untamed nature.",
-                        },
-                ],
-                comments: [
-                        {
-                                author: "Jane Doe",
-                                avatar: "https://i.pravatar.cc/50?u=jane",
-                                text: "This is an amazing guide! I'm planning a similar trip next year and this is incredibly helpful.",
-                        },
-                        {
-                                author: "John Smith",
-                                avatar: "https://i.pravatar.cc/50?u=john",
-                                text: "Great photos! The Andes are truly spectacular.",
-                        },
-                ],
-        },
-        {
-                id: 2,
-                title: "The Secrets of Bangkok Street Food",
-                author: { name: "Chris Foodie", avatar: "https://i.pravatar.cc/40?u=chris" },
-                publishDate: "September 22, 2025",
-                tags: ["Food", "Asia", "Thailand"],
-                recentImage: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                content: [
-                        {
-                                type: "intro",
-                                text: "Bangkok's street food scene is a vibrant, chaotic, and delicious symphony of flavors. From spicy som tam to sweet mango sticky rice, every corner offers a new culinary adventure waiting to be discovered.",
-                        },
-                        {
-                                type: "image",
-                                src: "https://images.unsplash.com/photo-1534542921-2e66e2c3b28b?q=80&w=1200",
-                                alt: "Bangkok street food stall at night",
-                        },
-                        {
-                                type: "subheading",
-                                text: "Must-Try Dishes",
-                        },
-                        {
-                                type: "list",
-                                items: [
-                                        "Pad Thai: The classic stir-fried noodle dish.",
-                                        "Moo Ping: Grilled pork skewers with a sweet and savory glaze.",
-                                        "Som Tam: A spicy green papaya salad that packs a punch.",
-                                        "Khao Niao Mamuang: Mango sticky rice, the perfect dessert.",
-                                ],
-                        },
-                ],
-                comments: [
-                        {
-                                author: "Emily Rogers",
-                                avatar: "https://i.pravatar.cc/50?u=emily",
-                                text: "I'm drooling just reading this! Moo Ping is my absolute favorite.",
-                        },
-                ],
-        },
-        {
-                id: 3,
-                title: "What to Do on a Romantic Day in Paris?",
-                author: { name: "Amélie Dubois", avatar: "https://i.pravatar.cc/40?u=amelie" },
-                publishDate: "August 15, 2025",
-                tags: ["Europe", "Romance", "City Guide"],
-                recentImage: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                content: [
-                        {
-                                type: "intro",
-                                text: "Paris, the 'City of Love,' offers endless opportunities for a romantic day. Forget the clichés and discover a more intimate side of this magical city with our curated guide.",
-                        },
-                        {
-                                type: "image",
-                                src: "https://images.unsplash.com/photo-1502602898657-3e91760c0337?q=80&w=1200",
-                                alt: "Eiffel Tower in Paris",
-                        },
-                        {
-                                type: "subheading",
-                                text: "A Perfect Itinerary",
-                        },
-                        {
-                                type: "paragraph",
-                                text: "Start your morning with fresh croissants from a local boulangerie. Take a stroll through the Luxembourg Gardens, followed by a visit to the Musée Rodin. For the evening, a sunset cruise on the Seine offers unparalleled views of the city's landmarks.",
-                        },
-                ],
-                comments: [],
-        },
-];
+// Build blog entries from data.json
+let blogData = [];
 
 // --- DOM ELEMENTS ---
 const blogMetaContainer = document.querySelector(".blog-detail__meta");
@@ -205,6 +67,27 @@ function renderPostDetails(post) {
                                         return `<img src="${block.src}" alt="${block.alt}" class="blog-detail__article__image" />`;
                                 case "blockquote":
                                         return `<blockquote>${block.text}<cite>- ${block.cite}</cite></blockquote>`;
+                                case "locations": {
+                                        const list = (block.items || [])
+                                                .map((loc) => {
+                                                        const img = loc.image_url
+                                                                ? `<img src="${loc.image_url}" alt="${loc.name}" class="location-img" />`
+                                                                : "";
+                                                        const desc = loc.description
+                                                                ? `<p class="location-desc">${loc.description}</p>`
+                                                                : "";
+                                                        return `
+                                                                <li class="location-item">
+                                                                        <div class="location-text">
+                                                                                <strong class="location-name">${loc.name}</strong>
+                                                                                ${desc}
+                                                                        </div>
+                                                                        ${img}
+                                                                </li>`;
+                                                })
+                                                .join("");
+                                        return `<ul class="locations-list">${list}</ul>`;
+                                }
                                 case "list":
                                         return `<ul>${block.items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
                                 default:
@@ -255,44 +138,144 @@ function renderRecentPosts(posts) {
                 // Use ?id=${post.id} to simulate navigating to a different post
                 article.innerHTML = `
                     <div class="blog-detail__recent-blog__image">
-                        <a href="#blog-detail">
+                        <a href="/index.html#blog-detail?id=${post.id}">
                             <img src="${post.recentImage}" alt="${post.title}" class="blog-detail__recent-blog__img" />
                         </a>
                     </div>
                     <p class="blog-detail__recent-blog__description">
-                        <a href="#blog-detail">${post.title}</a>
+                        <a href="/index.html#blog-detail?id=${post.id}">${post.title}</a>
                     </p>
                 `;
                 recentPostsContainer.appendChild(article);
         });
 }
 
-// --- INITIALIZATION LOGIC ---
+// --- DATA LOAD & TRANSFORM ---
 
-// 1. Get post ID from URL query parameter (e.g., blog-detail.html?id=2)
-const urlParams = new URLSearchParams(window.location.search);
-let currentPostId = parseInt(urlParams.get("id"), 10);
-
-// If no valid ID is found in URL, default to the first post
-if (isNaN(currentPostId) || !blogData.some((p) => p.id === currentPostId)) {
-        currentPostId = blogData[0]?.id || 1;
+function minutesToRead(text) {
+        if (!text) return "5 min read";
+        const words = text.split(/\s+/).filter(Boolean).length;
+        const minutes = Math.max(3, Math.round(words / 200));
+        return `${minutes} min read`;
 }
 
-// 2. Find the current post and the list of other posts for the sidebar
-const currentPost = blogData.find((p) => p.id === currentPostId);
-let recentPosts = blogData.filter((p) => p.id !== currentPostId);
+function buildBlogDataFromJson(json) {
+        const out = [];
+        const items = json?.data || [];
+        let idCounter = 1;
+        items.forEach((tour) => {
+                const country = tour.country;
+                const places = tour.places || [];
+                places.forEach((place) => {
+                        const img =
+                                place.famous_locations?.[0]?.image_url ||
+                                "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800";
+                        const title = `${place.city}, ${country}: ${tour.title || "Travel Guide"}`;
+                        const intro =
+                                place.blog || tour.description || "Discover highlights, tips, and must-see places.";
+                        const locationsDetailed = (place.famous_locations || []).map((l) => ({
+                                name: l.name,
+                                image_url: l.image_url,
+                                description: l.description || "",
+                        }));
+                        const post = {
+                                id: idCounter++,
+                                title,
+                                author: {
+                                        name: "Travel Team",
+                                        avatar: `https://i.pravatar.cc/40?u=${encodeURIComponent(place.city)}`,
+                                },
+                                publishDate: new Date().toLocaleDateString(undefined, {
+                                        year: "numeric",
+                                        month: "long",
+                                        day: "2-digit",
+                                }),
+                                tags: [country, place.city, "City Guide"],
+                                recentImage: img,
+                                content: [
+                                        { type: "intro", text: intro },
+                                        { type: "image", src: img, alt: `${place.city} in ${country}` },
+                                        { type: "subheading", text: "Famous Locations" },
+                                        { type: "locations", items: locationsDetailed },
+                                        { type: "subheading", text: "Traveler Tips" },
+                                        {
+                                                type: "paragraph",
+                                                text: "Consider visiting during shoulder seasons for fewer crowds. Book popular attractions in advance and sample local specialties for an authentic experience.",
+                                        },
+                                ],
+                                comments: [],
+                                meta: {
+                                        country,
+                                        city: place.city,
+                                        readingTime: minutesToRead(intro),
+                                },
+                        };
+                        out.push(post);
+                });
+        });
+        return out;
+}
 
-// 3. Render the initial content
-renderPostDetails(currentPost);
-renderRecentPosts(recentPosts);
+async function loadData() {
+        try {
+                const res = await fetch("/data.json");
+                const json = await res.json();
+                blogData = buildBlogDataFromJson(json);
+                initializeFromData();
+        } catch (e) {
+                console.error("Failed to load data.json", e);
+                blogData = [];
+                initializeFromData();
+        }
+}
 
-// 4. Setup sidebar search functionality
-const handleSearch = () => {
-        const searchTerm = searchInput.value.trim().toLowerCase();
-        // Filter the original list of recent posts
-        const filteredRecent = recentPosts.filter((p) => p.title.toLowerCase().includes(searchTerm));
-        renderRecentPosts(filteredRecent);
-};
+// --- INITIALIZATION LOGIC ---
 
-searchForm.addEventListener("submit", (e) => e.preventDefault());
-searchInput.addEventListener("input", debounce(handleSearch, 300));
+function getPostIdFromUrl() {
+        // Support hash-based routing like: /index.html#blog-detail?id=2
+        const hash = window.location.hash || "";
+        let paramsString = "";
+        if (hash.includes("?")) {
+                paramsString = hash.split("?")[1];
+        } else {
+                paramsString = window.location.search.replace(/^\?/, "");
+        }
+        const params = new URLSearchParams(paramsString);
+        return parseInt(params.get("id"), 10);
+}
+
+function initializeFromData() {
+        let currentPostId = getPostIdFromUrl();
+        if (isNaN(currentPostId)) currentPostId = blogData[0]?.id || 1;
+        let currentPost = blogData.find((p) => p.id === currentPostId) || blogData[0];
+        let recentPosts = blogData.filter((p) => p.id !== currentPost?.id).slice(0, 3);
+        renderPostDetails(currentPost);
+        renderRecentPosts(recentPosts);
+
+        const handleSearch = () => {
+                const searchTerm = (searchInput?.value || "").trim().toLowerCase();
+                const filteredRecent = blogData
+                        .filter((p) => p.id !== currentPost?.id)
+                        .filter(
+                                (p) =>
+                                        p.title.toLowerCase().includes(searchTerm) ||
+                                        p.tags.join(" ").toLowerCase().includes(searchTerm)
+                        )
+                        .slice(0, 5);
+                renderRecentPosts(filteredRecent);
+        };
+
+        if (searchForm) searchForm.addEventListener("submit", (e) => e.preventDefault());
+        if (searchInput) searchInput.addEventListener("input", debounce(handleSearch, 300));
+
+        // When navigating via hash links, re-render the new post
+        window.addEventListener("hashchange", () => {
+                const newId = getPostIdFromUrl();
+                const nextPost = blogData.find((p) => p.id === newId) || currentPost;
+                currentPost = nextPost;
+                renderPostDetails(currentPost);
+                renderRecentPosts(blogData.filter((p) => p.id !== currentPost.id).slice(0, 3));
+        });
+}
+
+loadData();

@@ -1,103 +1,336 @@
-<section class="contact-banner">
-        <section class="contact-banner__container">
-                <h1 class="contact-banner__title">Contact us</h1>
-        </section>
-</section>
-
-<section class="contact-info">
-        <div class="contact-info__left">
-                <h2 class="contact-info__title">Get In Touch</h2>
-                <p class="contact-info__subtitle">Have a question or a comment? We'd love to hear from you.</p>
-
-                <ul class="contact-details-list">
-                        <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="contact-detail-text">
-                                        <strong>Address</strong>
-                                        <span>2369 Robinson Lane, Jackson, OH 45640</span>
-                                </div>
-                        </li>
-                        <li>
-                                <i class="fas fa-phone-alt"></i>
-                                <div class="contact-detail-text">
-                                        <strong>Let's Talk</strong>
-                                        <a href="tel:+8801700000000">(+88) 017 000 00000</a>
-                                </div>
-                        </li>
-                        <li>
-                                <i class="fas fa-envelope"></i>
-                                <div class="contact-detail-text">
-                                        <strong>General Support</strong>
-                                        <a href="mailto:info@example.com">info@example.com</a>
-                                </div>
-                        </li>
-                </ul>
-
-                <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+<!-- Hero Section with Animated Background -->
+<section class="contact-hero">
+        <div class="contact-hero__bg">
+                <div class="animated-gradient"></div>
+                <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
                 </div>
         </div>
-
-        <div class="contact-info__right">
-                <form class="contact-form">
-                        <h2 class="contact-form__title">Send Us a Message</h2>
-
-                        <div class="form-group floating-label">
-                                <input type="text" id="name" name="name" class="form-input" placeholder=" " required />
-                                <label for="name">Your Name</label>
-                        </div>
-
-                        <div class="form-group floating-label">
-                                <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        class="form-input"
-                                        placeholder=" "
-                                        required
-                                />
-                                <label for="email">Email Address</label>
-                        </div>
-
-                        <div class="form-group floating-label">
-                                <input
-                                        type="text"
-                                        id="subject"
-                                        name="subject"
-                                        class="form-input"
-                                        placeholder=" "
-                                        required
-                                />
-                                <label for="subject">Subject</label>
-                        </div>
-
-                        <div class="form-group floating-label">
-                                <textarea
-                                        id="message"
-                                        name="message"
-                                        class="form-input"
-                                        placeholder=" "
-                                        required
-                                ></textarea>
-                                <label for="message">Your Message</label>
-                        </div>
-
-                        <button type="submit" class="contact-btn">Send Message</button>
-                </form>
+        <div class="contact-hero__content">
+                <span class="contact-hero__subtitle" data-aos="fade-up">Kết nối cùng chúng tôi</span>
+                <h1 class="contact-hero__title" data-aos="fade-up" data-aos-delay="100">Liên hệ với chúng tôi</h1>
+                <p class="contact-hero__description" data-aos="fade-up" data-aos-delay="200">
+                        Bạn có câu hỏi hoặc muốn hợp tác? Chúng tôi rất mong được lắng nghe từ bạn.
+                </p>
         </div>
 </section>
-<section class="contact-us__map">
-        <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.272097061732!2d-122.4214227846816!3d37.78318897975815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858099e02c686f%3A0x2d31b262a05f0b17!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1633544391332!5m2!1sen!2sus"
-                width="100%"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                title="Our Location on Google Maps"
-                referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+
+<!-- Contact Information Cards -->
+<section class="contact-cards">
+        <div class="contact-cards__container">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-card__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="contact-card__title">Đến thăm chúng tôi</h3>
+                        <p class="contact-card__text">2369 Robinson Lane<br />Jackson, OH 45640</p>
+                        <a href="#map" class="contact-card__link">Xem chỉ đường <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-card__icon">
+                                <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="contact-card__title">Gọi cho chúng tôi</h3>
+                        <p class="contact-card__text">Thứ Hai–Thứ Sáu<br />9:00 - 18:00</p>
+                        <a href="tel:+8801700000000" class="contact-card__link"
+                                >(+88) 017 000 00000 <i class="fas fa-arrow-right"></i
+                        ></a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-card__icon">
+                                <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-card__title">Gửi email cho chúng tôi</h3>
+                        <p class="contact-card__text">Chúng tôi sẽ phản hồi trong<br />24 giờ</p>
+                        <a href="mailto:info@example.com" class="contact-card__link"
+                                >info@example.com <i class="fas fa-arrow-right"></i
+                        ></a>
+                </div>
+        </div>
+</section>
+
+<!-- Main Contact Section -->
+<section class="contact-main">
+        <div class="contact-main__container">
+                <div class="contact-main__left" data-aos="fade-right">
+                        <div class="contact-info-box">
+                                <span class="section-tag">Thông tin liên hệ</span>
+                                <h2 class="contact-info-box__title">Hãy bắt đầu trò chuyện</h2>
+                                <p class="contact-info-box__description">
+                                        Dù bạn có câu hỏi về tour, giá cả hay bất kỳ điều gì khác, đội ngũ của chúng tôi
+                                        luôn sẵn sàng giải đáp.
+                                </p>
+
+                                <div class="contact-features">
+                                        <div class="contact-feature">
+                                                <div class="contact-feature__icon">
+                                                        <i class="fas fa-check-circle"></i>
+                                                </div>
+                                                <div class="contact-feature__content">
+                                                        <h4>Phản hồi nhanh</h4>
+                                                        <p>Chúng tôi phản hồi mọi yêu cầu trong vòng 24 giờ</p>
+                                                </div>
+                                        </div>
+
+                                        <div class="contact-feature">
+                                                <div class="contact-feature__icon">
+                                                        <i class="fas fa-headset"></i>
+                                                </div>
+                                                <div class="contact-feature__content">
+                                                        <h4>Hỗ trợ 24/7</h4>
+                                                        <p>Đội ngũ hỗ trợ luôn sẵn sàng giúp đỡ</p>
+                                                </div>
+                                        </div>
+
+                                        <div class="contact-feature">
+                                                <div class="contact-feature__icon">
+                                                        <i class="fas fa-shield-alt"></i>
+                                                </div>
+                                                <div class="contact-feature__content">
+                                                        <h4>Bảo mật & Riêng tư</h4>
+                                                        <p>Thông tin của bạn được bảo mật và giữ kín</p>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="social-connect">
+                                        <h4>Kết nối với chúng tôi</h4>
+                                        <div class="social-links">
+                                                <a href="#" class="social-link" aria-label="Facebook">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#" class="social-link" aria-label="Twitter">
+                                                        <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#" class="social-link" aria-label="Instagram">
+                                                        <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                                        <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                                <a href="#" class="social-link" aria-label="YouTube">
+                                                        <i class="fab fa-youtube"></i>
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="contact-main__right" data-aos="fade-left">
+                        <form class="modern-contact-form">
+                                <div class="form-header">
+                                        <h3>Gửi tin nhắn cho chúng tôi</h3>
+                                        <p>Điền vào biểu mẫu bên dưới, chúng tôi sẽ phản hồi sớm</p>
+                                </div>
+
+                                <div class="form-row">
+                                        <div class="form-group">
+                                                <label for="firstName" class="form-label">Tên *</label>
+                                                <div class="input-wrapper">
+                                                        <img
+                                                                src="../assets/icons/user.svg"
+                                                                alt="Người dùng"
+                                                                class="input-icon"
+                                                        />
+                                                        <input
+                                                                type="text"
+                                                                id="firstName"
+                                                                name="firstName"
+                                                                class="form-input"
+                                                                placeholder="Nhập tên"
+                                                                required
+                                                        />
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="lastName" class="form-label">Họ *</label>
+                                                <div class="input-wrapper">
+                                                        <img
+                                                                src="../assets/icons/user.svg"
+                                                                alt="Người dùng"
+                                                                class="input-icon"
+                                                        />
+                                                        <input
+                                                                type="text"
+                                                                id="lastName"
+                                                                name="lastName"
+                                                                class="form-input"
+                                                                placeholder="Nhập họ"
+                                                                required
+                                                        />
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="form-row">
+                                        <div class="form-group">
+                                                <label for="email" class="form-label">Địa chỉ email *</label>
+                                                <div class="input-wrapper">
+                                                        <img
+                                                                src="../assets/icons/email.svg"
+                                                                alt="Email"
+                                                                class="input-icon"
+                                                        />
+                                                        <input
+                                                                type="email"
+                                                                id="email"
+                                                                name="email"
+                                                                class="form-input"
+                                                                placeholder="Nhập email"
+                                                                required
+                                                        />
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="phone" class="form-label">Số điện thoại</label>
+                                                <div class="input-wrapper">
+                                                        <img
+                                                                src="../assets/icons/phone.svg"
+                                                                alt="Điện thoại"
+                                                                class="input-icon"
+                                                        />
+                                                        <input
+                                                                type="tel"
+                                                                id="phone"
+                                                                name="phone"
+                                                                class="form-input"
+                                                                placeholder="Nhập số điện thoại"
+                                                        />
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="subject" class="form-label">Chủ đề *</label>
+                                        <div class="input-wrapper">
+                                                <img src="../assets/icons/ticket.svg" alt="Chủ đề" class="input-icon" />
+                                                <input
+                                                        type="text"
+                                                        id="subject"
+                                                        name="subject"
+                                                        class="form-input"
+                                                        placeholder="Nhập chủ đề"
+                                                        required
+                                                />
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="message" class="form-label">Tin nhắn của bạn *</label>
+                                        <div class="input-wrapper textarea-wrapper">
+                                                <img
+                                                        src="../assets/icons/message.svg"
+                                                        alt="Tin nhắn"
+                                                        class="input-icon"
+                                                />
+                                                <textarea
+                                                        id="message"
+                                                        name="message"
+                                                        class="form-input form-textarea"
+                                                        placeholder="Nhập tin nhắn của bạn"
+                                                        required
+                                                ></textarea>
+                                        </div>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                        <input
+                                                type="checkbox"
+                                                id="newsletter"
+                                                name="newsletter"
+                                                class="form-checkbox"
+                                        />
+                                        <label for="newsletter" class="checkbox-label">
+                                                Tôi muốn nhận mẹo du lịch và ưu đãi độc quyền
+                                        </label>
+                                </div>
+
+                                <button type="submit" class="modern-submit-btn">
+                                        <span>Gửi tin nhắn</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                </button>
+                        </form>
+                </div>
+        </div>
+</section>
+
+<!-- Interactive Map Section -->
+<section class="contact-map" id="map">
+        <div class="map-header" data-aos="fade-up">
+                <h2 class="map-title">Tìm chúng tôi tại đây</h2>
+                <p class="map-description">Ghé thăm văn phòng hoặc trò chuyện cùng chúng tôi bên tách cà phê</p>
+        </div>
+        <div class="map-container" data-aos="zoom-in">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.272097061732!2d-122.4214227846816!3d37.78318897975815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858099e02c686f%3A0x2d31b262a05f0b17!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1633544391332!5m2!1sen!2sus"
+                        width="100%"
+                        height="500"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        title="Vị trí của chúng tôi trên Google Maps"
+                        referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+        </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="contact-faq">
+        <div class="contact-faq__container">
+                <div class="faq-header" data-aos="fade-up">
+                        <span class="section-tag">Hỏi đáp</span>
+                        <h2 class="faq-title">Câu hỏi thường gặp</h2>
+                        <p class="faq-description">Giải đáp nhanh những câu hỏi thường gặp</p>
+                </div>
+
+                <div class="faq-grid">
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="faq-question">
+                                        <i class="fas fa-clock"></i>
+                                        <h4>Giờ làm việc như thế nào?</h4>
+                                </div>
+                                <p class="faq-answer">
+                                        Chúng tôi làm việc từ Thứ Hai đến Thứ Sáu, 9:00 - 18:00. Hỗ trợ cuối tuần qua
+                                        email.
+                                </p>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="faq-question">
+                                        <i class="fas fa-reply"></i>
+                                        <h4>Trong bao lâu tôi sẽ nhận được phản hồi?</h4>
+                                </div>
+                                <p class="faq-answer">
+                                        Chúng tôi cố gắng phản hồi mọi yêu cầu trong vòng 24 giờ vào ngày làm việc.
+                                </p>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="faq-question">
+                                        <i class="fas fa-globe"></i>
+                                        <h4>Bạn có hỗ trợ quốc tế không?</h4>
+                                </div>
+                                <p class="faq-answer">
+                                        Có, chúng tôi hỗ trợ khách du lịch trên toàn thế giới với nhiều ngôn ngữ.
+                                </p>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="faq-question">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <h4>Có hỗ trợ qua điện thoại không?</h4>
+                                </div>
+                                <p class="faq-answer">
+                                        Chắc chắn! Đường dây điện thoại mở trong giờ làm việc để hỗ trợ ngay lập tức.
+                                </p>
+                        </div>
+                </div>
+        </div>
 </section>

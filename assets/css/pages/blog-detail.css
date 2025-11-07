@@ -158,9 +158,60 @@ blockquote cite {
 
 .blog-detail__article ul {
         list-style-type: "✓  ";
-        padding-left: 20px;
         line-height: 2;
         margin: 20px 0;
+}
+
+/* ---- Famous Locations (matching article style) ---- */
+.locations-list {
+        list-style: none; /* override default checkmark list */
+        padding: 0;
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0; /* no gap between items, spacing handled by image margin */
+        width: 100%;
+}
+
+.location-item {
+        background: transparent;
+        border: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+}
+
+.location-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: var(--radius-xl);
+        box-shadow: var(--color-card-shadow);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        margin: 30px 0;
+}
+
+.location-text {
+        padding: 0;
+        width: 100%;
+}
+
+.location-name {
+        display: block;
+        font-family: var(--font-heading);
+        font-size: var(--h3-fontSize);
+        font-weight: 600;
+        margin: 40px 0 20px;
+}
+
+.location-desc {
+        margin: 0;
+        color: var(--color-text-secondary);
+        font-size: var(--description-fontSize);
+        line-height: 1.7;
 }
 
 .blog-detail__article__image {
@@ -175,6 +226,21 @@ blockquote cite {
 .blog-detail__article__image:hover {
         transform: scale(1.02);
         box-shadow: var(--color-card-shadow-hover);
+}
+
+/* --- Unified image sizing across article and locations --- */
+.blog-detail__article__image,
+.location-img {
+        aspect-ratio: 16 / 9; /* consistent visual rhythm */
+        object-fit: cover;
+        max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+        .blog-detail__article__image,
+        .location-img {
+                aspect-ratio: 4 / 3; /* slightly taller on small screens for readability */
+        }
 }
 
 .blog-detail__article__description {

@@ -2,130 +2,132 @@
 
 /* Smooth scroll behavior */
 html {
-  scroll-behavior: smooth;
+        scroll-behavior: smooth;
 }
 
 /* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  
-  html {
-    scroll-behavior: auto;
-  }
+        *,
+        *::before,
+        *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+        }
+
+        html {
+                scroll-behavior: auto;
+        }
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+        from {
+                opacity: 0;
+                transform: translateY(30px);
+        }
+        to {
+                opacity: 1;
+                transform: translateY(0);
+        }
 }
 
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+        from {
+                opacity: 0;
+                transform: translateY(-30px);
+        }
+        to {
+                opacity: 1;
+                transform: translateY(0);
+        }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+        from {
+                opacity: 0;
+        }
+        to {
+                opacity: 1;
+        }
 }
 
 @keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+        from {
+                opacity: 0;
+                transform: translateX(-50px);
+        }
+        to {
+                opacity: 1;
+                transform: translateX(0);
+        }
 }
 
 @keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+        from {
+                opacity: 0;
+                transform: translateX(50px);
+        }
+        to {
+                opacity: 1;
+                transform: translateX(0);
+        }
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+        from {
+                opacity: 0;
+                transform: scale(0.9);
+        }
+        to {
+                opacity: 1;
+                transform: scale(1);
+        }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+        0%,
+        100% {
+                transform: translateY(0);
+        }
+        50% {
+                transform: translateY(-10px);
+        }
 }
 
 @keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
+        0%,
+        100% {
+                transform: scale(1);
+        }
+        50% {
+                transform: scale(1.05);
+        }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: -1000px 0;
-  }
-  100% {
-    background-position: 1000px 0;
-  }
+        0% {
+                background-position: -1000px 0;
+        }
+        100% {
+                background-position: 1000px 0;
+        }
 }
 
 @keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
+        to {
+                transform: scale(4);
+                opacity: 0;
+        }
 }
 
 /* ========== RIPPLE EFFECT ========== */
 .ripple {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.6);
-  transform: scale(0);
-  animation: ripple 0.6s ease-out;
-  pointer-events: none;
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        transform: scale(0);
+        animation: ripple 0.6s ease-out;
+        pointer-events: none;
 }
 
 /* Make buttons position relative for ripple effect */
@@ -133,59 +135,58 @@ html {
 .btn--primary,
 .destination-detail-cta__btn,
 .destination-detail-itinerary__button {
-  position: relative;
-  overflow: hidden;
+        position: relative;
+        overflow: hidden;
 }
 
 /* ========== ACCESSIBILITY - Respect user motion preferences ========== */
 @media (prefers-reduced-motion: reduce) {
-  .scroll-animate,
-  .scroll-animate.animate-in {
-    transition: none !important;
-    transform: none !important;
-    opacity: 1 !important;
-  }
-  
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+        .scroll-animate,
+        .scroll-animate.animate-in {
+                transition: none !important;
+                transform: none !important;
+                opacity: 1 !important;
+        }
 
+        * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+        }
+}
 
 /* ========== SCROLL ANIMATION SYSTEM ========== */
 /* Elements start hidden and animate when scrolled into view */
 .scroll-animate {
-  opacity: 0;
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        opacity: 0;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .scroll-animate.animate-in {
-  opacity: 1;
+        opacity: 1;
 }
 
 /* ========== HERO ========== */
 .destination-detail-hero {
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url("../../images/destination-detail/background.jpg") center/cover no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column; /* 👈 đổi từ row sang column */
-  justify-content: flex-start; /* 👈 bắt đầu từ trên xuống */
-  align-items: center; /* 👈 căn giữa ngang */
-  padding-top: 200px; /* tạo khoảng trống trên cho tiêu đề */
-  padding-bottom: 200px;
-  animation: fadeIn 1.5s ease-out;
+        position: relative;
+        min-height: 100vh;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("../../images/destination-detail/background.jpg") center/cover no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column; /* 👈 đổi từ row sang column */
+        justify-content: flex-start; /* 👈 bắt đầu từ trên xuống */
+        align-items: center; /* 👈 căn giữa ngang */
+        padding-top: 200px; /* tạo khoảng trống trên cho tiêu đề */
+        padding-bottom: 200px;
+        animation: fadeIn 1.5s ease-out;
 }
 
 .destination-detail-hero::before {
@@ -198,27 +199,31 @@ html {
 }
 
 .destination-detail-hero__content {
-  text-align: center;
-  z-index: 2;
-  position: relative;
-  max-width: 100%; /* Bỏ giới hạn chiều rộng */
-  margin: 0 auto;
-  padding: 0 2rem;
-  white-space: nowrap; /* Ngăn xuống dòng */
-  animation: fadeInDown 1.2s ease-out 0.3s both;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        max-width: 100%; /* Bỏ giới hạn chiều rộng */
+        margin: 0 auto;
+        padding: 0 2rem;
+        white-space: nowrap; /* Ngăn xuống dòng */
+        animation: fadeInDown 1.2s ease-out 0.3s both;
 }
 
 .destination-detail-hero__title {
-  font-size: clamp(2.5rem, 6vw, 4.2rem);
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-  letter-spacing: 0.02em;
-  line-height: 1;
-  text-align: center;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  animation: fadeInUp 1s ease-out;
-  white-space: nowrap; /* Quan trọng */
+        font-size: clamp(2.5rem, 6vw, 4.2rem);
+        font-weight: 700;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        text-align: center;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        animation: fadeInUp 1s ease-out;
+        white-space: normal;
+        word-wrap: break-word;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .destination-detail-hero__subtitle {
@@ -234,19 +239,19 @@ html {
 
 /* ========== POPULAR destination-detailS ========== */
 .destination-detail-popular {
-  text-align: center;
-  padding: 90px 0 161px 0;
-  width: 100%;
-  background-color: #dddddd1e;
-  margin-bottom: -201px;
+        text-align: center;
+        padding: 90px 0 161px 0;
+        width: 100%;
+        background-color: #dddddd1e;
+        margin-bottom: -201px;
 }
 
 .destination-detail-popular.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-popular.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 .destination-detail-popular__title {
@@ -265,74 +270,83 @@ html {
 }
 
 .destination-detail-card {
-  background: var(--color-bg-primary);
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  height: 290px;
-  width: 230px;
-  border-radius: 12px;
-  position: relative;
+        background: var(--color-bg-primary);
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        height: 290px;
+        width: 230px;
+        border-radius: 12px;
+        position: relative;
+}
+
+.destination-detail-card--interactive {
+        cursor: pointer;
+}
+
+.destination-detail-card--inactive {
+        cursor: not-allowed;
+        opacity: 0.85;
 }
 
 /* Scroll-triggered animations for cards */
 .destination-detail-card.scroll-animate {
-  transform: translateY(40px);
+        transform: translateY(40px);
 }
 
 .destination-detail-card.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 /* Staggered animation delays */
 .destination-detail-card.scroll-animate:nth-child(1) {
-  transition-delay: 0.1s;
+        transition-delay: 0.1s;
 }
 
 .destination-detail-card.scroll-animate:nth-child(2) {
-  transition-delay: 0.2s;
+        transition-delay: 0.2s;
 }
 
 .destination-detail-card.scroll-animate:nth-child(3) {
-  transition-delay: 0.3s;
+        transition-delay: 0.3s;
 }
 
 .destination-detail-card.scroll-animate:nth-child(4) {
-  transition-delay: 0.4s;
+        transition-delay: 0.4s;
 }
 
 .destination-detail-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(16, 85, 156, 0.05), transparent);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  border-radius: 12px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(16, 85, 156, 0.05), transparent);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+        border-radius: 12px;
 }
 
 .destination-detail-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 28px rgba(16, 85, 156, 0.25);
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 28px rgba(16, 85, 156, 0.25);
 }
 
 .destination-detail-card:hover::before {
-  opacity: 1;
+        opacity: 1;
 }
 
 .destination-detail-card__img {
-  width: 100%;
-  height: 212px;
-  object-fit: cover;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 212px;
+        object-fit: cover;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .destination-detail-card:hover .destination-detail-card__img {
-  transform: scale(1.08);
+        transform: scale(1.08);
 }
 
 .destination-detail-card__content {
@@ -348,45 +362,44 @@ html {
 }
 
 .destination-detail-card__location {
-  font-size: 0.75rem;
-  color: var(--color-text-secondary);
-  line-height: 1.4;
+        font-size: 0.75rem;
+        color: var(--color-text-secondary);
+        line-height: 1.4;
 }
 
 /* ========== INSIGHTS (fallbacks for data-src) ========== */
 .destination-detail-insights__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 18px;
-  align-items: start;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 18px;
+        align-items: start;
 }
 
 .destination-detail-insights__card {
-  background: #fff;
-  overflow: hidden;
-  border-radius: 8px;
-  display: block;
-  /* Reserve a reasonable height so cards don't collapse when img has no src */
-  aspect-ratio: 4 / 3;
-  min-height: 140px;
+        background: #fff;
+        overflow: hidden;
+        border-radius: 8px;
+        display: block;
+        /* Reserve a reasonable height so cards don't collapse when img has no src */
+        aspect-ratio: 4 / 3;
+        min-height: 140px;
 }
 
 .destination-detail-insights__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
 }
 
 /* Ensure images with data-src still reserve space before JS runs */
 img[data-src].destination-detail-insights__image,
 img[data-src] {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 }
-
 
 /* ========== MISSION ========== */
 .destination-detail-mission {
@@ -398,23 +411,23 @@ img[data-src] {
 
 /* Scroll-triggered animation for mission section */
 .destination-detail-mission.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-mission.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 .destination-detail-mission__content {
-  display: flex;
-  align-items: center;
-  /* Align inner blocks to the left so the image block sits at the left of the content area */
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 1100px;
-  height: 100%;
-  gap: 60px;
-  margin: 0 auto; /* keep the content centered on the page */
+        display: flex;
+        align-items: center;
+        /* Align inner blocks to the left so the image block sits at the left of the content area */
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 1100px;
+        height: 100%;
+        gap: 60px;
+        margin: 0 auto; /* keep the content centered on the page */
 }
 
 .destination-detail-mission__image {
@@ -426,26 +439,26 @@ img[data-src] {
 
 /* Scroll-triggered animation for mission image */
 .destination-detail-mission__image.scroll-animate {
-  transform: translateX(-40px);
+        transform: translateX(-40px);
 }
 
 .destination-detail-mission__image.scroll-animate.animate-in {
-  transform: translateX(0);
+        transform: translateX(0);
 }
 
 .destination-detail-mission__text {
-  flex: 1 1 480px; /* allow text to take remaining space */
-  max-width: 560px;
+        flex: 1 1 480px; /* allow text to take remaining space */
+        max-width: 560px;
 }
 
 /* Scroll-triggered animation for mission text */
 .destination-detail-mission__text.scroll-animate {
-  transform: translateX(40px);
-  transition-delay: 0.15s;
+        transform: translateX(40px);
+        transition-delay: 0.15s;
 }
 
 .destination-detail-mission__text.scroll-animate.animate-in {
-  transform: translateX(0);
+        transform: translateX(0);
 }
 
 .destination-detail-mission__img {
@@ -463,52 +476,52 @@ img[data-src] {
 }
 
 .destination-detail-mission__stat {
-  position: absolute;
-  background: #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
-  text-align: center;
-  align-items: center;
-  width: 180px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px;
+        text-align: center;
+        align-items: center;
+        width: 180px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
 }
 
 /* Scroll-triggered animation for stats */
 .destination-detail-mission__stat.scroll-animate {
-  transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .destination-detail-mission__stat.scroll-animate.animate-in {
-  transform: scale(1);
+        transform: scale(1);
 }
 
 .destination-detail-mission__stat:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Position and stagger animations */
 .destination-detail-mission__stat:nth-child(1) {
-  top: 180px;
-  left: -40px;
-  transition-delay: 0.4s;
+        top: 180px;
+        left: -40px;
+        transition-delay: 0.4s;
 }
 
 .destination-detail-mission__stat:nth-child(2) {
-  top: -40px;
-  right: -40px;
-  transition-delay: 0.5s;
+        top: -40px;
+        right: -40px;
+        transition-delay: 0.5s;
 }
 
 .destination-detail-mission__stat:nth-child(3) {
-  bottom: -460px;
-  right: -40px;
-  transition-delay: 0.6s;
+        bottom: -460px;
+        right: -40px;
+        transition-delay: 0.6s;
 }
 
 .destination-detail-mission__stat h3 {
@@ -547,42 +560,42 @@ img[data-src] {
 }
 
 .btn.btn--primary {
-  display: inline-block;
-  background: linear-gradient(135deg, #4466ff, #5f80ff);
-  color: #fff;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 6px 15px rgba(68, 102, 255, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+        display: inline-block;
+        background: linear-gradient(135deg, #4466ff, #5f80ff);
+        color: #fff;
+        padding: 14px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 6px 15px rgba(68, 102, 255, 0.3);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
 }
 
 .btn.btn--primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
 }
 
 .btn.btn--primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(68, 102, 255, 0.4);
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(68, 102, 255, 0.4);
 }
 
 .btn.btn--primary:hover::before {
-  left: 100%;
+        left: 100%;
 }
 
 .btn.btn--primary:active {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 15px rgba(68, 102, 255, 0.35);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 15px rgba(68, 102, 255, 0.35);
 }
 
 /* ========== VIDEO ========== */
@@ -629,110 +642,110 @@ img[data-src] {
 
 /* ========== DESTINATION DETAIL READY ========== */
 .destination-detail-ready {
-  position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust based on your image */
-  overflow: hidden;
+        position: relative;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust based on your image */
+        overflow: hidden;
 }
 
 /* Scroll-triggered animation for ready section */
 .destination-detail-ready.scroll-animate {
-  transform: scale(0.95);
+        transform: scale(0.95);
 }
 
 .destination-detail-ready.scroll-animate.animate-in {
-  transform: scale(1);
+        transform: scale(1);
 }
 
 /* Background image */
 .destination-detail-ready__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(90%);
-  z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(90%);
+        z-index: 0;
 }
 
 /* Preloaded video placed behind the poster image; hidden by default */
 .destination-detail-ready__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none; /* shown when playing */
-  z-index: 1;
-  background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none; /* shown when playing */
+        z-index: 1;
+        background: #000;
 }
 
 /* When active, show video and lower poster image opacity */
 .destination-detail-ready.video-active .destination-detail-ready__video {
-  display: block;
-  z-index: 2;
+        display: block;
+        z-index: 2;
 }
 .destination-detail-ready.video-active .destination-detail-ready__background {
-  opacity: 0; /* hide poster image when video is shown */
-  z-index: 0;
+        opacity: 0; /* hide poster image when video is shown */
+        z-index: 0;
 }
 
 /* Close button to dismiss the video */
 .destination-detail-ready__close-btn {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 4;
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  border: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  font-size: 22px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        z-index: 4;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        border: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 22px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
 }
 
 /* Play button should be above poster */
 .destination-detail-ready__play-btn {
-  z-index: 3;
+        z-index: 3;
 }
 
 /* Overlay content box */
 .destination-detail-ready__overlay {
-  position: absolute;
-  top: 50%;
-  right: 8%;
-  transform: translateY(-50%);
-  width: min(400px, 35%);
-  height: auto;
-  max-height: 70%;
-  padding: 2rem;
-  background: rgba(100, 100, 160, 0.3);
-  border-radius: 30px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+        position: absolute;
+        top: 50%;
+        right: 8%;
+        transform: translateY(-50%);
+        width: min(400px, 35%);
+        height: auto;
+        max-height: 70%;
+        padding: 2rem;
+        background: rgba(100, 100, 160, 0.3);
+        border-radius: 30px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
 }
 
 /* Scroll-triggered animation for ready overlay */
 .destination-detail-ready__overlay.scroll-animate {
-  transform: translateY(-50%) translateX(40px);
-  transition-delay: 0.2s;
+        transform: translateY(-50%) translateX(40px);
+        transition-delay: 0.2s;
 }
 
 .destination-detail-ready__overlay.scroll-animate.animate-in {
-  transform: translateY(-50%) translateX(0);
+        transform: translateY(-50%) translateX(0);
 }
 
 /* Text content */
@@ -756,74 +769,74 @@ img[data-src] {
 
 /* Dashed path line */
 .destination-detail-ready__path {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-  overflow: hidden; /* Changed from visible to hidden to keep within bounds */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+        overflow: hidden; /* Changed from visible to hidden to keep within bounds */
 }
 
 .destination-detail-ready__image {
-  position: absolute;
-  top: 5%;
-  right: 0;
-  height: 85%;
-  width: auto;
-  max-width: 50%;
-  object-fit: contain;
+        position: absolute;
+        top: 5%;
+        right: 0;
+        height: 85%;
+        width: auto;
+        max-width: 50%;
+        object-fit: contain;
 }
 
 /* Play button */
 .destination-detail-ready__play-btn {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  color: #fff;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .destination-detail-ready__play-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
-  animation: pulse 2s ease-in-out infinite;
+        background: rgba(255, 255, 255, 0.25);
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+        animation: pulse 2s ease-in-out infinite;
 }
 
 .destination-detail-ready__play-btn:active {
-  transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 /* pilgrimages */
 .destination-detail-pilgrimages {
-  text-align: center;
-  padding: 80px 5%;
-  background: var(--bg-primary);
-  color: #222;
-  font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 80px 5%;
+        background: var(--bg-primary);
+        color: #222;
+        font-family: "Poppins", sans-serif;
 }
 
 .destination-detail-pilgrimages.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-pilgrimages.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 .destination-detail-pilgrimages__title {
@@ -831,40 +844,6 @@ img[data-src] {
         font-weight: 600;
         margin-bottom: 30px;
 }
-
-.destination-detail-pilgrimages__tabs {
-  display: inline-flex;
-  gap: 1rem;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 0.5rem;
-  margin-bottom: 40px;
-  border-radius: 12px;
-}
-
-.destination-detail-pilgrimages__tab {
-  border: none;
-  background: transparent;
-  padding: 10px 25px;
-  font-weight: 500;
-  cursor: pointer;
-  color: #444;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 8px;
-}
-
-.destination-detail-pilgrimages__tab:hover {
-  background: rgba(62, 134, 245, 0.1);
-  color: #3E86F5;
-}
-
-.destination-detail-pilgrimages__tab--active {
-  background: linear-gradient(135deg, #3E86F5, #5a9df7);
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(62, 134, 245, 0.35);
-  transform: translateY(-2px);
-}
-
 .destination-detail-pilgrimages__cards {
         display: flex;
         justify-content: center;
@@ -873,38 +852,38 @@ img[data-src] {
 }
 
 .destination-detail-pilgrimages__card {
-  width: 300px;
-  background: var(--color-bg-tertiary);
-  border-radius: 16px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: left;
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  flex-direction: column;
+        width: 300px;
+        background: var(--color-bg-tertiary);
+        border-radius: 16px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: left;
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
 }
 
 /* Scroll-triggered animation for pilgrimage cards */
 .destination-detail-pilgrimages__card.scroll-animate {
-  transform: translateY(40px);
+        transform: translateY(40px);
 }
 
 .destination-detail-pilgrimages__card.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 /* Staggered delays for cards */
 .destination-detail-pilgrimages__card.scroll-animate:nth-child(1) {
-  transition-delay: 0.1s;
+        transition-delay: 0.1s;
 }
 
 .destination-detail-pilgrimages__card.scroll-animate:nth-child(2) {
-  transition-delay: 0.2s;
+        transition-delay: 0.2s;
 }
 
 .destination-detail-pilgrimages__card.scroll-animate:nth-child(3) {
-  transition-delay: 0.3s;
+        transition-delay: 0.3s;
 }
 
 .destination-detail-pilgrimages__card-title {
@@ -913,28 +892,28 @@ img[data-src] {
 }
 
 .destination-detail-pilgrimages__card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(62, 134, 245, 0.2);
+        transform: translateY(-8px);
+        box-shadow: 0 8px 24px rgba(62, 134, 245, 0.2);
 }
 
 .destination-detail-pilgrimages__image-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px 12px 0 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
 }
 
 .destination-detail-pilgrimages__image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
 }
 
 /* Hover vẫn hoạt động dù có skeleton-wrapper hay không */
 .destination-detail-pilgrimages__card:hover .destination-detail-pilgrimages__image,
 .destination-detail-pilgrimages__card:hover .destination-detail-pilgrimages__image-wrapper img {
-  transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 .destination-detail-pilgrimages__date {
@@ -949,10 +928,10 @@ img[data-src] {
 }
 
 .destination-detail-pilgrimages__content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
 }
 
 .destination-detail-pilgrimages__status {
@@ -1005,11 +984,11 @@ img[data-src] {
 }
 
 .destination-detail-pilgrimages__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 10px;
 }
 
 .destination-detail-pilgrimages__price {
@@ -1024,25 +1003,25 @@ img[data-src] {
 }
 
 .destination-detail-pilgrimages__btn {
-  background: #e0e7ff;
-  color: #3E86F5;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #e0e7ff;
+        color: #3e86f5;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .destination-detail-pilgrimages__btn:hover {
-  background: linear-gradient(135deg, #3E86F5, #5a9df7);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(62, 134, 245, 0.3);
+        background: linear-gradient(135deg, #3e86f5, #5a9df7);
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(62, 134, 245, 0.3);
 }
 
 .destination-detail-pilgrimages__btn:active {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 .destination-detail-itinerary {
@@ -1051,11 +1030,11 @@ img[data-src] {
 
 /* Scroll-triggered animation for itinerary */
 .destination-detail-itinerary.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-itinerary.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 /* Header info */
@@ -1116,20 +1095,20 @@ img[data-src] {
 }
 
 .destination-detail-itinerary__days li {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid #eaeaf6;
-  font-size: 15px;
-  color: #333;
-  transition: all 0.3s ease;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeaf6;
+        font-size: 15px;
+        color: #333;
+        transition: all 0.3s ease;
 }
 
 .destination-detail-itinerary__days li:hover {
-  background: rgba(62, 134, 245, 0.05);
-  padding-left: 10px;
-  border-left: 3px solid #3E86F5;
+        background: rgba(62, 134, 245, 0.05);
+        padding-left: 10px;
+        border-left: 3px solid #3e86f5;
 }
 
 .destination-detail-itinerary__days strong {
@@ -1170,11 +1149,11 @@ img[data-src] {
 
 /* Scroll-triggered animation for CTA */
 .destination-detail-cta.scroll-animate {
-  transform: scale(0.95);
+        transform: scale(0.95);
 }
 
 .destination-detail-cta.scroll-animate.animate-in {
-  transform: scale(1);
+        transform: scale(1);
 }
 
 .destination-detail-cta__overlay {
@@ -1186,12 +1165,12 @@ img[data-src] {
 
 /* Scroll-triggered animation for CTA overlay */
 .destination-detail-cta__overlay.scroll-animate {
-  transform: scale(0.9);
-  transition-delay: 0.15s;
+        transform: scale(0.9);
+        transition-delay: 0.15s;
 }
 
 .destination-detail-cta__overlay.scroll-animate.animate-in {
-  transform: scale(1);
+        transform: scale(1);
 }
 
 .destination-detail-cta__title {
@@ -1202,42 +1181,42 @@ img[data-src] {
 }
 
 .destination-detail-cta__btn {
-  display: inline-block;
-  padding: 20px 30px;
-  background: #fff;
-  color: #3E86F5;
-  font-weight: 600;
-  border-radius: 15px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
+        display: inline-block;
+        padding: 20px 30px;
+        background: #fff;
+        color: #3e86f5;
+        font-weight: 600;
+        border-radius: 15px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
 }
 
 .destination-detail-cta__btn:hover {
-  background: linear-gradient(135deg, #3E86F5, #5a9df7);
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(62, 134, 245, 0.4);
+        background: linear-gradient(135deg, #3e86f5, #5a9df7);
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(62, 134, 245, 0.4);
 }
 
 .destination-detail-cta__btn:active {
-  transform: translateY(-1px);
+        transform: translateY(-1px);
 }
 
 /* ========== DESTINATION DETAIL - FEATURED INSIGHTS ========== */
 .destination-detail-insights {
-  padding: 80px 0;
-  text-align: center;
-  background: var(--bg-primary);
+        padding: 80px 0;
+        text-align: center;
+        background: var(--bg-primary);
 }
 
 /* Scroll-triggered animation for insights section */
 .destination-detail-insights.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-insights.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 .destination-detail-insights__header {
@@ -1259,79 +1238,152 @@ img[data-src] {
 
 .destination-detail-insights__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
         max-width: 1100px;
         margin: 0 auto;
 }
 
 .destination-detail-insights__card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .destination-detail-insights__card.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-insights__card.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 /* Staggered delays for insights cards */
-.destination-detail-insights__card.scroll-animate:nth-child(1) { transition-delay: 0.05s; }
-.destination-detail-insights__card.scroll-animate:nth-child(2) { transition-delay: 0.1s; }
-.destination-detail-insights__card.scroll-animate:nth-child(3) { transition-delay: 0.15s; }
-.destination-detail-insights__card.scroll-animate:nth-child(4) { transition-delay: 0.2s; }
-.destination-detail-insights__card.scroll-animate:nth-child(5) { transition-delay: 0.25s; }
-.destination-detail-insights__card.scroll-animate:nth-child(6) { transition-delay: 0.3s; }
+.destination-detail-insights__card.scroll-animate:nth-child(1) {
+        transition-delay: 0.05s;
+}
+.destination-detail-insights__card.scroll-animate:nth-child(2) {
+        transition-delay: 0.1s;
+}
+.destination-detail-insights__card.scroll-animate:nth-child(3) {
+        transition-delay: 0.15s;
+}
+.destination-detail-insights__card.scroll-animate:nth-child(4) {
+        transition-delay: 0.2s;
+}
+.destination-detail-insights__card.scroll-animate:nth-child(5) {
+        transition-delay: 0.25s;
+}
+.destination-detail-insights__card.scroll-animate:nth-child(6) {
+        transition-delay: 0.3s;
+}
 
 .destination-detail-insights__card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-4px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+        transform: translateY(-8px);
+        border-color: rgba(62, 134, 245, 0.15);
+}
+
+/* Link wrapper bên trong card */
+.destination-detail-insights__link {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
 }
 
 .destination-detail-insights__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
 }
 
 /* Hover cho cả image trực tiếp và image trong skeleton-wrapper */
 .destination-detail-insights__card:hover .destination-detail-insights__image,
 .destination-detail-insights__card:hover .skeleton-wrapper img {
-  transform: scale(1.08);
+        transform: scale(1.1);
+}
+
+.destination-detail-insights__content {
+        padding: 1.5rem 1.75rem 1.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        flex: 1;
+        background: #fff;
+}
+
+.destination-detail-insights__title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        line-height: 1.5;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: color 0.3s ease;
+        letter-spacing: -0.01em;
+}
+
+.destination-detail-insights__card:hover .destination-detail-insights__title {
+        color: #3e86f5;
+}
+
+.destination-detail-insights__location {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        color: #666;
+        margin: 0;
+        font-weight: 400;
+        padding-top: 0.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.destination-detail-insights__location i {
+        color: #3e86f5;
+        font-size: 0.9rem;
 }
 
 .destination-detail-insights__load-btn {
-  background: none;
-  border: 2px solid #e0e0e0;
-  color: var(--color-text-primary);
-  font-weight: 500;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 50px;
-  padding: 12px 28px;
-  border-radius: 8px;
+        background: #fff;
+        border: 2px solid #e8e8e8;
+        color: #333;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 50px;
+        padding: 14px 32px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .destination-detail-insights__load-btn i {
-  font-size: 0.85rem;
-  transition: transform 0.3s ease;
-  margin-left: 6px;
+        font-size: 0.85rem;
+        transition: transform 0.3s ease;
+        margin-left: 8px;
 }
 
 .destination-detail-insights__load-btn:hover {
-  color: #3E86F5;
-  border-color: #3E86F5;
-  background: rgba(62, 134, 245, 0.05);
-  transform: translateY(-2px);
+        color: #fff;
+        border-color: #3e86f5;
+        background: linear-gradient(135deg, #3e86f5, #10559c);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(62, 134, 245, 0.3);
 }
 
 .destination-detail-insights__load-btn:hover i {
@@ -1340,18 +1392,18 @@ img[data-src] {
 
 /* ========== DESTINATION DETAIL TESTIMONIALS ========== */
 .destination-detail-testimonials {
-  text-align: center;
-  padding: 80px 10%;
-  background-color: var(--bg-primary);
+        text-align: center;
+        padding: 80px 10%;
+        background-color: var(--bg-primary);
 }
 
 /* Scroll-triggered animation for testimonials section */
 .destination-detail-testimonials.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .destination-detail-testimonials.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 .destination-detail-testimonials__header {
@@ -1380,40 +1432,39 @@ img[data-src] {
 }
 
 .destination-detail-testimonials__item {
-  position: relative;
-  background: var(--color-bg-tertiary);
-  width: 300px;
-  padding: 50px 30px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 8px 0 15px -8px rgba(0, 0, 0, 0.2),  /* bóng bên phải */
-              0 8px 15px -8px rgba(0, 0, 0, 0.2); /* bóng bên dưới */
-  border-radius: 16px;
+        position: relative;
+        background: var(--color-bg-tertiary);
+        width: 300px;
+        padding: 50px 30px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 8px 0 15px -8px rgba(0, 0, 0, 0.2), /* bóng bên phải */ 0 8px 15px -8px rgba(0, 0, 0, 0.2); /* bóng bên dưới */
+        border-radius: 16px;
 }
 
 /* Scroll-triggered animation for testimonial items */
 .destination-detail-testimonials__item.scroll-animate {
-  transform: translateY(40px);
+        transform: translateY(40px);
 }
 
 .destination-detail-testimonials__item.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
 /* Staggered delays */
 .destination-detail-testimonials__item.scroll-animate:nth-child(1) {
-  transition-delay: 0.1s;
+        transition-delay: 0.1s;
 }
 
 .destination-detail-testimonials__item.scroll-animate:nth-child(2) {
-  transition-delay: 0.2s;
+        transition-delay: 0.2s;
 }
 
 .destination-detail-testimonials__item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(62, 134, 245, 0.15);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(62, 134, 245, 0.15);
 }
 
 /* quote mark nằm chìm phía sau text */
@@ -1467,7 +1518,7 @@ img[data-src] {
 }
 
 .destination-detail-testimonials__avatar {
-        width: 70px;
+        width: 130px;
         height: 70px;
         border-radius: 50%;
         object-fit: cover;
@@ -1482,29 +1533,29 @@ img[data-src] {
 }
 
 .destination-detail-testimonials__btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1.5px solid #3E86F5;
-  background: transparent;
-  color: #3E86F5;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1.5px solid #3e86f5;
+        background: transparent;
+        color: #3e86f5;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .destination-detail-testimonials__btn:hover {
-  background: linear-gradient(135deg, #3E86F5, #5a9df7);
-  color: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(62, 134, 245, 0.3);
+        background: linear-gradient(135deg, #3e86f5, #5a9df7);
+        color: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(62, 134, 245, 0.3);
 }
 
 .destination-detail-testimonials__btn:active {
-  transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 /* ========== RESPONSIVE ========== */
@@ -1515,76 +1566,76 @@ img[data-src] {
                 padding-bottom: 150px;
         }
 
-  .destination-detail-mission {
-    flex-direction: column;
-    text-align: center;
-    height: auto !important;
-  }
+        .destination-detail-mission {
+                flex-direction: column;
+                text-align: center;
+                height: auto !important;
+        }
 
-  .destination-detail-mission__content {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
+        .destination-detail-mission__content {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+        }
 
-  /* Fix mission stats to stack properly on tablet instead of absolute positioning */
-  .destination-detail-mission__image {
-    position: relative;
-    max-width: 450px;
-  }
+        /* Fix mission stats to stack properly on tablet instead of absolute positioning */
+        .destination-detail-mission__image {
+                position: relative;
+                max-width: 450px;
+        }
 
-  .destination-detail-mission__stats {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px;
-  }
+        .destination-detail-mission__stats {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 30px;
+        }
 
-  .destination-detail-mission__stat {
-    position: relative !important; /* override absolute */
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: auto;
-    height: auto;
-    min-width: 150px;
-    padding: 20px 28px;
-    margin: 0;
-    transform: none !important;
-  }
+        .destination-detail-mission__stat {
+                position: relative !important; /* override absolute */
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                bottom: auto !important;
+                width: auto;
+                height: auto;
+                min-width: 150px;
+                padding: 20px 28px;
+                margin: 0;
+                transform: none !important;
+        }
 
-  /* Fix ready overlay to stay within background on tablet */
-  .destination-detail-ready {
-    padding-bottom: 60%; /* Adjust aspect ratio for tablet */
-  }
+        /* Fix ready overlay to stay within background on tablet */
+        .destination-detail-ready {
+                padding-bottom: 60%; /* Adjust aspect ratio for tablet */
+        }
 
-  .destination-detail-ready__overlay {
-    width: min(340px, 40%);
-    right: 8%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 1.5rem;
-    max-height: 65%;
-  }
+        .destination-detail-ready__overlay {
+                width: min(340px, 40%);
+                right: 8%;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 1.5rem;
+                max-height: 65%;
+        }
 
-  .destination-detail-ready__content {
-    margin-top: 30px;
-    max-width: 100%;
-  }
+        .destination-detail-ready__content {
+                margin-top: 30px;
+                max-width: 100%;
+        }
 
-  .destination-detail-ready__title {
-    font-size: 1.5rem;
-  }
+        .destination-detail-ready__title {
+                font-size: 1.5rem;
+        }
 
-  .destination-detail-ready__text {
-    font-size: 1rem;
-  }
+        .destination-detail-ready__text {
+                font-size: 1rem;
+        }
 
         .destination-detail-pilgrimages__cards {
                 gap: 1.5rem;
@@ -1639,47 +1690,47 @@ img[data-src] {
                 font-size: 1rem;
         }
 
-  /* POPULAR */
-  .destination-detail-popular {
-    padding: 60px 0 120px 0;
-    margin-top: 100px;
-  }
+        /* POPULAR */
+        .destination-detail-popular {
+                padding: 60px 0 120px 0;
+                margin-top: 100px;
+        }
 
-  .destination-detail-popular__container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 5%;
-  }
+        .destination-detail-popular__container {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 5%;
+        }
 
-  .destination-detail-card {
-    width: 100%;
-    max-width: 100%;
-    min-width: auto;
-    height: auto;
-  }
+        .destination-detail-card {
+                width: 100%;
+                max-width: 100%;
+                min-width: auto;
+                height: auto;
+        }
 
-  .destination-detail-card__img {
-    height: 200px;
-    width: 100%;
-  }
+        .destination-detail-card__img {
+                height: 200px;
+                width: 100%;
+        }
 
-  .destination-detail-card__content {
-    padding: 15px;
-    text-align: left;
-  }
+        .destination-detail-card__content {
+                padding: 15px;
+                text-align: left;
+        }
 
-  .destination-detail-card__name {
-    white-space: normal;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-    line-height: 1.3;
-  }
+        .destination-detail-card__name {
+                white-space: normal;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 5px;
+                line-height: 1.3;
+        }
 
-  .destination-detail-card__location {
-    font-size: 0.9rem;
-    color: #666;
-  }
+        .destination-detail-card__location {
+                font-size: 0.9rem;
+                color: #666;
+        }
 
         /* MISSION */
         .destination-detail-mission {
@@ -1687,35 +1738,35 @@ img[data-src] {
                 padding: 60px 5%;
         }
 
-  /* On tablet we remove absolute positioning of the stat boxes and let them flow */
-  .destination-detail-mission__stats {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-  }
+        /* On tablet we remove absolute positioning of the stat boxes and let them flow */
+        .destination-detail-mission__stats {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 16px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 20px;
+        }
 
-  .destination-detail-mission__stat {
-    position: relative; /* override absolute */
-    width: auto;
-    height: auto;
-    min-width: 140px;
-    padding: 18px 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    border-radius: 10px;
-    margin: 0;
-    transform: none;
-    opacity: 1;
-  }
+        .destination-detail-mission__stat {
+                position: relative; /* override absolute */
+                width: auto;
+                height: auto;
+                min-width: 140px;
+                padding: 18px 22px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                border-radius: 10px;
+                margin: 0;
+                transform: none;
+                opacity: 1;
+        }
 
         .destination-detail-mission__stat h3 {
                 font-size: 1.5rem;
@@ -1732,36 +1783,36 @@ img[data-src] {
                 padding: 15px 20px;
         }
 
-  /* READY */
-  .destination-detail-ready {
-    padding-bottom: 75%; /* Taller aspect ratio for mobile */
-  }
+        /* READY */
+        .destination-detail-ready {
+                padding-bottom: 75%; /* Taller aspect ratio for mobile */
+        }
 
-  /* Center overlay on mobile but keep it within bounds */
-  .destination-detail-ready__overlay {
-    width: min(320px, 85%);
-    left: 40%;
-    right: auto;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    max-height: 60%;
-    padding: 1.5rem;
-    z-index: 3;
-  }
+        /* Center overlay on mobile but keep it within bounds */
+        .destination-detail-ready__overlay {
+                width: min(320px, 85%);
+                left: 40%;
+                right: auto;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: auto;
+                max-height: 60%;
+                padding: 1.5rem;
+                z-index: 3;
+        }
 
-  .destination-detail-ready__content {
-    margin-top: 15px;
-    max-width: 100%;
-  }
+        .destination-detail-ready__content {
+                margin-top: 15px;
+                max-width: 100%;
+        }
 
-  .destination-detail-ready__title {
-    font-size: 1.3rem;
-  }
+        .destination-detail-ready__title {
+                font-size: 1.3rem;
+        }
 
-  .destination-detail-ready__text {
-    font-size: 0.95rem;
-  }
+        .destination-detail-ready__text {
+                font-size: 0.95rem;
+        }
 
         /* PILGRIMAGES */
         .destination-detail-pilgrimages__cards {
@@ -1774,16 +1825,11 @@ img[data-src] {
                 max-width: 320px;
         }
 
-        .destination-detail-pilgrimages__tabs {
-                flex-wrap: wrap;
-                gap: 0.5rem;
+        /* ITINERARY */
+        .destination-detail-itinerary__list-header {
+                flex-direction: column;
+                align-items: flex-start;
         }
-
-  /* ITINERARY */
-  .destination-detail-itinerary__list-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
         .destination-detail-itinerary__days li strong {
                 width: 60px;
@@ -1815,7 +1861,20 @@ img[data-src] {
         }
 
         .destination-detail-insights__grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.5rem;
+        }
+
+        .destination-detail-insights__image {
+                height: 200px;
+        }
+
+        .destination-detail-insights__content {
+                padding: 1rem 1.25rem;
+        }
+
+        .destination-detail-insights__title {
+                font-size: 1rem;
         }
 
         .destination-detail-insights__load-btn {
@@ -1868,26 +1927,26 @@ img[data-src] {
                 font-size: 0.9rem;
         }
 
-  /* POPULAR CARDS */
-  .destination-detail-card {
-    width: 100%;
-  }
+        /* POPULAR CARDS */
+        .destination-detail-card {
+                width: 100%;
+        }
 
-  .destination-detail-card__img {
-    height: 180px;
-  }
+        .destination-detail-card__img {
+                height: 180px;
+        }
 
-  .destination-detail-card__name {
-    font-size: 1rem;
-  }
+        .destination-detail-card__name {
+                font-size: 1rem;
+        }
 
-  .destination-detail-card__location {
-    font-size: 0.85rem;
-  }
+        .destination-detail-card__location {
+                font-size: 0.85rem;
+        }
 
-  .destination-detail-ready__overlay {
-    border-radius: 20px;
-  }
+        .destination-detail-ready__overlay {
+                border-radius: 20px;
+        }
 
         .destination-detail-pilgrimages__card {
                 width: 100%;
@@ -1895,6 +1954,28 @@ img[data-src] {
 
         .destination-detail-cta__btn {
                 padding: 12px 20px;
+        }
+
+        /* INSIGHTS */
+        .destination-detail-insights__grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+        }
+
+        .destination-detail-insights__image {
+                height: 180px;
+        }
+
+        .destination-detail-insights__content {
+                padding: 0.875rem 1rem;
+        }
+
+        .destination-detail-insights__title {
+                font-size: 0.95rem;
+        }
+
+        .destination-detail-insights__location {
+                font-size: 0.85rem;
         }
 
         /* TESTIMONIALS */
@@ -1953,468 +2034,457 @@ img[data-src] {
                 gap: 10px;
         }
 
-  .destination-detail-testimonials__btn {
-    width: 34px;
-    height: 34px;
-    font-size: 0.95rem;
-  }
+        .destination-detail-testimonials__btn {
+                width: 34px;
+                height: 34px;
+                font-size: 0.95rem;
+        }
 }
 
 /* ========== LARGE DESKTOP (≥ 1920px) ========== */
 @media (min-width: 1920px) {
-  .destination-detail-hero {
-    min-height: 110vh;
-  }
+        .destination-detail-hero {
+                min-height: 110vh;
+        }
 
-  .destination-detail-hero__title {
-    font-size: 5rem;
-  }
+        .destination-detail-hero__title {
+                font-size: 5rem;
+        }
 
-  .destination-detail-hero__subtitle {
-    font-size: 1.5rem;
-  }
+        .destination-detail-hero__subtitle {
+                font-size: 1.5rem;
+        }
 
-  .destination-detail-popular__container {
-    gap: 35px;
-  }
+        .destination-detail-popular__container {
+                gap: 35px;
+        }
 
-  .destination-detail-card {
-    width: 260px;
-    height: 320px;
-  }
+        .destination-detail-card {
+                width: 260px;
+                height: 320px;
+        }
 
-  .destination-detail-mission {
-    padding: 100px 8%;
-  }
+        .destination-detail-mission {
+                padding: 100px 8%;
+        }
 
-  .destination-detail-mission__title {
-    font-size: 2.5rem;
-  }
+        .destination-detail-mission__title {
+                font-size: 2.5rem;
+        }
 
-  .destination-detail-pilgrimages__cards {
-    gap: 2.5rem;
-  }
+        .destination-detail-pilgrimages__cards {
+                gap: 2.5rem;
+        }
 
-  .destination-detail-pilgrimages__card {
-    width: 340px;
-  }
+        .destination-detail-pilgrimages__card {
+                width: 340px;
+        }
 
-  .destination-detail-insights__grid {
-    max-width: 1400px;
-    grid-template-columns: repeat(3, 1fr);
-  }
+        .destination-detail-insights__grid {
+                max-width: 1400px;
+                grid-template-columns: repeat(3, 1fr);
+        }
 
-  .destination-detail-testimonials__item {
-    width: 350px;
-  }
+        .destination-detail-testimonials__item {
+                width: 350px;
+        }
 }
 
 /* ========== DESKTOP (1200px - 1439px) ========== */
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .destination-detail-hero {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
+        .destination-detail-hero {
+                padding-top: 180px;
+                padding-bottom: 180px;
+        }
 
-  .destination-detail-popular__container {
-    gap: 22px;
-  }
+        .destination-detail-popular__container {
+                gap: 22px;
+        }
 
-  .destination-detail-card {
-    width: 220px;
-  }
+        .destination-detail-card {
+                width: 220px;
+        }
 
-  .destination-detail-pilgrimages__card {
-    width: 290px;
-  }
-
+        .destination-detail-pilgrimages__card {
+                width: 290px;
+        }
 }
 
 /* ========== MEDIUM DESKTOP (992px - 1199px) ========== */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .destination-detail-popular__container {
-    gap: 18px;
-  }
+        .destination-detail-popular__container {
+                gap: 18px;
+        }
 
-  .destination-detail-card {
-    width: 200px;
-    height: 270px;
-  }
+        .destination-detail-card {
+                width: 200px;
+                height: 270px;
+        }
 
-  .destination-detail-pilgrimages__title {
-    font-size: 1.8rem;
-  }
+        .destination-detail-pilgrimages__title {
+                font-size: 1.8rem;
+        }
 
-  .destination-detail-insights__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+        .destination-detail-insights__grid {
+                grid-template-columns: repeat(2, 1fr);
+        }
 }
 
 /* ========== TABLET LANDSCAPE (769px - 991px) ========== */
 @media (min-width: 769px) and (max-width: 991px) {
-  .destination-detail-hero {
-    padding-top: 140px;
-    padding-bottom: 120px;
-  }
+        .destination-detail-hero {
+                padding-top: 140px;
+                padding-bottom: 120px;
+        }
 
-  .destination-detail-popular__container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+        .destination-detail-popular__container {
+                flex-wrap: wrap;
+                justify-content: center;
+        }
 
-  .destination-detail-card {
-    width: 220px;
-  }
+        .destination-detail-card {
+                width: 220px;
+        }
 
-  .destination-detail-mission {
-    padding: 70px 5%;
-    height: auto !important;
-  }
+        .destination-detail-mission {
+                padding: 70px 5%;
+                height: auto !important;
+        }
 
-  .destination-detail-mission__content {
-    gap: 40px;
-  }
+        .destination-detail-mission__content {
+                gap: 40px;
+        }
 
-  .destination-detail-mission__image {
-    max-width: 400px;
-  }
+        .destination-detail-mission__image {
+                max-width: 400px;
+        }
 
-  .destination-detail-mission__stat {
-    width: 160px;
-    height: 110px;
-    padding: 18px 25px;
-  }
+        .destination-detail-mission__stat {
+                width: 160px;
+                height: 110px;
+                padding: 18px 25px;
+        }
 
-  .destination-detail-mission__stat:nth-child(1) {
-    top: 150px;
-    left: -30px;
-  }
+        .destination-detail-mission__stat:nth-child(1) {
+                top: 150px;
+                left: -30px;
+        }
 
-  .destination-detail-mission__stat:nth-child(2) {
-    top: -30px;
-    right: -30px;
-  }
+        .destination-detail-mission__stat:nth-child(2) {
+                top: -30px;
+                right: -30px;
+        }
 
-  .destination-detail-mission__stat:nth-child(3) {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    margin-top: 20px;
-  }
+        .destination-detail-mission__stat:nth-child(3) {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: 20px;
+        }
 
-  .destination-detail-ready__overlay {
-    width: 360px;
-  }
+        .destination-detail-ready__overlay {
+                width: 360px;
+        }
 
-  .destination-detail-pilgrimages__cards {
-    justify-content: center;
-  }
+        .destination-detail-pilgrimages__cards {
+                justify-content: center;
+        }
 
-  .destination-detail-pilgrimages__card {
-    width: 280px;
-  }
+        .destination-detail-pilgrimages__card {
+                width: 280px;
+        }
 
-  .destination-detail-insights__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+        .destination-detail-insights__grid {
+                grid-template-columns: repeat(2, 1fr);
+        }
 
-  .destination-detail-testimonials__list {
-    gap: 28px;
-  }
+        .destination-detail-testimonials__list {
+                gap: 28px;
+        }
 }
 
 /* ========== TABLET PORTRAIT (481px - 768px) ========== */
 @media (min-width: 481px) and (max-width: 768px) {
-  .destination-detail-hero {
-    padding-top: 130px;
-    padding-bottom: 110px;
-  }
+        .destination-detail-hero {
+                padding-top: 130px;
+                padding-bottom: 110px;
+        }
 
-  .destination-detail-hero__title {
-    font-size: 2.2rem;
-  }
+        .destination-detail-hero__title {
+                font-size: 2.2rem;
+        }
 
-  .destination-detail-popular {
-    padding: 70px 0 140px 0;
-  }
+        .destination-detail-popular {
+                padding: 70px 0 140px 0;
+        }
 
-  .destination-detail-popular__title {
-    font-size: 1.8rem;
-  }
+        .destination-detail-popular__title {
+                font-size: 1.8rem;
+        }
 
-  .destination-detail-card {
-    width: 280px;
-    max-width: 90%;
-  }
+        .destination-detail-card {
+                width: 280px;
+                max-width: 90%;
+        }
 
-  .destination-detail-mission {
-    height: auto !important;
-  }
+        .destination-detail-mission {
+                height: auto !important;
+        }
 
-  .destination-detail-mission__image {
-    max-width: 100%;
-    height: 400px;
-  }
+        .destination-detail-mission__image {
+                max-width: 100%;
+                height: 400px;
+        }
 
-  .destination-detail-mission__stat {
-    width: 150px;
-    height: 100px;
-  }
+        .destination-detail-mission__stat {
+                width: 150px;
+                height: 100px;
+        }
 
-  .destination-detail-mission__stat:nth-child(1),
-  .destination-detail-mission__stat:nth-child(2),
-  .destination-detail-mission__stat:nth-child(3) {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    margin: 10px;
-  }
+        .destination-detail-mission__stat:nth-child(1),
+        .destination-detail-mission__stat:nth-child(2),
+        .destination-detail-mission__stat:nth-child(3) {
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+                margin: 10px;
+        }
 
-  .destination-detail-mission__stats {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
+        .destination-detail-mission__stats {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+        }
 
-  .destination-detail-mission__title {
-    font-size: 1.8rem;
-  }
+        .destination-detail-mission__title {
+                font-size: 1.8rem;
+        }
 
-  .destination-detail-ready__play-btn {
-    width: 45px;
-    height: 45px;
-    bottom: 30px;
-    left: 30px;
-  }
+        .destination-detail-ready__play-btn {
+                width: 45px;
+                height: 45px;
+                bottom: 30px;
+                left: 30px;
+        }
 
-  .destination-detail-pilgrimages {
-    padding: 70px 5%;
-  }
+        .destination-detail-pilgrimages {
+                padding: 70px 5%;
+        }
 
-  .destination-detail-pilgrimages__card {
-    width: 320px;
-    max-width: 100%;
-  }
+        .destination-detail-pilgrimages__card {
+                width: 320px;
+                max-width: 100%;
+        }
 
+        .destination-detail-itinerary {
+                padding: 0 15px;
+        }
 
-  .destination-detail-itinerary {
-    padding: 0 15px;
-  }
+        .destination-detail-itinerary__title {
+                font-size: 1.8rem;
+        }
 
-  .destination-detail-itinerary__title {
-    font-size: 1.8rem;
-  }
+        .destination-detail-insights__title {
+                font-size: 1.8rem;
+        }
 
-  .destination-detail-insights__title {
-    font-size: 1.8rem;
-  }
-
-  .destination-detail-insights__grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+        .destination-detail-insights__grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+        }
 }
 
 /* ========== EXTRA SMALL MOBILE (≤ 375px) ========== */
 @media (max-width: 375px) {
-  .destination-detail-hero {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
+        .destination-detail-hero {
+                padding-top: 100px;
+                padding-bottom: 80px;
+        }
 
-  .destination-detail-hero__title {
-    font-size: 1.6rem;
-  }
+        .destination-detail-hero__title {
+                font-size: 1.6rem;
+        }
 
-  .destination-detail-hero__subtitle {
-    font-size: 0.85rem;
-  }
+        .destination-detail-hero__subtitle {
+                font-size: 0.85rem;
+        }
 
-  .destination-detail-popular {
-    padding: 60px 0 120px 0;
-    margin-top: 100px;
-  }
+        .destination-detail-popular {
+                padding: 60px 0 120px 0;
+                margin-top: 100px;
+        }
 
-  .destination-detail-popular__title {
-    font-size: 1.6rem;
-  }
+        .destination-detail-popular__title {
+                font-size: 1.6rem;
+        }
 
-  .destination-detail-card {
-    width: 100%;
-    height: auto;
-  }
+        .destination-detail-card {
+                width: 100%;
+                height: auto;
+        }
 
-  .destination-detail-mission {
-    padding: 50px 4%;
-  }
+        .destination-detail-mission {
+                padding: 50px 4%;
+        }
 
-  .destination-detail-mission__title {
-    font-size: 1.5rem;
-  }
+        .destination-detail-mission__title {
+                font-size: 1.5rem;
+        }
 
-  .destination-detail-mission__desc {
-    font-size: 0.9rem;
-  }
+        .destination-detail-mission__desc {
+                font-size: 0.9rem;
+        }
 
-  .destination-detail-mission__stat {
-    width: 140px;
-    height: 95px;
-  }
+        .destination-detail-mission__stat {
+                width: 140px;
+                height: 95px;
+        }
 
-  .destination-detail-mission__stat h3 {
-    font-size: 1.4rem;
-  }
+        .destination-detail-mission__stat h3 {
+                font-size: 1.4rem;
+        }
 
-  .destination-detail-ready__overlay {
-    width: 95%;
-    padding: 1.2rem;
-  }
+        .destination-detail-ready__overlay {
+                width: 95%;
+                padding: 1.2rem;
+        }
 
-  .destination-detail-ready__title {
-    font-size: 1.2rem;
-  }
+        .destination-detail-ready__title {
+                font-size: 1.2rem;
+        }
 
-  .destination-detail-ready__text {
-    font-size: 1rem;
-  }
+        .destination-detail-ready__text {
+                font-size: 1rem;
+        }
 
-  .destination-detail-ready__play-btn {
-    width: 42px;
-    height: 42px;
-    font-size: 20px;
-    bottom: 25px;
-    left: 25px;
-  }
+        .destination-detail-ready__play-btn {
+                width: 42px;
+                height: 42px;
+                font-size: 20px;
+                bottom: 25px;
+                left: 25px;
+        }
 
-  .destination-detail-pilgrimages {
-    padding: 60px 4%;
-  }
+        .destination-detail-pilgrimages {
+                padding: 60px 4%;
+        }
 
-  .destination-detail-pilgrimages__title {
-    font-size: 1.6rem;
-  }
+        .destination-detail-pilgrimages__title {
+                font-size: 1.6rem;
+        }
 
-  .destination-detail-pilgrimages__tabs {
-    padding: 0.4rem;
-  }
+        .destination-detail-pilgrimages__card {
+                width: 100%;
+        }
 
-  .destination-detail-pilgrimages__tab {
-    padding: 8px 18px;
-    font-size: 13px;
-  }
+        .destination-detail-cta__title {
+                font-size: 1.3rem;
+        }
 
-  .destination-detail-pilgrimages__card {
-    width: 100%;
-  }
+        .destination-detail-cta__btn {
+                padding: 10px 18px;
+                font-size: 14px;
+        }
 
-  .destination-detail-cta__title {
-    font-size: 1.3rem;
-  }
+        .destination-detail-insights {
+                padding: 50px 0;
+        }
 
-  .destination-detail-cta__btn {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
+        .destination-detail-insights__title {
+                font-size: 1.5rem;
+        }
 
-  .destination-detail-insights {
-    padding: 50px 0;
-  }
+        .destination-detail-insights__subtitle {
+                font-size: 0.9rem;
+        }
 
-  .destination-detail-insights__title {
-    font-size: 1.5rem;
-  }
+        .destination-detail-insights__load-btn {
+                font-size: 0.9rem;
+                padding: 10px 22px;
+        }
 
-  .destination-detail-insights__subtitle {
-    font-size: 0.9rem;
-  }
+        .destination-detail-testimonials__title {
+                font-size: 1.5rem;
+        }
 
-  .destination-detail-insights__load-btn {
-    font-size: 0.9rem;
-    padding: 10px 22px;
-  }
+        .destination-detail-testimonials__item {
+                padding: 35px 18px 28px;
+        }
 
-  .destination-detail-testimonials__title {
-    font-size: 1.5rem;
-  }
-
-  .destination-detail-testimonials__item {
-    padding: 35px 18px 28px;
-  }
-
-  .btn.btn--primary {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
+        .btn.btn--primary {
+                padding: 12px 24px;
+                font-size: 14px;
+        }
 }
 
 /* ========== LANDSCAPE ORIENTATION ========== */
 @media (max-height: 600px) and (orientation: landscape) {
-  .destination-detail-hero {
-    min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+        .destination-detail-hero {
+                min-height: 100vh;
+                padding-top: 100px;
+                padding-bottom: 100px;
+        }
 
-  .destination-detail-ready {
-    min-height: 100vh;
-  }
+        .destination-detail-ready {
+                min-height: 100vh;
+        }
 
-  .destination-detail-ready__overlay {
-    width: 320px;
-    height: auto;
-    padding: 1.5rem;
-  }
+        .destination-detail-ready__overlay {
+                width: 320px;
+                height: auto;
+                padding: 1.5rem;
+        }
 
-  .destination-detail-mission__stats {
-    flex-direction: row;
-    gap: 15px;
-  }
+        .destination-detail-mission__stats {
+                flex-direction: row;
+                gap: 15px;
+        }
 
-  .destination-detail-mission__stat {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-  }
+        .destination-detail-mission__stat {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                bottom: auto !important;
+        }
 }
 
 /* ========== HIGH DPI DISPLAYS (Retina) ========== */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .destination-detail-hero__title {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+        .destination-detail-hero__title {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+        }
 
-  .destination-detail-card__img,
-  .destination-detail-pilgrimages__image,
-  .destination-detail-insights__image {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-  }
+        .destination-detail-card__img,
+        .destination-detail-pilgrimages__image,
+        .destination-detail-insights__image {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+        }
 }
 
 /* ========== PRINT STYLES ========== */
 @media print {
-  .destination-detail-hero,
-  .destination-detail-ready,
-  .destination-detail-cta {
-    page-break-inside: avoid;
-    min-height: auto;
-  }
+        .destination-detail-hero,
+        .destination-detail-ready,
+        .destination-detail-cta {
+                page-break-inside: avoid;
+                min-height: auto;
+        }
 
-  .destination-detail-pilgrimages__card,
-  .destination-detail-testimonials__item,
-  .destination-detail-insights__card {
-    page-break-inside: avoid;
-    box-shadow: none;
-    border: 1px solid #ddd;
-  }
+        .destination-detail-pilgrimages__card,
+        .destination-detail-testimonials__item,
+        .destination-detail-insights__card {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+        }
 }
 
 /* ==============================================
@@ -2423,98 +2493,98 @@ img[data-src] {
 
 /* Skeleton Wrapper - Base */
 .skeleton-wrapper {
-  position: relative;
-  overflow: hidden;
-  background: #f0f0f0;
-  display: block;
-  /* Đảm bảo không chặn hover events của parent */
-  pointer-events: none;
+        position: relative;
+        overflow: hidden;
+        background: #f0f0f0;
+        display: block;
+        /* Đảm bảo không chặn hover events của parent */
+        pointer-events: none;
 }
 
 /* Nhưng cho phép click vào image */
 .skeleton-wrapper img {
-  pointer-events: auto;
+        pointer-events: auto;
 }
 
 /* Wrapper đã loaded có thể interact */
 .skeleton-wrapper.skeleton-loaded {
-  pointer-events: auto;
+        pointer-events: auto;
 }
 
 /* Shimmer Effect khi đang loading */
 .skeleton-wrapper.skeleton-loading::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-    background-size: 200% 100%;
-    animation: shimmer 1.5s linear infinite;
-    z-index: 1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s linear infinite;
+        z-index: 1;
 }
 
 /* Animation shimmer */
 @keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
+        0% {
+                background-position: -200% 0;
+        }
+        100% {
+                background-position: 200% 0;
+        }
 }
 
 /* Image bên trong skeleton */
 .skeleton-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
 }
 
 /* Giữ nguyên object-fit của ảnh background trong ready section */
 .destination-detail-ready__background.skeleton-wrapper img {
-    object-fit: cover;
-    filter: brightness(90%);
+        object-fit: cover;
+        filter: brightness(90%);
 }
 
 /* Khi đang loading - ẩn image */
 .skeleton-wrapper.skeleton-loading img {
-    opacity: 0;
-    visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
 }
 
 /* Khi đã loaded - hiện image */
 .skeleton-wrapper.skeleton-loaded img,
 .skeleton-wrapper img.loaded {
-    opacity: 1;
-    visibility: visible;
+        opacity: 1;
+        visibility: visible;
 }
 
 /* Xóa shimmer effect khi đã load */
 .skeleton-wrapper.skeleton-loaded::before {
-    animation: none;
-    opacity: 0;
+        animation: none;
+        opacity: 0;
 }
 
 /* Trường hợp lỗi */
 .skeleton-wrapper.skeleton-error {
-    background: #e0e0e0;
+        background: #e0e0e0;
 }
 
 .skeleton-wrapper.skeleton-error::before {
-    display: none;
+        display: none;
 }
 
 .skeleton-wrapper.skeleton-error img {
-    opacity: 1;
-    visibility: visible;
-    object-fit: contain;
+        opacity: 1;
+        visibility: visible;
+        object-fit: contain;
 }
 
 /* ==============================================
@@ -2523,107 +2593,107 @@ img[data-src] {
 
 /* Popular destination cards */
 .destination-detail-card .skeleton-wrapper {
-  aspect-ratio: 4 / 3;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 100%;
-  height: 212px;
-  display: block;
-  position: relative;
+        aspect-ratio: 4 / 3;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 100%;
+        height: 212px;
+        display: block;
+        position: relative;
 }
 
 .destination-detail-card .skeleton-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Giữ hiệu ứng hover cho card images */
 .destination-detail-card:hover .skeleton-wrapper img {
-  transform: scale(1.08);
+        transform: scale(1.08);
 }
 
 /* Mission section image - Giữ nguyên kích thước ban đầu */
 .destination-detail-mission__img.skeleton-wrapper,
 .destination-detail-mission__image .skeleton-wrapper {
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
 }
 
 /* Ready section images - Giữ nguyên kích thước ban đầu */
 .destination-detail-ready__background.skeleton-wrapper,
 .destination-detail-ready .skeleton-wrapper {
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
 }
 
 .destination-detail-ready__image.skeleton-wrapper {
-    width: auto;
-    height: auto;
+        width: auto;
+        height: auto;
 }
 
 /* Pilgrimage cards */
 .destination-detail-pilgrimages__image-wrapper .skeleton-wrapper {
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+        aspect-ratio: 16 / 9;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
 }
 
 .destination-detail-pilgrimages__image-wrapper .skeleton-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Giữ hiệu ứng hover cho pilgrimage card images */
 .destination-detail-pilgrimages__card:hover .skeleton-wrapper img {
-  transform: scale(1.1);
+        transform: scale(1.1);
 }
 
 /* Insight cards */
 .destination-detail-insights__card .skeleton-wrapper {
-  aspect-ratio: 16 / 10;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+        aspect-ratio: 16 / 10;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
 }
 
 .destination-detail-insights__card .skeleton-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hover effect cho insight card images */
 .destination-detail-insights__card:hover .skeleton-wrapper img {
-  transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 /* Testimonial images */
 .destination-detail-testimonials__avatar.skeleton-wrapper {
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
 }
 
 .destination-detail-testimonial__quote.skeleton-wrapper {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
 }
 
 /* ==============================================
@@ -2636,10 +2706,10 @@ img[data-src] {
 
 /* Mobile */
 @media (max-width: 768px) {
-    /* Giảm intensity của shimmer trên mobile để tiết kiệm pin */
-    .skeleton-wrapper.skeleton-loading::before {
-        animation-duration: 2s;
-    }
+        /* Giảm intensity của shimmer trên mobile để tiết kiệm pin */
+        .skeleton-wrapper.skeleton-loading::before {
+                animation-duration: 2s;
+        }
 }
 
 /* ==============================================
@@ -2648,76 +2718,95 @@ img[data-src] {
 
 /* Fallback cho images không dùng skeleton wrapper */
 img[data-src] {
-    background: #f0f0f0;
-    opacity: 0.7;
+        background: #f0f0f0;
+        opacity: 0.7;
 }
 
 img.loaded {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+        opacity: 1;
+        transition: opacity 0.3s ease;
 }
 
 /* ========== UTILITY ANIMATION CLASSES ========== */
 .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
 }
 
 /* Stagger delays for list items - using scroll-animate system */
 .stagger-item.scroll-animate {
-  transform: translateY(30px);
+        transform: translateY(30px);
 }
 
 .stagger-item.scroll-animate.animate-in {
-  transform: translateY(0);
+        transform: translateY(0);
 }
 
-.stagger-item.scroll-animate:nth-child(1) { transition-delay: 0.05s; }
-.stagger-item.scroll-animate:nth-child(2) { transition-delay: 0.1s; }
-.stagger-item.scroll-animate:nth-child(3) { transition-delay: 0.15s; }
-.stagger-item.scroll-animate:nth-child(4) { transition-delay: 0.2s; }
-.stagger-item.scroll-animate:nth-child(5) { transition-delay: 0.25s; }
-.stagger-item.scroll-animate:nth-child(6) { transition-delay: 0.3s; }
-.stagger-item.scroll-animate:nth-child(7) { transition-delay: 0.35s; }
-.stagger-item:nth-child(8) { animation-delay: 0.8s; }
+.stagger-item.scroll-animate:nth-child(1) {
+        transition-delay: 0.05s;
+}
+.stagger-item.scroll-animate:nth-child(2) {
+        transition-delay: 0.1s;
+}
+.stagger-item.scroll-animate:nth-child(3) {
+        transition-delay: 0.15s;
+}
+.stagger-item.scroll-animate:nth-child(4) {
+        transition-delay: 0.2s;
+}
+.stagger-item.scroll-animate:nth-child(5) {
+        transition-delay: 0.25s;
+}
+.stagger-item.scroll-animate:nth-child(6) {
+        transition-delay: 0.3s;
+}
+.stagger-item.scroll-animate:nth-child(7) {
+        transition-delay: 0.35s;
+}
+.stagger-item:nth-child(8) {
+        animation-delay: 0.8s;
+}
 
 /* Enhanced hover effects */
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hover-scale {
-  transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
 }
 
 .hover-scale:hover {
-  transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 /* Smooth transitions for all interactive elements */
-a, button, input, select {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+a,
+button,
+input,
+select {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Add subtle entrance animation to page */
 body {
-  animation: fadeIn 0.5s ease-out;
+        animation: fadeIn 0.5s ease-out;
 }
 
 .destination-detail-back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 }

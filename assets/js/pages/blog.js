@@ -1,94 +1,76 @@
 // =========================================================================
-// Fake data
+// Load data from data.json and normalize to blogPosts
 // =========================================================================
-const blogPosts = [
-        {
-                id: 1,
-                image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                category: "City Guide",
-                title: "A Backpacker's Guide to Venice's Hidden Alleys",
-                author: { name: "Marco Rossi", avatar: "https://i.pravatar.cc/32?u=marco" },
-                date: "Oct 15, 2025",
-                readingTime: "7 min read",
-                isFeatured: true, // This post is the editor's pick
-        },
-        {
-                id: 2,
-                image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800",
-                category: "Culture",
-                title: "The Ultimate Guide to Paris Fashion Week",
-                author: { name: "Chloé Dubois", avatar: "https://i.pravatar.cc/32?u=chloe" },
-                date: "Oct 12, 2025",
-                readingTime: "9 min read",
-        },
-        {
-                id: 3,
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=800",
-                category: "Food",
-                title: "Tasting Tokyo: A Journey Through Japan's Culinary Capital",
-                author: { name: "Kenji Tanaka", avatar: "https://i.pravatar.cc/32?u=kenji" },
-                date: "Oct 10, 2025",
-                readingTime: "12 min read",
-        },
-        {
-                id: 4,
-                image: "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=800",
-                category: "Adventure",
-                title: "Hiking the Inca Trail: What to Know Before You Go",
-                author: { name: "Alex Wanderlust", avatar: "https://i.pravatar.cc/32?u=alex" },
-                date: "Oct 08, 2025",
-                readingTime: "15 min read",
-        },
-        {
-                id: 5,
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=800",
-                category: "Nature",
-                title: "Chasing the Northern Lights in Iceland: A Complete Guide",
-                author: { name: "Bjorn Sigurdsson", avatar: "https://i.pravatar.cc/32?u=bjorn" },
-                date: "Oct 05, 2025",
-                readingTime: "8 min read",
-        },
-        {
-                id: 6,
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=800",
-                category: "Food",
-                title: "A Culinary Tour of Ho Chi Minh City's Street Food",
-                author: { name: "Linh Nguyen", avatar: "https://i.pravatar.cc/32?u=linh" },
-                date: "Oct 02, 2025",
-                readingTime: "10 min read",
-        },
-        {
-                id: 7,
-                image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=800",
-                category: "City Guide",
-                title: "48 Hours in Rome: How to See the Best of the Eternal City",
-                author: { name: "Jane Doe", avatar: "https://i.pravatar.cc/32?u=jane" },
-                date: "Sep 29, 2025",
-                readingTime: "11 min read",
-        },
-        {
-                id: 8,
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=800",
-                category: "Adventure",
-                title: "Sunrise over the Sahara: A Camel Trekking Experience",
-                author: { name: "Aisha Bakar", avatar: "https://i.pravatar.cc/32?u=aisha" },
-                date: "Sep 25, 2025",
-                readingTime: "6 min read",
-        },
-        {
-                id: 9,
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=800",
-                category: "Nature",
-                title: "The Untouched Beauty of New Zealand's Fiordland",
-                author: { name: "Alex Wanderlust", avatar: "https://i.pravatar.cc/32?u=alex" },
-                date: "Sep 22, 2025",
-                readingTime: "9 min read",
-        },
-];
-
+let blogPosts = [];
 let currentPage = 1;
-const postsPerPage = 6; // Tăng số bài viết mỗi trang
-let filteredPosts = [...blogPosts];
+const postsPerPage = 6;
+let filteredPosts = [];
+
+function minutesToRead(text) {
+        if (!text) return "5 min read";
+        const words = text.split(/\s+/).filter(Boolean).length;
+        const minutes = Math.max(3, Math.round(words / 200));
+        return `${minutes} min read`;
+}
+
+function buildPostsFromData(data) {
+        const items = data?.data || [];
+        const posts = [];
+        let idCounter = 1;
+        items.forEach((tour) => {
+                const country = tour.country;
+                const tourId = tour.id;
+                const places = tour.places || [];
+                places.forEach((place, idx) => {
+                        const firstImage =
+                                place.famous_locations?.[0]?.image_url ||
+                                "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=800";
+                        const title = `${place.city}, ${country}: ${tour.title || "Travel Guide"}`;
+                        const description =
+                                place.blog || tour.description || "Discover highlights, tips, and must-see places.";
+                        posts.push({
+                                id: idCounter++,
+                                country,
+                                tourId,
+                                placeIndex: idx,
+                                city: place.city,
+                                title,
+                                description,
+                                image: firstImage,
+                                category: "City Guide",
+                                author: {
+                                        name: "Travel Team",
+                                        avatar: `https://i.pravatar.cc/32?u=${encodeURIComponent(place.city)}`,
+                                },
+                                date: new Date().toLocaleDateString(undefined, {
+                                        month: "short",
+                                        day: "2-digit",
+                                        year: "numeric",
+                                }),
+                                readingTime: minutesToRead(description),
+                                isFeatured: false,
+                        });
+                });
+        });
+        if (posts.length > 0) posts[0].isFeatured = true;
+        return posts;
+}
+
+async function loadData() {
+        try {
+                const res = await fetch("/data.json");
+                const json = await res.json();
+                blogPosts = buildPostsFromData(json);
+                filteredPosts = [...blogPosts];
+                initialLoad();
+        } catch (e) {
+                console.error("Failed to load data.json", e);
+                // Fallback to empty state
+                blogPosts = [];
+                filteredPosts = [];
+                initialLoad();
+        }
+}
 
 // =========================================================================
 // DOM ELEMENT VARIABLES
@@ -127,13 +109,13 @@ function renderPosts() {
                 postElement.className = "blog-card";
                 postElement.style.animationDelay = `${index * 0.1}s`; // Stagger animation
                 postElement.innerHTML = `
-                <a href="#blog-detail" class="blog-card__image-link">
+                <a href="/index.html#blog-detail?id=${post.id}" class="blog-card__image-link">
                     <img src="${post.image}" alt="${post.title}" class="blog-card__image">
                     <span class="blog-card__category">${post.category}</span>
                 </a>
                 <div class="blog-card__content">
                     <h3 class="blog-card__title">
-                        <a href="#blog-detail-${post.id}">${post.title}</a>
+                        <a href="/index.html#blog-detail?id=${post.id}">${post.title}</a>
                     </h3>
                     <div class="blog-card__footer">
                         <div class="blog-card__author">
@@ -162,9 +144,15 @@ function renderPagination() {
         nextBtn.classList.toggle("disabled", currentPage === totalPages);
         lastBtn.classList.toggle("disabled", currentPage === totalPages);
 
-        // Generate page number links
+        // Generate page number links (window size = 3)
         pageNumbersSpan.innerHTML = "";
-        for (let i = 1; i <= totalPages; i++) {
+        const windowSize = 3;
+        let start = Math.max(1, currentPage - Math.floor(windowSize / 2));
+        let end = Math.min(totalPages, start + windowSize - 1);
+        if (end - start + 1 < windowSize) {
+                start = Math.max(1, end - windowSize + 1);
+        }
+        for (let i = start; i <= end; i++) {
                 pageNumbersSpan.innerHTML += `<a href="#" data-page="${i}" class="${
                         i === currentPage ? "active" : ""
                 }">${i}</a>`;
@@ -173,12 +161,12 @@ function renderPagination() {
 
 function renderCategories() {
         if (!categoryList) return;
-        const categories = ["All", ...new Set(blogPosts.map((p) => p.category))];
+        const categories = ["All", ...new Set(blogPosts.map((p) => p.country))];
         categoryList.innerHTML = categories
                 .map(
                         (cat) =>
                                 `<li><a href="#" data-category="${cat}" class="${cat === "All" ? "active" : ""}">${
-                                        cat === "All" ? "All Categories" : cat
+                                        cat === "All" ? "All Countries" : cat
                                 }</a></li>`
                 )
                 .join("");
@@ -186,11 +174,11 @@ function renderCategories() {
 
 function renderFeaturedPost() {
         if (!featuredPostContainer) return;
-        const featured = blogPosts.find((p) => p.isFeatured) || blogPosts[0]; // Fallback to first post
+        const featured = blogPosts.find((p) => p.isFeatured) || blogPosts[0];
         if (!featured) return;
 
         featuredPostContainer.innerHTML = `
-            <a href="#blog-detail-${featured.id}">
+            <a href="/index.html#blog-detail?id=${featured.id}">
                 <img src="${featured.image}" alt="${featured.title}">
                 <h4>${featured.title}</h4>
             </a>
@@ -200,12 +188,12 @@ function renderFeaturedPost() {
 // NEW: Render recent posts
 function renderRecentPosts() {
         if (!recentPostsContainer) return;
-        const recent = blogPosts.slice(0, 3); // Get the first 3 posts
+        const recent = blogPosts.slice(0, 3);
         recentPostsContainer.innerHTML = recent
                 .map(
                         (post) => `
             <div class="sidebar-widget__recent-post-item">
-                <a href="#blog-detail-${post.id}">
+                <a href="/index.html#blog-detail?id=${post.id}">
                     <img src="${post.image}" alt="${post.title}">
                     <h5>${post.title}</h5>
                 </a>
@@ -246,10 +234,12 @@ function handleSearchAndFilter() {
         const activeCategory = activeCategoryLink ? activeCategoryLink.dataset.category : "All";
 
         filteredPosts = blogPosts.filter((post) => {
-                const matchesCategory = activeCategory === "All" || post.category === activeCategory;
+                const matchesCategory = activeCategory === "All" || post.country === activeCategory;
                 const matchesSearch =
                         post.title.toLowerCase().includes(searchTerm) ||
-                        post.description.toLowerCase().includes(searchTerm);
+                        (post.description || "").toLowerCase().includes(searchTerm) ||
+                        (post.city || "").toLowerCase().includes(searchTerm) ||
+                        (post.country || "").toLowerCase().includes(searchTerm);
                 return matchesCategory && matchesSearch;
         });
 
@@ -349,4 +339,4 @@ function initialLoad() {
         updateUI();
 }
 
-initialLoad();
+loadData();
