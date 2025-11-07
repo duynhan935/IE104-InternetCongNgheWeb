@@ -17,21 +17,24 @@
 
     <div class="home-hero__image-group">
         <img src="../assets/images/home/Shapes.svg" alt="" class="home-hero__brush" loading="lazy" aria-hidden="true" />
-        <img data-src="../assets/images/home/Girl.png" alt="Cô gái du lịch" class="home-hero__image lazy-image" />
 
+        <img src="../assets/images/home/Girl.png" alt="Cô gái du lịch" class="home-hero__image" />
+
+        <!-- Thẻ thống kê nổi trên hình -->
         <div class="home-hero__stat-card">
             <div class="home-hero__stat-circle" style="--progress: 39">
                 <div class="home-hero__stat-circle-inner">
                     <span class="home-hero__stat-number">39</span>
-                    <span class="home-hero__stat-label">Dịch vụ</span>
+                    <span class="home-hero__stat-label">Dịch vụ hiện có</span>
                 </div>
             </div>
             <div class="home-hero__stat-total">
                 <span class="home-hero__stat-total-number">224</span>
-                <span class="home-hero__stat-total-label">Chuyến đi/Tháng</span>
+                <span class="home-hero__stat-total-label">Chuyến đi (mỗi tháng)</span>
             </div>
         </div>
 
+        <!-- Danh sách thông tin bên phải -->
         <ul class="home-hero__info-list">
             <li class="home-hero__info-item">
                 <div class="home-hero__info-icon">
@@ -114,19 +117,75 @@
         <a href="#tours" class="home-tours__see-all">Xem tất cả</a>
     </div>
 
-    <div class="home-tours__list" id="tours-container"></div>
+    <div class="home-tours__list">
+        <article class="home-tour-card">
+            <a href="#tour-details" class="home-tour-card__media">
+                <img data-src="../assets/images/home/pexels-amine-m'siouri-2245436 1.svg" alt="Du lịch Cairns" />
+            </a>
+            <div class="home-tour-card__body">
+                <div class="home-tour-card__price"><span>$150</span>/ngày</div>
+                <h3 class="home-tour-card__title"><a href="#">Du lịch Cairns</a></h3>
+                <ul class="home-tour-card__meta">
+                    <li class="home-tour-card__meta-item">📍 Cairns QLD, Úc</li>
+                    <li class="home-tour-card__meta-item">⏱ 6 ngày</li>
+                </ul>
+                <a href="#tour-details" class="home-tour-card__btn">Đặt ngay</a>
+            </div>
+        </article>
+
+        <article class="home-tour-card">
+            <a href="#tour-details" class="home-tour-card__media">
+                <img data-src="../assets/images/home/pexels-amine-m'siouri-2245436 1.svg" alt="Du lịch Cairns" />
+            </a>
+            <div class="home-tour-card__body">
+                <div class="home-tour-card__price"><span>$150</span>/ngày</div>
+                <h3 class="home-tour-card__title"><a href="#">Du lịch Cairns</a></h3>
+                <ul class="home-tour-card__meta">
+                    <li class="home-tour-card__meta-item">📍 Cairns QLD, Úc</li>
+                    <li class="home-tour-card__meta-item">⏱ 6 ngày</li>
+                </ul>
+                <a href="#tour-details" class="home-tour-card__btn">Đặt ngay</a>
+            </div>
+        </article>
+
+        <article class="home-tour-card">
+            <a href="#tour-details" class="home-tour-card__media">
+                <img data-src="../assets/images/home/pexels-amine-m'siouri-2245436 1.svg" alt="Du lịch Orlando" />
+            </a>
+            <div class="home-tour-card__body">
+                <div class="home-tour-card__price"><span>$110</span>/ngày</div>
+                <h3 class="home-tour-card__title"><a href="#">Du lịch Orlando</a></h3>
+                <ul class="home-tour-card__meta">
+                    <li class="home-tour-card__meta-item">📍 Orlando, Hoa Kỳ</li>
+                    <li class="home-tour-card__meta-item">⏱ 3 ngày</li>
+                </ul>
+                <a href="#tour-details" class="home-tour-card__btn">Đặt ngay</a>
+            </div>
+        </article>
+
+        <article class="home-tour-card">
+            <a href="#tour-details" class="home-tour-card__media">
+                <img data-src="../assets/images/home/pexels-amine-m'siouri-2245436 1.svg" alt="Du lịch Malaysia" />
+            </a>
+            <div class="home-tour-card__body">
+                <div class="home-tour-card__price"><span>$136</span>/ngày</div>
+                <h3 class="home-tour-card__title"><a href="#">Du lịch Malaysia</a></h3>
+                <ul class="home-tour-card__meta">
+                    <li class="home-tour-card__meta-item">📍 Malaysia</li>
+                    <li class="home-tour-card__meta-item">⏱ 5 ngày</li>
+                </ul>
+                <a href="#tour-details" class="home-tour-card__btn">Đặt ngay</a>
+            </div>
+        </article>
+    </div>
 </section>
 
 <!-- Explore the world -->
 <section class="home-video lazy-load">
-    <video
-        data-src="../assets/images/home/wave.mp4"
-        class="home-video__background lazy-video"
-        muted
-        loop
-        playsinline
-        preload="none"
-    ></video>
+    <video autoplay muted loop playsinline class="home-video__background">
+        <source src="../assets/images/home/wave.mp4" type="video/mp4" />
+        Trình duyệt của bạn không hỗ trợ video nền.
+    </video>
     <div class="home-video__overlay">
         <h1>Khám phá thế giới cùng chúng tôi</h1>
         <p>Trải nghiệm những địa điểm và hành trình tuyệt vời</p>
@@ -134,7 +193,7 @@
     </div>
 </section>
 
-<!-- Travel Vlogs / Reels -->
+<!-- 7. Travel Vlogs / Reels -->
 <section class="travel-vlogs lazy-load">
     <div class="des-container">
         <h2 class="section-title">Vlogs & Reels</h2>
@@ -146,45 +205,38 @@
                 <div class="vlog-track">
                     <div class="vlog-item">
                         <video
-                            data-src="../assets/images/destinations/blogs/3002391-hd_1920_1080_25fps.mp4"
-                            class="lazy-video"
+                            src="../assets/images/destinations/blogs/3002391-hd_1920_1080_25fps.mp4"
                             muted
+                            autoplay
                             loop
-                            playsinline
-                            preload="none"
                         ></video>
                         <div class="vlog-overlay">
-                            <h3 class="vlog-title">Chuyến đi biển tuyệt đẹp</h3>
+                            <h3>Chuyến đi biển tuyệt đẹp</h3>
                             <p>Khám phá những bãi biển hoang sơ và làn nước xanh ngọc trong vlog thư giãn này.</p>
                         </div>
                     </div>
 
                     <div class="vlog-item">
                         <video
-                            data-src="../assets/images/destinations/blogs/3018542-hd_1920_1080_24fps.mp4"
-                            class="lazy-video"
-                            muted
+                            src="../assets/images/destinations/blogs/3018542-hd_1920_1080_24fps.mp4"
+                            autoplay
                             loop
-                            playsinline
-                            preload="none"
                         ></video>
                         <div class="vlog-overlay">
-                            <h3 class="vlog-title">Hành trình chinh phục núi</h3>
+                            <h3>Hành trình chinh phục núi</h3>
                             <p>Trải nghiệm những cung đường leo núi đầy thử thách và khung cảnh hùng vĩ.</p>
                         </div>
                     </div>
 
                     <div class="vlog-item">
                         <video
-                            data-src="../assets/images/destinations/blogs/3018669-hd_1920_1080_24fps.mp4"
-                            class="lazy-video"
+                            src="../assets/images/destinations/blogs/3018669-hd_1920_1080_24fps.mp4"
                             muted
+                            autoplay
                             loop
-                            playsinline
-                            preload="none"
                         ></video>
                         <div class="vlog-overlay">
-                            <h3 class="vlog-title">Nhịp sống thành phố</h3>
+                            <h3>Nhịp sống thành phố</h3>
                             <p>
                                 Khám phá những con phố sầm uất, công trình biểu tượng và không khí về đêm đầy sắc màu.
                             </p>
@@ -193,15 +245,13 @@
 
                     <div class="vlog-item">
                         <video
-                            data-src="../assets/images/destinations/blogs/3064204-hd_1920_1080_24fps.mp4"
-                            class="lazy-video"
+                            src="../assets/images/destinations/blogs/3064204-hd_1920_1080_24fps.mp4"
                             muted
+                            autoplay
                             loop
-                            playsinline
-                            preload="none"
                         ></video>
                         <div class="vlog-overlay">
-                            <h3 class="vlog-title">Nhịp sống thành phố</h3>
+                            <h3>Nhịp sống thành phố</h3>
                             <p>
                                 Khám phá những con phố sầm uất, công trình biểu tượng và không khí về đêm đầy sắc màu.
                             </p>
@@ -210,30 +260,26 @@
 
                     <div class="vlog-item">
                         <video
-                            data-src="../assets/images/destinations/blogs/3141319-uhd_3840_2160_25fps.mp4"
-                            class="lazy-video"
+                            src="../assets/images/destinations/blogs/3141319-uhd_3840_2160_25fps.mp4"
                             muted
+                            autoplay
                             loop
-                            playsinline
-                            preload="none"
                         ></video>
                         <div class="vlog-overlay">
-                            <h3 class="vlog-title">Chuyến đi biển tuyệt đẹp</h3>
+                            <h3>Chuyến đi biển tuyệt đẹp</h3>
                             <p>Khám phá những bãi biển hoang sơ và làn nước xanh ngọc trong vlog thư giãn này.</p>
                         </div>
                     </div>
 
                     <div class="vlog-item">
                         <video
-                            data-src="../assets/images/destinations/blogs/3192303-uhd_3840_2160_25fps.mp4"
-                            class="lazy-video"
+                            src="../assets/images/destinations/blogs/3192303-uhd_3840_2160_25fps.mp4"
                             muted
+                            autoplay
                             loop
-                            playsinline
-                            preload="none"
                         ></video>
                         <div class="vlog-overlay">
-                            <h3 class="vlog-title">Chuyến đi biển tuyệt đẹp</h3>
+                            <h3>Chuyến đi biển tuyệt đẹp</h3>
                             <p>Khám phá những bãi biển hoang sơ và làn nước xanh ngọc trong vlog thư giãn này.</p>
                         </div>
                     </div>
@@ -242,22 +288,118 @@
 
             <button class="slide-vlog-btn next">&#10095;</button>
         </div>
+
+        <!-- <div class="view-all-container">
+      <button class="view-all-btn">Xem tất cả</button>
+    </div> -->
     </div>
 </section>
 
 <!-- Top Destination Section -->
 <section class="home-destinations lazy-load">
-  <div class="home-destinations__head">
-    <div>
-      <h2 class="home-destinations__title">Điểm đến hàng đầu</h2>
-      <p class="home-destinations__desc">
-        Những lý do tuyệt vời nhất khiến Entrada là lựa chọn hoàn hảo cho bạn!
-      </p>
+    <div class="home-destinations__head">
+        <div>
+            <h2 class="home-destinations__title">Điểm đến hàng đầu</h2>
+            <p class="home-destinations__desc">
+                Những lý do tuyệt vời nhất khiến Entrada là lựa chọn hoàn hảo cho bạn!
+            </p>
+        </div>
+        <a href="#destinations" class="home-destinations__btn">Xem tất cả</a>
     </div>
-    <a href="#destinations" class="home-destinations__btn">Xem tất cả</a>
-  </div>
 
-  <div class="home-destinations__grid" id="destinationsGrid"></div>
+    <div class="home-destinations__grid">
+        <!-- 1 -->
+        <article class="home-destination-card">
+            <a href="#destination-detail">
+                <div class="home-destination-card__rating">3.5</div>
+                <img
+                    src="../assets/images/home/dest-1.svg"
+                    alt="Thác nước Việt Nam"
+                    class="home-destination-card__img"
+                />
+                <div class="home-destination-card__info">
+                    <h3 class="home-destination-card__name">Việt Nam</h3>
+                    <span class="home-destination-card__type">Thác nước</span>
+                </div>
+            </a>
+        </article>
+
+        <!-- 2 (Tall) -->
+        <article class="home-destination-card home-destination-card--tall">
+            <a href="#destination-detail">
+                <div class="home-destination-card__rating">3.5</div>
+                <img
+                    src="../assets/images/home/dest-2.svg"
+                    alt="Hành trình đường bộ Việt Nam"
+                    class="home-destination-card__img"
+                />
+                <div class="home-destination-card__info">
+                    <h3 class="home-destination-card__name">Việt Nam</h3>
+                    <span class="home-destination-card__type">Hành trình</span>
+                </div>
+            </a>
+        </article>
+
+        <!-- 3 (Wide) -->
+        <article class="home-destination-card home-destination-card--wide">
+            <a href="#destination-detail">
+                <div class="home-destination-card__rating">3.5</div>
+                <img
+                    src="../assets/images/home/dest-3.svg"
+                    alt="Bãi biển Việt Nam"
+                    class="home-destination-card__img"
+                />
+                <div class="home-destination-card__info">
+                    <h3 class="home-destination-card__name">Việt Nam</h3>
+                    <span class="home-destination-card__type">Bãi biển</span>
+                </div>
+            </a>
+        </article>
+
+        <!-- 4 -->
+        <article class="home-destination-card">
+            <a href="#destination-detail">
+                <div class="home-destination-card__rating">3.5</div>
+                <img
+                    src="../assets/images/home/dest-4.svg"
+                    alt="Bầu trời Việt Nam"
+                    class="home-destination-card__img"
+                />
+                <div class="home-destination-card__info">
+                    <h3 class="home-destination-card__name">Việt Nam</h3>
+                    <span class="home-destination-card__type">Bầu trời</span>
+                </div>
+            </a>
+        </article>
+
+        <!-- 5 -->
+        <article class="home-destination-card">
+            <a href="#destination-detail">
+                <div class="home-destination-card__rating">3.5</div>
+                <img
+                    src="../assets/images/home/dest-5.svg"
+                    alt="Thành phố Việt Nam"
+                    class="home-destination-card__img"
+                />
+                <div class="home-destination-card__info">
+                    <h3 class="home-destination-card__name">Việt Nam</h3>
+                    <span class="home-destination-card__type">Thành phố</span>
+                </div>
+            </a>
+        </article>
+
+        <!-- 6 -->
+        <article class="home-destination-card">
+            <a href="#destination-detail">
+                <div class="home-destination-card__rating">3.5</div>
+                <img src="../assets/images/home/dest-6.svg" alt="Sa mạc Việt Nam" class="home-destination-card__img" />
+                <div class="home-destination-card__info">
+                    <h3 class="home-destination-card__name">Việt Nam</h3>
+                    <span class="home-destination-card__type">Sa mạc</span>
+                </div>
+            </a>
+        </article>
+    </div>
 </section>
 
 <!-- Tour Type Section -->
@@ -317,21 +459,21 @@
 <section class="home-testimonial lazy-load">
     <div class="home-testimonial__container">
         <div class="home-testimonial__image">
-            <img data-src="../assets/images/home/Girl Images.png" alt="Khách du lịch hạnh phúc" class="lazy-image" />
+            <img src="../assets/images/home/Girl Images.png" alt="Khách du lịch hạnh phúc" />
         </div>
 
         <div class="home-testimonial__content">
             <h2 class="home-testimonial__title">Khách hàng nói gì về chúng tôi</h2>
             <p class="home-testimonial__quote">
-                "Việc thêm bằng chứng xã hội trực tiếp là yếu tố số 1 giúp tăng doanh thu trong tất cả các thử nghiệm
-                của tôi tại Airkey." Và thương hiệu phải tồn tại ít nhất 1 năm.
+                “Việc thêm bằng chứng xã hội trực tiếp là yếu tố số 1 giúp tăng doanh thu trong tất cả các thử nghiệm
+                của tôi tại Airkey.” Và thương hiệu phải tồn tại ít nhất 1 năm.
             </p>
 
             <div class="home-testimonial__author">
                 <img
-                    data-src="../assets/images/home/raul van.png"
+                    src="../assets/images/home/raul van.png"
                     alt="Ảnh đại diện người dùng"
-                    class="home-testimonial__avatar lazy-image"
+                    class="home-testimonial__avatar"
                 />
                 <div>
                     <h4 class="home-testimonial__name">Raul van Sutoyo</h4>
@@ -344,6 +486,7 @@
 </section>
 
 <!-- Articles section -->
+
 <section class="home-articles lazy-load">
     <div class="home-articles__header">
         <h2 class="home-articles__title">Bài viết & Hướng dẫn du lịch</h2>
@@ -355,12 +498,9 @@
     </div>
 
     <div class="home-articles__content">
+        <!-- Bài viết lớn bên trái -->
         <div class="home-articles__main">
-            <img
-                data-src="../assets/images/home/main_pic.jpg"
-                alt="Khinh khí cầu"
-                class="home-articles__main-img lazy-image"
-            />
+            <img src="../assets/images/home/main_pic.jpg" alt="Khinh khí cầu" class="home-articles__main-img" />
             <div class="home-articles__main-text">
                 <div class="home-articles__main-info">
                     <h3 class="home-articles__main-title">Chuyến hành trình thật sự không chỉ là tìm nơi mới</h3>
@@ -373,13 +513,10 @@
             </div>
         </div>
 
+        <!-- Danh sách bài viết nhỏ bên phải -->
         <div class="home-articles__list">
             <article class="home-articles__item">
-                <img
-                    data-src="../assets/images/home/first_pic.jpg"
-                    alt="Đồi cát sa mạc"
-                    class="home-articles__item-img lazy-image"
-                />
+                <img src="../assets/images/home/first_pic.jpg" alt="Đồi cát sa mạc" class="home-articles__item-img" />
                 <div class="home-articles__item-content">
                     <h4 class="home-articles__item-title">Những ngọn núi luôn là điểm đến lý tưởng</h4>
                     <p class="home-articles__item-desc">
@@ -391,9 +528,9 @@
 
             <article class="home-articles__item">
                 <img
-                    data-src="../assets/images/home/second_pic.png"
+                    src="../assets/images/home/second_pic.png"
                     alt="Lều trại giữa núi"
-                    class="home-articles__item-img lazy-image"
+                    class="home-articles__item-img"
                 />
                 <div class="home-articles__item-content">
                     <h4 class="home-articles__item-title">Cuộc sống là một chuyến phiêu lưu đầy táo bạo</h4>
@@ -406,9 +543,9 @@
 
             <article class="home-articles__item">
                 <img
-                    data-src="../assets/images/home/third_pic.png"
+                    src="../assets/images/home/third_pic.png"
                     alt="Phiêu lưu trên xe máy"
-                    class="home-articles__item-img lazy-image"
+                    class="home-articles__item-img"
                 />
                 <div class="home-articles__item-content">
                     <h4 class="home-articles__item-title">Cuộc sống là một chuyến phiêu lưu hoặc chẳng là gì cả</h4>
@@ -420,7 +557,7 @@
     </div>
 </section>
 
-<!-- Newsletter -->
+<!-- Phần đăng ký nhận tin -->
 <section class="home-newsletter lazy-load">
     <div class="home-newsletter__inner">
         <h2 class="home-newsletter__title">Đăng ký nhận bản tin</h2>

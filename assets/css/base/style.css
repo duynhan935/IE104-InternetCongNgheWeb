@@ -563,6 +563,7 @@ body:has(
         z-index: 950;
         background: transparent;
         box-shadow: none;
+        -webkit-backdrop-filter: none;
         backdrop-filter: none;
         transition: all 0.3s ease;
 }
@@ -656,13 +657,17 @@ body:has(
 
 #page-loading {
         position: fixed;
-        inset: 0;
+        top: 76px;
+        right: 0;
+        bottom: 0;
+        left: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         background: var(--loading-bg);
+        -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
-        z-index: 9999;
+        z-index: 850;
         flex-direction: column;
         gap: var(--spacing-lg);
 }
@@ -673,16 +678,29 @@ body:has(
         font-weight: var(--font-weight-medium);
 }
 
-body:not(.page-ready) #header,
-body:not(.page-ready) .container,
-body:not(.page-ready) #footer {
+body:not(.page-ready) .container {
         visibility: hidden;
         opacity: 0;
 }
 
-body.page-ready #header,
-body.page-ready .container,
-body.page-ready #footer {
+/* Keep header visible during loading */
+body:not(.page-ready) header .container {
+        visibility: visible;
+        opacity: 1;
+}
+
+body:not(.page-ready) header {
+        background-color: rgba(252, 252, 252, 0.9) !important;
+        backdrop-filter: blur(10px) !important;
+        transition: none !important;
+}
+
+/* Make header nav links black during loading */
+body:not(.page-ready) .header-main-nav__link {
+        color: var(--nav-text) !important;
+}
+
+body.page-ready .container {
         visibility: visible;
         opacity: 1;
         transition: opacity 0.3s ease;
