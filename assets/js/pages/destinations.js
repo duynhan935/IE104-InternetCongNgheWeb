@@ -421,9 +421,7 @@ function renderTopDestinations() {
     const topdestTrack = document.querySelector('.topdest-track');
     if (!topdestTrack) return;
 
-    const topDests = [...destinations]
-        .sort((a, b) => (visitsStore[b.name] || 0) - (visitsStore[a.name] || 0))
-        .slice(0, 8);
+    const topDests = [...destinations].sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 10);
 
     topdestTrack.innerHTML = '';
 
